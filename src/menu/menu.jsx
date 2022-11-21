@@ -1,1 +1,0 @@
-import React from "react"; export default function Menu(props){ return ( <ul className="menu" style={{textAlign: "center"}}> <li style={{color: "white"}}>Home</li> <li>Philosophy</li> <li>Lite Paper</li> </ul> ); }
