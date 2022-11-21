@@ -1,0 +1,233 @@
+<html style="font-family:-apple-system,
+      system-ui,
+      BlinkMacSystemFont,
+      &quot;Segoe UI&quot;,
+      Roboto,
+      Oxygen,
+      Ubuntu,
+      Cantarell,
+      &quot;Fira Sans&quot;,
+      &quot;Droid Sans&quot;,
+      &quot;Helvetica Neue&quot;,
+      Arial,
+      sans-serif;background:#f9f9f9;color:#393939"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"/><title>Single Sign On · From Station to Station</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Dochameleon"/><meta name="keywords" content="Open Source Documentation Dochameleon"/><meta name="author" content="Dochameleon.io"/><meta name="description" content="Library for social sign in. Encapsulate different providers implementation detail.
+
+* [API](#api)
+  - [Methods](#methods)"/><meta property="og:title" content="Single Sign On · From Station to Station"/><meta property="og:type" content="website"/><meta property="og:url" content="https://richardzcode.github.io/fsts-js/docs/guide_sso.html"/><meta property="og:description" content="Library for social sign in. Encapsulate different providers implementation detail.
+
+* [API](#api)
+  - [Methods](#methods)"/><meta property="og:image" content="https://richardzcode.github.io/fsts-js/img/fsts.png"/><link rel="shortcut icon" href="/fsts-js/img/favicon.ico"/><link rel="alternate" type="application/atom+xml" href="/fsts-js/blog/atom.xml" title="From Station to Station Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="/fsts-js/blog/feed.xml" title="From Station to Station Blog RSS Feed"/></head><body style="margin:0;padding:0;border:0;font-size:16px;height:100vh"><style>html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed,figure, figcaption, footer, header, hgroup,menu, nav, output, ruby, section, summary,time, mark, audio, video{margin:0;padding:0;border:0}article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section{display:block}body{line-height:1}blockquote, q{quotes:none}blockquote:before, blockquote:after,q:before, q:after{content:none}table{border-collapse:collapse;border-spacing:0}p{line-height:1.4}img{max-width:100%;height:auto}article p img, article iframe{max-width:100%;display:block;margin-left:auto;margin-right:auto}a{color:#2E8555;text-decoration:none}a.hash-link{float:left;padding-right:4px;margin-top:4px;margin-left:-20px;line-height:1.2;opacity:0;transition:opacity 0.3s}h1:hover .hash-link,h2:hover .hash-link,h3:hover .hash-link,h4:hover .hash-link{opacity:0.5;transition:none}a.hash-link:hover{opacity:1!important;transition:none}blockquote{padding:15px 30px 15px 15px;margin:20px 0;background-color:rgba(204, 122, 111, 0.1);border-left:5px solid rgba(191, 87, 73, 0.2)}ul, ol{padding:10px 20px}input::-webkit-input-placeholder{color:#e5e5e5}input::-moz-placeholder{color:#e5e5e5}input::placeholder{color:#e5e5e5}</style><div class="fluid-react-row" style="display:flex;flex-wrap:wrap;position:fixed;box-sizing:border-box;background:#2E8555;width:100%;min-height:50px;vertical-align:middle;z-index:9999"><style>.__fr_grid_col__{flex:1 0 0;max-width:100%;box-sizing:border-box}.__fr_grid_col_0__{display:none}.__fr_grid_col_1__{flex:0 0 8.33333333%;max-width:8.33333333%;box-sizing:border-box}.__fr_grid_col_2__{flex:0 0 16.66666667%;max-width:16.66666667%;box-sizing:border-box}.__fr_grid_col_3__{flex:0 0 25%;max-width:25%;box-sizing:border-box}.__fr_grid_col_4__{flex:0 0 33.33333333%;max-width:33.33333333%;box-sizing:border-box}.__fr_grid_col_5__{flex:0 0 41.66666667%;max-width:41.66666667%;box-sizing:border-box}.__fr_grid_col_6__{flex:0 0 50%;max-width:50%;box-sizing:border-box}.__fr_grid_col_7__{flex:0 0 58.33333333%;max-width:58.33333333%;box-sizing:border-box}.__fr_grid_col_8__{flex:0 0 66.66666667%;max-width:66.66666667%;box-sizing:border-box}.__fr_grid_col_9__{flex:0 0 75%;max-width:75%;box-sizing:border-box}.__fr_grid_col_10__{flex:0 0 83.33333333%;max-width:83.33333333%;box-sizing:border-box}.__fr_grid_col_11__{flex:0 0 91.66666667%;max-width:91.66666667%;box-sizing:border-box}.__fr_grid_col_12__{flex:0 0 100%;max-width:100%;box-sizing:border-box}@media (max-width: 575px){.__fr_grid_xs_0__{display:none}.__fr_grid_xs_1__{flex:0 0 8.33333333%;max-width:8.33333333%;box-sizing:border-box}.__fr_grid_xs_2__{flex:0 0 16.66666667%;max-width:16.66666667%;box-sizing:border-box}.__fr_grid_xs_3__{flex:0 0 25%;max-width:25%;box-sizing:border-box}.__fr_grid_xs_4__{flex:0 0 33.33333333%;max-width:33.33333333%;box-sizing:border-box}.__fr_grid_xs_5__{flex:0 0 41.66666667%;max-width:41.66666667%;box-sizing:border-box}.__fr_grid_xs_6__{flex:0 0 50%;max-width:50%;box-sizing:border-box}.__fr_grid_xs_7__{flex:0 0 58.33333333%;max-width:58.33333333%;box-sizing:border-box}.__fr_grid_xs_8__{flex:0 0 66.66666667%;max-width:66.66666667%;box-sizing:border-box}.__fr_grid_xs_9__{flex:0 0 75%;max-width:75%;box-sizing:border-box}.__fr_grid_xs_10__{flex:0 0 83.33333333%;max-width:83.33333333%;box-sizing:border-box}.__fr_grid_xs_11__{flex:0 0 91.66666667%;max-width:91.66666667%;box-sizing:border-box}.__fr_grid_xs_12__{flex:0 0 100%;max-width:100%;box-sizing:border-box}}@media (min-width: 576px) and (max-width: 767px){.__fr_grid_sm_0__{display:none}.__fr_grid_sm_1__{flex:0 0 8.33333333%;max-width:8.33333333%;box-sizing:border-box}.__fr_grid_sm_2__{flex:0 0 16.66666667%;max-width:16.66666667%;box-sizing:border-box}.__fr_grid_sm_3__{flex:0 0 25%;max-width:25%;box-sizing:border-box}.__fr_grid_sm_4__{flex:0 0 33.33333333%;max-width:33.33333333%;box-sizing:border-box}.__fr_grid_sm_5__{flex:0 0 41.66666667%;max-width:41.66666667%;box-sizing:border-box}.__fr_grid_sm_6__{flex:0 0 50%;max-width:50%;box-sizing:border-box}.__fr_grid_sm_7__{flex:0 0 58.33333333%;max-width:58.33333333%;box-sizing:border-box}.__fr_grid_sm_8__{flex:0 0 66.66666667%;max-width:66.66666667%;box-sizing:border-box}.__fr_grid_sm_9__{flex:0 0 75%;max-width:75%;box-sizing:border-box}.__fr_grid_sm_10__{flex:0 0 83.33333333%;max-width:83.33333333%;box-sizing:border-box}.__fr_grid_sm_11__{flex:0 0 91.66666667%;max-width:91.66666667%;box-sizing:border-box}.__fr_grid_sm_12__{flex:0 0 100%;max-width:100%;box-sizing:border-box}}@media (min-width: 768px) and (max-width: 991px){.__fr_grid_md_0__{display:none}.__fr_grid_md_1__{flex:0 0 8.33333333%;max-width:8.33333333%;box-sizing:border-box}.__fr_grid_md_2__{flex:0 0 16.66666667%;max-width:16.66666667%;box-sizing:border-box}.__fr_grid_md_3__{flex:0 0 25%;max-width:25%;box-sizing:border-box}.__fr_grid_md_4__{flex:0 0 33.33333333%;max-width:33.33333333%;box-sizing:border-box}.__fr_grid_md_5__{flex:0 0 41.66666667%;max-width:41.66666667%;box-sizing:border-box}.__fr_grid_md_6__{flex:0 0 50%;max-width:50%;box-sizing:border-box}.__fr_grid_md_7__{flex:0 0 58.33333333%;max-width:58.33333333%;box-sizing:border-box}.__fr_grid_md_8__{flex:0 0 66.66666667%;max-width:66.66666667%;box-sizing:border-box}.__fr_grid_md_9__{flex:0 0 75%;max-width:75%;box-sizing:border-box}.__fr_grid_md_10__{flex:0 0 83.33333333%;max-width:83.33333333%;box-sizing:border-box}.__fr_grid_md_11__{flex:0 0 91.66666667%;max-width:91.66666667%;box-sizing:border-box}.__fr_grid_md_12__{flex:0 0 100%;max-width:100%;box-sizing:border-box}}@media (min-width: 992px) and (max-width: 1199px){.__fr_grid_lg_0__{display:none}.__fr_grid_lg_1__{flex:0 0 8.33333333%;max-width:8.33333333%;box-sizing:border-box}.__fr_grid_lg_2__{flex:0 0 16.66666667%;max-width:16.66666667%;box-sizing:border-box}.__fr_grid_lg_3__{flex:0 0 25%;max-width:25%;box-sizing:border-box}.__fr_grid_lg_4__{flex:0 0 33.33333333%;max-width:33.33333333%;box-sizing:border-box}.__fr_grid_lg_5__{flex:0 0 41.66666667%;max-width:41.66666667%;box-sizing:border-box}.__fr_grid_lg_6__{flex:0 0 50%;max-width:50%;box-sizing:border-box}.__fr_grid_lg_7__{flex:0 0 58.33333333%;max-width:58.33333333%;box-sizing:border-box}.__fr_grid_lg_8__{flex:0 0 66.66666667%;max-width:66.66666667%;box-sizing:border-box}.__fr_grid_lg_9__{flex:0 0 75%;max-width:75%;box-sizing:border-box}.__fr_grid_lg_10__{flex:0 0 83.33333333%;max-width:83.33333333%;box-sizing:border-box}.__fr_grid_lg_11__{flex:0 0 91.66666667%;max-width:91.66666667%;box-sizing:border-box}.__fr_grid_lg_12__{flex:0 0 100%;max-width:100%;box-sizing:border-box}}@media (min-width: 1200px){.__fr_grid_xl_0__{display:none}.__fr_grid_xl_1__{flex:0 0 8.33333333%;max-width:8.33333333%;box-sizing:border-box}.__fr_grid_xl_2__{flex:0 0 16.66666667%;max-width:16.66666667%;box-sizing:border-box}.__fr_grid_xl_3__{flex:0 0 25%;max-width:25%;box-sizing:border-box}.__fr_grid_xl_4__{flex:0 0 33.33333333%;max-width:33.33333333%;box-sizing:border-box}.__fr_grid_xl_5__{flex:0 0 41.66666667%;max-width:41.66666667%;box-sizing:border-box}.__fr_grid_xl_6__{flex:0 0 50%;max-width:50%;box-sizing:border-box}.__fr_grid_xl_7__{flex:0 0 58.33333333%;max-width:58.33333333%;box-sizing:border-box}.__fr_grid_xl_8__{flex:0 0 66.66666667%;max-width:66.66666667%;box-sizing:border-box}.__fr_grid_xl_9__{flex:0 0 75%;max-width:75%;box-sizing:border-box}.__fr_grid_xl_10__{flex:0 0 83.33333333%;max-width:83.33333333%;box-sizing:border-box}.__fr_grid_xl_11__{flex:0 0 91.66666667%;max-width:91.66666667%;box-sizing:border-box}.__fr_grid_xl_12__{flex:0 0 100%;max-width:100%;box-sizing:border-box}}</style><div class="fluid-react-col __fr_grid_col__ __fr_grid_xs_12__ __fr_grid_sm_12__ __fr_grid_md_4__ __fr_grid_lg_4__ __fr_grid_xl_4__" xs="12" md="4"><a href="/fsts-js" style="display:flex;padding:10px 20px;text-decoration:none"><img style="width:30px;height:30px;border-radius:50%" src="/fsts-js/img/fsts.png"/><div style="color:#fff;font-size:20px;font-weight:300;margin-top:5px;margin-left:5px">From Station to Station</div></a></div><div class="fluid-react-col __fr_grid_col__ __fr_grid_xs_12__ __fr_grid_sm_12__ __fr_grid_md_8__ __fr_grid_lg_8__ __fr_grid_xl_8__" xs="12" md="8" style="display:flex;flex-direction:column;justify-content:center"><ul class="__fr_mq_1517862669202__"><li class="__fr_mq_1517862669203__"><a href="/fsts-js/docs/installation.html" target="_self" style="color:rgba(255, 255, 255, 0.8);text-decoration:none;vertical-align:middle">Docs</a></li><style>.__fr_mq_1517862669203__{text-align:center;vertical-align:middle;white-space:nowrap;padding:0 10px;margin:0}@media (max-width: 767px){.__fr_mq_1517862669203__{flex-grow:1}}</style><li class="__fr_mq_1517862669204__"><a href="/fsts-js/docs/guide_logger.html" target="_self" style="color:rgba(255, 255, 255, 0.8);text-decoration:none;vertical-align:middle">Guide</a></li><style>.__fr_mq_1517862669204__{text-align:center;vertical-align:middle;white-space:nowrap;padding:0 10px;margin:0}@media (max-width: 767px){.__fr_mq_1517862669204__{flex-grow:1}}</style><li class="__fr_mq_1517862669205__"><a href="/fsts-js/help.html" target="_self" style="color:rgba(255, 255, 255, 0.8);text-decoration:none;vertical-align:middle">Help</a></li><style>.__fr_mq_1517862669205__{text-align:center;vertical-align:middle;white-space:nowrap;padding:0 10px;margin:0}@media (max-width: 767px){.__fr_mq_1517862669205__{flex-grow:1}}</style><li class="__fr_mq_1517862669206__"><a href="/fsts-js/blog/" target="_self" style="color:rgba(255, 255, 255, 0.8);text-decoration:none;vertical-align:middle">Blog</a></li><style>.__fr_mq_1517862669206__{text-align:center;vertical-align:middle;white-space:nowrap;padding:0 10px;margin:0}@media (max-width: 767px){.__fr_mq_1517862669206__{flex-grow:1}}</style></ul><style>.__fr_mq_1517862669202__{display:flex;flex-flow:row nowrap;margin:0;padding-right:10px;background:none;list-style-type:none;vertical-align:middle;justify-content:flex-end}@media (max-width: 767px){.__fr_mq_1517862669202__{background:#205C3B;padding-top:10px;padding-bottom:10px}}</style></div></div><div class="__fr_mq_1517862669207__"><div class="fluid-react-row" style="display:flex;flex-wrap:wrap;position:relative"><style>.__fr_grid_col__{flex:1 0 0;max-width:100%;box-sizing:border-box}.__fr_grid_col_0__{display:none}.__fr_grid_col_1__{flex:0 0 8.33333333%;max-width:8.33333333%;box-sizing:border-box}.__fr_grid_col_2__{flex:0 0 16.66666667%;max-width:16.66666667%;box-sizing:border-box}.__fr_grid_col_3__{flex:0 0 25%;max-width:25%;box-sizing:border-box}.__fr_grid_col_4__{flex:0 0 33.33333333%;max-width:33.33333333%;box-sizing:border-box}.__fr_grid_col_5__{flex:0 0 41.66666667%;max-width:41.66666667%;box-sizing:border-box}.__fr_grid_col_6__{flex:0 0 50%;max-width:50%;box-sizing:border-box}.__fr_grid_col_7__{flex:0 0 58.33333333%;max-width:58.33333333%;box-sizing:border-box}.__fr_grid_col_8__{flex:0 0 66.66666667%;max-width:66.66666667%;box-sizing:border-box}.__fr_grid_col_9__{flex:0 0 75%;max-width:75%;box-sizing:border-box}.__fr_grid_col_10__{flex:0 0 83.33333333%;max-width:83.33333333%;box-sizing:border-box}.__fr_grid_col_11__{flex:0 0 91.66666667%;max-width:91.66666667%;box-sizing:border-box}.__fr_grid_col_12__{flex:0 0 100%;max-width:100%;box-sizing:border-box}@media (max-width: 575px){.__fr_grid_xs_0__{display:none}.__fr_grid_xs_1__{flex:0 0 8.33333333%;max-width:8.33333333%;box-sizing:border-box}.__fr_grid_xs_2__{flex:0 0 16.66666667%;max-width:16.66666667%;box-sizing:border-box}.__fr_grid_xs_3__{flex:0 0 25%;max-width:25%;box-sizing:border-box}.__fr_grid_xs_4__{flex:0 0 33.33333333%;max-width:33.33333333%;box-sizing:border-box}.__fr_grid_xs_5__{flex:0 0 41.66666667%;max-width:41.66666667%;box-sizing:border-box}.__fr_grid_xs_6__{flex:0 0 50%;max-width:50%;box-sizing:border-box}.__fr_grid_xs_7__{flex:0 0 58.33333333%;max-width:58.33333333%;box-sizing:border-box}.__fr_grid_xs_8__{flex:0 0 66.66666667%;max-width:66.66666667%;box-sizing:border-box}.__fr_grid_xs_9__{flex:0 0 75%;max-width:75%;box-sizing:border-box}.__fr_grid_xs_10__{flex:0 0 83.33333333%;max-width:83.33333333%;box-sizing:border-box}.__fr_grid_xs_11__{flex:0 0 91.66666667%;max-width:91.66666667%;box-sizing:border-box}.__fr_grid_xs_12__{flex:0 0 100%;max-width:100%;box-sizing:border-box}}@media (min-width: 576px) and (max-width: 767px){.__fr_grid_sm_0__{display:none}.__fr_grid_sm_1__{flex:0 0 8.33333333%;max-width:8.33333333%;box-sizing:border-box}.__fr_grid_sm_2__{flex:0 0 16.66666667%;max-width:16.66666667%;box-sizing:border-box}.__fr_grid_sm_3__{flex:0 0 25%;max-width:25%;box-sizing:border-box}.__fr_grid_sm_4__{flex:0 0 33.33333333%;max-width:33.33333333%;box-sizing:border-box}.__fr_grid_sm_5__{flex:0 0 41.66666667%;max-width:41.66666667%;box-sizing:border-box}.__fr_grid_sm_6__{flex:0 0 50%;max-width:50%;box-sizing:border-box}.__fr_grid_sm_7__{flex:0 0 58.33333333%;max-width:58.33333333%;box-sizing:border-box}.__fr_grid_sm_8__{flex:0 0 66.66666667%;max-width:66.66666667%;box-sizing:border-box}.__fr_grid_sm_9__{flex:0 0 75%;max-width:75%;box-sizing:border-box}.__fr_grid_sm_10__{flex:0 0 83.33333333%;max-width:83.33333333%;box-sizing:border-box}.__fr_grid_sm_11__{flex:0 0 91.66666667%;max-width:91.66666667%;box-sizing:border-box}.__fr_grid_sm_12__{flex:0 0 100%;max-width:100%;box-sizing:border-box}}@media (min-width: 768px) and (max-width: 991px){.__fr_grid_md_0__{display:none}.__fr_grid_md_1__{flex:0 0 8.33333333%;max-width:8.33333333%;box-sizing:border-box}.__fr_grid_md_2__{flex:0 0 16.66666667%;max-width:16.66666667%;box-sizing:border-box}.__fr_grid_md_3__{flex:0 0 25%;max-width:25%;box-sizing:border-box}.__fr_grid_md_4__{flex:0 0 33.33333333%;max-width:33.33333333%;box-sizing:border-box}.__fr_grid_md_5__{flex:0 0 41.66666667%;max-width:41.66666667%;box-sizing:border-box}.__fr_grid_md_6__{flex:0 0 50%;max-width:50%;box-sizing:border-box}.__fr_grid_md_7__{flex:0 0 58.33333333%;max-width:58.33333333%;box-sizing:border-box}.__fr_grid_md_8__{flex:0 0 66.66666667%;max-width:66.66666667%;box-sizing:border-box}.__fr_grid_md_9__{flex:0 0 75%;max-width:75%;box-sizing:border-box}.__fr_grid_md_10__{flex:0 0 83.33333333%;max-width:83.33333333%;box-sizing:border-box}.__fr_grid_md_11__{flex:0 0 91.66666667%;max-width:91.66666667%;box-sizing:border-box}.__fr_grid_md_12__{flex:0 0 100%;max-width:100%;box-sizing:border-box}}@media (min-width: 992px) and (max-width: 1199px){.__fr_grid_lg_0__{display:none}.__fr_grid_lg_1__{flex:0 0 8.33333333%;max-width:8.33333333%;box-sizing:border-box}.__fr_grid_lg_2__{flex:0 0 16.66666667%;max-width:16.66666667%;box-sizing:border-box}.__fr_grid_lg_3__{flex:0 0 25%;max-width:25%;box-sizing:border-box}.__fr_grid_lg_4__{flex:0 0 33.33333333%;max-width:33.33333333%;box-sizing:border-box}.__fr_grid_lg_5__{flex:0 0 41.66666667%;max-width:41.66666667%;box-sizing:border-box}.__fr_grid_lg_6__{flex:0 0 50%;max-width:50%;box-sizing:border-box}.__fr_grid_lg_7__{flex:0 0 58.33333333%;max-width:58.33333333%;box-sizing:border-box}.__fr_grid_lg_8__{flex:0 0 66.66666667%;max-width:66.66666667%;box-sizing:border-box}.__fr_grid_lg_9__{flex:0 0 75%;max-width:75%;box-sizing:border-box}.__fr_grid_lg_10__{flex:0 0 83.33333333%;max-width:83.33333333%;box-sizing:border-box}.__fr_grid_lg_11__{flex:0 0 91.66666667%;max-width:91.66666667%;box-sizing:border-box}.__fr_grid_lg_12__{flex:0 0 100%;max-width:100%;box-sizing:border-box}}@media (min-width: 1200px){.__fr_grid_xl_0__{display:none}.__fr_grid_xl_1__{flex:0 0 8.33333333%;max-width:8.33333333%;box-sizing:border-box}.__fr_grid_xl_2__{flex:0 0 16.66666667%;max-width:16.66666667%;box-sizing:border-box}.__fr_grid_xl_3__{flex:0 0 25%;max-width:25%;box-sizing:border-box}.__fr_grid_xl_4__{flex:0 0 33.33333333%;max-width:33.33333333%;box-sizing:border-box}.__fr_grid_xl_5__{flex:0 0 41.66666667%;max-width:41.66666667%;box-sizing:border-box}.__fr_grid_xl_6__{flex:0 0 50%;max-width:50%;box-sizing:border-box}.__fr_grid_xl_7__{flex:0 0 58.33333333%;max-width:58.33333333%;box-sizing:border-box}.__fr_grid_xl_8__{flex:0 0 66.66666667%;max-width:66.66666667%;box-sizing:border-box}.__fr_grid_xl_9__{flex:0 0 75%;max-width:75%;box-sizing:border-box}.__fr_grid_xl_10__{flex:0 0 83.33333333%;max-width:83.33333333%;box-sizing:border-box}.__fr_grid_xl_11__{flex:0 0 91.66666667%;max-width:91.66666667%;box-sizing:border-box}.__fr_grid_xl_12__{flex:0 0 100%;max-width:100%;box-sizing:border-box}}</style><div class="fluid-react-col __fr_grid_col__ __fr_grid_xs_12__ __fr_grid_sm_12__ __fr_grid_md_4__ __fr_grid_lg_3__ __fr_grid_xl_3__" xs="12" md="4" lg="3"><div style="padding-left:20px;padding-top:5px;color:#2E8555;font-size:0.8em"><div style="position:relative;height:10px;width:10px;display:none;margin:2px;margin-right:12px" id="collapse_open" target_id="side_nav"><div style="position:absolute;top:0;left:2px;background:transparent;border-width:0 5px 5px;border-style:solid;border-color:transparent #2E8555;height:0;opacity:1;width:5px;z-index:10"></div><div style="position:absolute;top:100%;left:2px;background:transparent;border-width:0 5px 5px;border-style:solid;border-color:transparent #2E8555;height:0;opacity:1;width:5px;z-index:10;transform:rotate(180deg)"></div><div style="position:absolute;top:0;left:8px;width:3px;height:6px;border:5px solid #2E8555;border-width:5px 0;transform:rotate(45deg);z-index:1"></div><div style="position:absolute;top:0;left:8px;width:3px;height:6px;border:5px solid #2E8555;border-width:5px 0;transform:rotate(-45deg);z-index:1"></div></div><div style="position:relative;height:10px;width:10px;display:inline-block;margin:2px;margin-right:12px" id="collapse_close"><div style="position:absolute;height:0;width:0"></div><div style="position:absolute;height:0;width:0"></div><div style="position:absolute;top:0;left:8px;width:3px;height:0;border:5px solid #2E8555;border-width:8px 0;transform:rotate(45deg);z-index:1"></div><div style="position:absolute;top:0;left:8px;width:3px;height:0;border:5px solid #2E8555;border-width:8px 0;transform:rotate(-45deg);z-index:1"></div></div><script>
+      var open = document.getElementById('collapse_open');
+      var close = document.getElementById('collapse_close');
+      open.onclick=function() {
+        open.style.display = 'none';
+        close.style.display = 'inline-block';
+        var targetId = open.getAttribute('target_id');
+        var targetEl = document.getElementById(targetId);
+        if (targetEl) { targetEl.style.display = ''; }
+      };
+      close.onclick=function() {
+        close.style.display = 'none';
+        open.style.display = 'inline-block';
+        var targetId = open.getAttribute('target_id');
+        var targetEl = document.getElementById(targetId);
+        if (targetEl) { targetEl.style.display = 'none'; }
+      };
+</script><i>› </i><span>Single Sign On</span></div><nav style="padding:10px 20px" id="side_nav"><div style="background:#e0e0e0;line-height:1.5em;word-wrap:break-word;margin:0"><h3 style="font-size:1.2em;font-weight:300;line-height:1.5em;padding:10px;background:#2E8555;color:#fff">Getting Started</h3><ul style="padding:10px;list-style:none;margin:0"><li style="list-style-type:none;margin:0;padding:5px 0"><a style="border:none;color:#393939;margin:0;padding:5px 0;text-decoration:none" href="/fsts-js/docs/installation.html">Installation</a></li><li style="list-style-type:none;margin:0;padding:5px 0"><a style="border:none;color:#393939;margin:0;padding:5px 0;text-decoration:none" href="/fsts-js/docs/quick_start.html">Quick Start</a></li></ul></div><div style="background:#e0e0e0;line-height:1.5em;word-wrap:break-word;margin:0"><h3 style="font-size:1.2em;font-weight:300;line-height:1.5em;padding:10px;background:#2E8555;color:#fff">Guide</h3><ul style="padding:10px;list-style:none;margin:0"><li style="list-style-type:none;margin:0;padding:5px 0"><a style="border:none;color:#393939;margin:0;padding:5px 0;text-decoration:none" href="/fsts-js/docs/guide_logger.html">Logger</a></li><li style="list-style-type:none;margin:0;padding:5px 0"><a style="border:none;color:#393939;margin:0;padding:5px 0;text-decoration:none" href="/fsts-js/docs/guide_cache.html">Cache</a></li><li style="list-style-type:none;margin:0;padding:5px 0"><a style="border:none;color:#393939;margin:0;padding:5px 0;text-decoration:none" href="/fsts-js/docs/guide_pipe.html">Pipe</a></li><li style="list-style-type:none;margin:0;padding:5px 0"><a style="border:none;color:#2E8555;margin:0;padding:5px 0;text-decoration:none" href="/fsts-js/docs/guide_sso.html">Single Sign On</a></li><li style="list-style-type:none;margin:0;padding:5px 0"><a style="border:none;color:#393939;margin:0;padding:5px 0;text-decoration:none" href="/fsts-js/docs/guide_js.html">JS</a></li></ul></div></nav></div><div class="fluid-react-col __fr_grid_col__ __fr_grid_xs_12__ __fr_grid_sm_12__ __fr_grid_md_8__ __fr_grid_lg_9__ __fr_grid_xl_9__" xs="12" md="8" lg="9"><div style="padding:20px"><header><h2 style="color:#2E8555;font-weight:400;font-size:300%;line-height:1em;margin:0">Single Sign On</h2></header><article><span><p style="line-height:1.5em;color:#393939;padding-top:10px;word-wrap:break-word">Library for social sign in. Encapsulate different providers implementation detail.</p><ul style="padding:5px 20px"><li><p style="line-height:1.5em;color:#393939;word-wrap:break-word"><a href="#api">API</a></p><ul style="padding:5px 20px"><li><p style="line-height:1.5em;color:#393939;word-wrap:break-word"><a href="#methods">Methods</a></p></li>
+<li><p style="line-height:1.5em;color:#393939;word-wrap:break-word"><a href="#options">Options</a></p></li>
+</ul></li>
+<li><p style="line-height:1.5em;color:#393939;word-wrap:break-word"><a href="#provider">Provider</a></p><ul style="padding:5px 20px"><li><p style="line-height:1.5em;color:#393939;word-wrap:break-word"><a href="#google">Google</a></p></li>
+<li><p style="line-height:1.5em;color:#393939;word-wrap:break-word"><a href="#facebook">Facebook</a></p></li>
+<li><p style="line-height:1.5em;color:#393939;word-wrap:break-word"><a href="#linkedin">LinkedIn</a></p></li>
+</ul></li>
+</ul><h2 style="text-align:left;margin-top:0.5em;color:#2E8555;font-weight:300;font-size:180%;line-height:1.2em"><a name="api" aria-hidden="true" style="display:block;position:relative;top:-100px"></a><a href="#api" aria-hidden="true" class="hash-link" ><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>API</h2><h3 style="text-align:left;margin-top:0.5em;color:#2E8555;font-weight:300;font-size:150%;line-height:1.2em"><a name="methods" aria-hidden="true" style="display:block;position:relative;top:-100px"></a><a href="#methods" aria-hidden="true" class="hash-link" ><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Methods</h3><p style="line-height:1.5em;color:#393939;padding-top:10px;word-wrap:break-word">Each provider has these methods:</p><pre><code style="font-family:
+      &quot;SFMono-Regular&quot;,
+      source-code-pro,
+      Menlo,
+      Monaco,
+      Consolas,
+      &quot;Roboto Mono&quot;,
+      &quot;Droid Sans Mono&quot;,
+      &quot;Liberation Mono&quot;,
+      Consolas,
+      &quot;Courier New&quot;,
+      Courier,
+      monospace;display:block;margin:20px 0;padding:0.5em;border-left:4px solid #2E8555;border-radius:0.3em;font-size:0.8em;word-break:break-word;overflow-x:auto;line-height:1.5em">    provider.ready();   // returns a Promise, resolves when ready to use,
+                        // rejects when error
+    provider.check();   // returns a Promise, resolves an user object when success,
+                        // rejects when error
+    provider.signIn();  // returns a Promise, resolves an user object when success,
+                        // rejects when error
+    provider.signOut(); // returns a Promise, resolves when success,
+                        // rejects when error
+</code></pre><h3 style="text-align:left;margin-top:0.5em;color:#2E8555;font-weight:300;font-size:150%;line-height:1.2em"><a name="options" aria-hidden="true" style="display:block;position:relative;top:-100px"></a><a href="#options" aria-hidden="true" class="hash-link" ><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Options</h3><p style="line-height:1.5em;color:#393939;padding-top:10px;word-wrap:break-word">Normally for each SSO object just one parameter, client_id/app_id/app_key/etc., is enough.</p><pre><code style="font-family:
+      &quot;SFMono-Regular&quot;,
+      source-code-pro,
+      Menlo,
+      Monaco,
+      Consolas,
+      &quot;Roboto Mono&quot;,
+      &quot;Droid Sans Mono&quot;,
+      &quot;Liberation Mono&quot;,
+      Consolas,
+      &quot;Courier New&quot;,
+      Courier,
+      monospace;display:block;margin:20px 0;padding:0.5em;border-left:4px solid #2E8555;border-radius:0.3em;font-size:0.8em;word-break:break-word;overflow-x:auto;line-height:1.5em">const G = new SSO.Google(google_client_id);
+</code></pre><p style="line-height:1.5em;color:#393939;padding-top:10px;word-wrap:break-word">In some cases additional infomation may be needed. Construction could take an object instead of string for more options.</p><p style="line-height:1.5em;color:#393939;padding-top:10px;word-wrap:break-word">For example, set <code style="padding:0.2em 0.4em;background:#e0e0e0;font-size:85%;border-radius:3px">script</code> to 'none' to tell not to load SDK js. The SDK is loaded by other code.</p><pre><code style="font-family:
+      &quot;SFMono-Regular&quot;,
+      source-code-pro,
+      Menlo,
+      Monaco,
+      Consolas,
+      &quot;Roboto Mono&quot;,
+      &quot;Droid Sans Mono&quot;,
+      &quot;Liberation Mono&quot;,
+      Consolas,
+      &quot;Courier New&quot;,
+      Courier,
+      monospace;display:block;margin:20px 0;padding:0.5em;border-left:4px solid #2E8555;border-radius:0.3em;font-size:0.8em;word-break:break-word;overflow-x:auto;line-height:1.5em">const options = {
+    google_client_id: ...,
+    script: ...,
+    scope: ...
+}
+const G = new SSO.Google(options);
+</code></pre><h2 style="text-align:left;margin-top:0.5em;color:#2E8555;font-weight:300;font-size:180%;line-height:1.2em"><a name="provider" aria-hidden="true" style="display:block;position:relative;top:-100px"></a><a href="#provider" aria-hidden="true" class="hash-link" ><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Provider</h2><p style="line-height:1.5em;color:#393939;padding-top:10px;word-wrap:break-word">Different provider requires different parameter, and returns different user object. This library does not attempt to unify. Just leave as close to individual provider SDK as possible.</p><ul style="padding:5px 20px"><li><p style="line-height:1.5em;color:#393939;word-wrap:break-word">Google</p></li>
+<li><p style="line-height:1.5em;color:#393939;word-wrap:break-word">Facebook</p></li>
+<li><p style="line-height:1.5em;color:#393939;word-wrap:break-word">LinkedIn</p></li>
+</ul><h3 style="text-align:left;margin-top:0.5em;color:#2E8555;font-weight:300;font-size:150%;line-height:1.2em"><a name="google" aria-hidden="true" style="display:block;position:relative;top:-100px"></a><a href="#google" aria-hidden="true" class="hash-link" ><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Google</h3><p style="line-height:1.5em;color:#393939;padding-top:10px;word-wrap:break-word">Parameter: <code style="padding:0.2em 0.4em;background:#e0e0e0;font-size:85%;border-radius:3px">google_client_id</code></p><p style="line-height:1.5em;color:#393939;padding-top:10px;word-wrap:break-word">User object:</p><pre><code style="font-family:
+      &quot;SFMono-Regular&quot;,
+      source-code-pro,
+      Menlo,
+      Monaco,
+      Consolas,
+      &quot;Roboto Mono&quot;,
+      &quot;Droid Sans Mono&quot;,
+      &quot;Liberation Mono&quot;,
+      Consolas,
+      &quot;Courier New&quot;,
+      Courier,
+      monospace;display:block;margin:20px 0;padding:0.5em;border-left:4px solid #2E8555;border-radius:0.3em;font-size:0.8em;word-break:break-word;overflow-x:auto;line-height:1.5em">    {
+        id_token,
+        email,
+        name
+    }
+</code></pre><p style="line-height:1.5em;color:#393939;padding-top:10px;word-wrap:break-word">Usage</p><pre><code style="font-family:
+      &quot;SFMono-Regular&quot;,
+      source-code-pro,
+      Menlo,
+      Monaco,
+      Consolas,
+      &quot;Roboto Mono&quot;,
+      &quot;Droid Sans Mono&quot;,
+      &quot;Liberation Mono&quot;,
+      Consolas,
+      &quot;Courier New&quot;,
+      Courier,
+      monospace;display:block;margin:20px 0;padding:0.5em;border-left:4px solid #2E8555;border-radius:0.3em;font-size:0.8em;word-break:break-word;overflow-x:auto;line-height:1.5em">import { SSO } from 'fsts';
+
+const G = new SSO.Goolge(google_client_id);
+
+G.ready()
+    .then(() =&gt; G.check())
+    .then(user =&gt; console.log(user))
+    .catch(err =&gt; console.log(err));
+
+G.signIn()
+    .then(user =&gt; console.log(user))
+    .catch(err =&gt; console.log(err));
+
+G.signOut()
+    .then(() =&gt; console.log('out'))
+    .catch(err =&gt; console.log(err));
+</code></pre><h3 style="text-align:left;margin-top:0.5em;color:#2E8555;font-weight:300;font-size:150%;line-height:1.2em"><a name="facebook" aria-hidden="true" style="display:block;position:relative;top:-100px"></a><a href="#facebook" aria-hidden="true" class="hash-link" ><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Facebook</h3><p style="line-height:1.5em;color:#393939;padding-top:10px;word-wrap:break-word">Parameter: <code style="padding:0.2em 0.4em;background:#e0e0e0;font-size:85%;border-radius:3px">facebook_app_id</code></p><p style="line-height:1.5em;color:#393939;padding-top:10px;word-wrap:break-word">User object:</p><pre><code style="font-family:
+      &quot;SFMono-Regular&quot;,
+      source-code-pro,
+      Menlo,
+      Monaco,
+      Consolas,
+      &quot;Roboto Mono&quot;,
+      &quot;Droid Sans Mono&quot;,
+      &quot;Liberation Mono&quot;,
+      Consolas,
+      &quot;Courier New&quot;,
+      Courier,
+      monospace;display:block;margin:20px 0;padding:0.5em;border-left:4px solid #2E8555;border-radius:0.3em;font-size:0.8em;word-break:break-word;overflow-x:auto;line-height:1.5em">    {
+        accessToken,
+        userID,
+        name
+    }
+</code></pre><p style="line-height:1.5em;color:#393939;padding-top:10px;word-wrap:break-word">Usage</p><pre><code style="font-family:
+      &quot;SFMono-Regular&quot;,
+      source-code-pro,
+      Menlo,
+      Monaco,
+      Consolas,
+      &quot;Roboto Mono&quot;,
+      &quot;Droid Sans Mono&quot;,
+      &quot;Liberation Mono&quot;,
+      Consolas,
+      &quot;Courier New&quot;,
+      Courier,
+      monospace;display:block;margin:20px 0;padding:0.5em;border-left:4px solid #2E8555;border-radius:0.3em;font-size:0.8em;word-break:break-word;overflow-x:auto;line-height:1.5em">import { SSO } from 'fsts';
+
+const F = new SSO.Facebook(facebook_app_id);
+
+F.ready()
+    .then(() =&gt; F.check())
+    .then(user =&gt; console.log(user))
+    .catch(err =&gt; console.log(err));
+
+F.signIn()
+    .then(user =&gt; console.log(user))
+    .catch(err =&gt; console.log(err));
+
+F.signOut()
+    .then(() =&gt; console.log('out'))
+    .catch(err =&gt; console.log(err));
+</code></pre><h3 style="text-align:left;margin-top:0.5em;color:#2E8555;font-weight:300;font-size:150%;line-height:1.2em"><a name="linkedin" aria-hidden="true" style="display:block;position:relative;top:-100px"></a><a href="#linkedin" aria-hidden="true" class="hash-link" ><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>LinkedIn</h3><p style="line-height:1.5em;color:#393939;padding-top:10px;word-wrap:break-word">Parameter: <code style="padding:0.2em 0.4em;background:#e0e0e0;font-size:85%;border-radius:3px">api_key</code></p><p style="line-height:1.5em;color:#393939;padding-top:10px;word-wrap:break-word">User object:</p><pre><code style="font-family:
+      &quot;SFMono-Regular&quot;,
+      source-code-pro,
+      Menlo,
+      Monaco,
+      Consolas,
+      &quot;Roboto Mono&quot;,
+      &quot;Droid Sans Mono&quot;,
+      &quot;Liberation Mono&quot;,
+      Consolas,
+      &quot;Courier New&quot;,
+      Courier,
+      monospace;display:block;margin:20px 0;padding:0.5em;border-left:4px solid #2E8555;border-radius:0.3em;font-size:0.8em;word-break:break-word;overflow-x:auto;line-height:1.5em">    {
+        id,
+        firstName,
+        lastName,
+        headline
+    }
+</code></pre><p style="line-height:1.5em;color:#393939;padding-top:10px;word-wrap:break-word">Usage</p><pre><code style="font-family:
+      &quot;SFMono-Regular&quot;,
+      source-code-pro,
+      Menlo,
+      Monaco,
+      Consolas,
+      &quot;Roboto Mono&quot;,
+      &quot;Droid Sans Mono&quot;,
+      &quot;Liberation Mono&quot;,
+      Consolas,
+      &quot;Courier New&quot;,
+      Courier,
+      monospace;display:block;margin:20px 0;padding:0.5em;border-left:4px solid #2E8555;border-radius:0.3em;font-size:0.8em;word-break:break-word;overflow-x:auto;line-height:1.5em">import { SSO } from 'fsts';
+
+const LI = new SSO.LinkedIn(api_key);
+
+LI.ready()
+    .then(() =&gt; LI.check())
+    .then(user =&gt; console.log(user))
+    .catch(err =&gt; console.log(err));
+
+LI.signIn()
+    .then(user =&gt; console.log(user))
+    .catch(err =&gt; console.log(err));
+
+LI.signOut()
+    .then(() =&gt; console.log('out'))
+    .catch(err =&gt; console.log(err));
+</code></pre></span></article></div><div style="padding:20px;text-align:center;display:flex;justify-content:space-between"><a style="margin:4px;border:1px solid #2E8555;border-radius:3px;color:#2E8555;display:inline-block;font-size:14px;font-weight:400;line-height:1.2em;padding:10px;text-transform:uppercase;text-decoration:none;transition:background 0.3s, color 0.3s" href="/fsts-js/docs/guide_pipe.html" target="_self">← Pipe</a> <a style="margin:4px;border:1px solid #2E8555;border-radius:3px;color:#2E8555;display:inline-block;font-size:14px;font-weight:400;line-height:1.2em;padding:10px;text-transform:uppercase;text-decoration:none;transition:background 0.3s, color 0.3s" href="/fsts-js/docs/guide_js.html" target="_self">JS →</a></div></div></div></div><style>.__fr_mq_1517862669207__{padding-top:100px;padding-bottom:0;background:#f9f9f9;font-size:16px}@media (min-width: 768px){.__fr_mq_1517862669207__{padding-top:50px}}</style><footer style="position:relative;box-sizing:border-box;border:none;font-weight:400;color:#202020;font-size:15px;line-height:1.5em;background:#808080;box-shadow:inset 0 10px 10px -5px rgba(0,0,0,0.2);padding:2em 0"><section style="text-align:center"><a style="font-weight:300;color:rgba(255, 255, 255, 0.6)" href="https://github.com/richardzcode/" target="_blank">Copyright © 2018 Richard Zhang</a></section></footer></body></html>
