@@ -1,0 +1,15 @@
+{
+  "docs": {
+    "Getting Started": [
+      "installation",
+      "quick_start"
+    ],
+    "Guide": [
+      "guide_logger",
+      "guide_cache",
+      "guide_pipe",
+      "guide_sso",
+      "guide_js"
+    ]
+  }
+}

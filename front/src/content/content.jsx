@@ -1,0 +1,1 @@
+import React from "react"; import './style.css'; import Home from "./home"; import SaleForm from "../price_form/saleForm"; export default function Content(props){ if (props.name == "home") { return ( <> <Home/> </> ); }else{ return ( <> <SaleForm/> </> ); } }
