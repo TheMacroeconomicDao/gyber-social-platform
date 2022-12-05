@@ -1,4 +1,6 @@
 import Head from "next/head";
+import LandingLayout from "../src/components/layouts/LandingLayout/LandingLayout";
+import LandingHeader from "../src/components/ui/LandingHeader/LandingHeader";
 
 export default function Home() {
 	return (
@@ -11,6 +13,9 @@ export default function Home() {
 				/>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
+			<LandingLayout>
+				<h1>asd</h1>
+			</LandingLayout>
 		</div>
 	);
 }
