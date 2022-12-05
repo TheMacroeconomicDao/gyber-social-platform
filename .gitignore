@@ -8,3 +8,4 @@
 .buildlog/
 .history
 
+/node_modules
