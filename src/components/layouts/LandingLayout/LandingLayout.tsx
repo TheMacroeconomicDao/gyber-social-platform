@@ -10,7 +10,7 @@ interface LandingLayoutProps {
 const LandingLayout: FC<LandingLayoutProps> = ({ children }) => (
 	<div className={s.container}>
 		<LandingHeader />
-		{children}
+		<div className="content">{children}</div>
 		<LandingFooter />
 	</div>
 );
