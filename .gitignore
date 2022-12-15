@@ -8,3 +8,6 @@
 .buildlog/
 .history
 
+/node_modules
+.next
+/.next
