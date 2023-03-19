@@ -1,7 +1,10 @@
+import { AuthPage } from "pages/AuthPage";
+import RootLayout from "./layout";
+
 export default function Home() {
 	return (
-		<div>
-			Hello
-		</div>
+		<RootLayout>
+			<AuthPage/>
+		</RootLayout>
 	);
 }
