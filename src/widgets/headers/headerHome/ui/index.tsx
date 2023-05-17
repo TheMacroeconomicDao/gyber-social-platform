@@ -2,11 +2,13 @@
 import React, { FC } from 'react'
 import { Col, Layout, Row, Input, Avatar, Popover, Divider, Button, Space } from 'antd';
 import { HeaderMenu } from 'shared/ui/menu/headerMenu';
-import { RollbackOutlined, SettingOutlined } from '@ant-design/icons';
+import { RollbackOutlined, SettingOutlined, UserOutlined } from '@ant-design/icons';
+import { useRouter } from 'next/router';
 
 export const HeaderHome:FC = () => {
     const { Header } = Layout;
     const { Search } = Input;
+    const router = useRouter()
 
     const onSearch = (value: any) => {
         console.log(value);
@@ -46,25 +48,11 @@ export const HeaderHome:FC = () => {
                   border: '2px solid #bae0ff',
                   color: '#bae0ff'
                 }}
+                onClick={() => router.push('/')}
             >
                 Exit
             </Button>
-
         </Space>
-        // <Row
-        //     justify={'center'}
-        // >
-        //     <Col>
-        //     </Col>
-        //     <Col>
-        //     <Button 
-        //         icon={<RollbackOutlined />}
-        //         block
-        //     >
-        //         Exit
-        //     </Button>
-        //     </Col>
-        // </Row>
     );
 
     return (
@@ -107,7 +95,7 @@ export const HeaderHome:FC = () => {
                         trigger="click"
                         placement="bottomRight"
                     >
-                        <Avatar/>
+                        <Avatar icon={<UserOutlined />}/>
                     </Popover>
                 </Col>
             </Row>

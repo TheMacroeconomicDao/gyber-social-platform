@@ -1,0 +1,31 @@
+.message {
+    position: relative;
+    border: 1px solid #0505050f;
+    padding: 10px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #8f8fbc27;
+        transition: 0.5s;
+    }
+
+    .messageTitle {
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .lastMessage {
+        font-size: 12px;
+        font-weight: 300;
+        color: gray;
+    }
+
+    .messageTime {
+        position: absolute;
+        top: 40%;
+        right: 5%;
+        font-size: 12px;
+        font-weight: 400;
+        color: gray;
+    }
+}

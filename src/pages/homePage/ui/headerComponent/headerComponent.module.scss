@@ -1,0 +1,15 @@
+.headerComponentWrap {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: #e6f4ff;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #d0e4f470;
+
+    .userInfo {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+}

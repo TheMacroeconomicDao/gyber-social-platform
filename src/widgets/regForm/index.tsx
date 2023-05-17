@@ -29,6 +29,7 @@ export const RegForm:FC = () => {
                 <Logo
                     width={120}
                     height={120}
+                    text=''
                     background={'#13c2c2'}
                     logoColour={'#ffffff'}
                 />

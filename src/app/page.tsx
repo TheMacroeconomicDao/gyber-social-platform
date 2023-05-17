@@ -1,7 +1,7 @@
 'use client'
 
 import { Layout} from "antd";
-import { Footer } from "widgets/footer";
+import { AuthFooter } from "widgets/footers/authFooter";
 import { Header } from "widgets/header";
 import { RegForm } from "widgets/regForm";
 import RootLayout from "./layout";
@@ -31,7 +31,7 @@ export default function Home() {
 				>
 					<RegForm/>
 				</main>
-				<Footer/>
+				<AuthFooter/>
 			</Layout>
 		</RootLayout>
 	);
