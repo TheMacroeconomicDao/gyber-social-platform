@@ -7,7 +7,6 @@ export const AuthFooter:FC = () => {
     return (
         <Footer style={{
             marginTop: 'auto',
-            background: '#e6f4ff',
         }}>
             <div>Footer</div>
         </Footer>

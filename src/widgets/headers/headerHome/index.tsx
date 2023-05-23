@@ -1,1 +1,0 @@
-export {HeaderHome} from './ui'

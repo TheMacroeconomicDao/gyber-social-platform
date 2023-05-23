@@ -24,7 +24,7 @@ export const Logo:FC<Partial<LogoProps>> = (props) => {
 
   return (
     <div className={styles.logoWrap}>
-      <svg xmlns="http://www.w3.org/2000/svg" width={width} height={height} viewBox="0 0 419 419" fill="none">
+      {/* <svg xmlns="http://www.w3.org/2000/svg" width={width} height={height} viewBox="0 0 419 419" fill="none">
         <circle cx="209.5" cy="209.5" r="209.5" fill={background}/>
         <g filter="url(#filter0_d_801_6)">
           <path d="M102.811 279.455L102.062 131.391L210.217 74.9158L316.021 156.703L317.103 278.393L212.624 345.47L147.699 295.229L148.92 164.066L208.365 135.191L269.688 183.1L270.255 246.899L212.099 286.397L192.89 274.749L192.155 192.047L211.142 178.884" stroke="white" strokeWidth="25"/>
@@ -57,7 +57,22 @@ export const Logo:FC<Partial<LogoProps>> = (props) => {
             <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_801_6" result="shape"/>
           </filter>
         </defs>
+      </svg> */}
+
+      <svg 
+        width={width} 
+        height={height} 
+        viewBox="0 0 58 73" 
+        fill="none" 
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path 
+          d="M2.8883 53.5619L2.70376 16.7215L29.3327 2.66978L55.3825 23.0194L55.6491 53.2975L29.9253 69.9871L13.9401 57.4865L14.2407 24.8515L28.8768 17.667L43.9749 29.5875L44.1147 45.4615L29.7959 55.289L25.0666 52.3908L24.8855 31.8135L29.5604 28.5385" 
+          stroke="#CCFF00" 
+          stroke-width="4.44231"
+        />
       </svg>
+
       {
         hidenText 
           ? <></>

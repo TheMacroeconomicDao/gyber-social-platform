@@ -3,13 +3,12 @@
 import { Layout} from "antd";
 import { AuthFooter } from "widgets/footers/authFooter";
 import { Header } from "widgets/header";
-import { RegForm } from "widgets/regForm";
 import RootLayout from "./layout";
 
 export default function Home() {
 	return (
 		<RootLayout>
-			<Layout 
+			<Layout
 				style={{
 					height: '100vh',
     				width: '100%',
@@ -29,7 +28,7 @@ export default function Home() {
 						justifyContent: 'center',
 					}}
 				>
-					<RegForm/>
+
 				</main>
 				<AuthFooter/>
 			</Layout>
