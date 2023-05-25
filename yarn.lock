@@ -1612,6 +1612,11 @@
   resolved "https://registry.npmjs.org/@next/env/-/env-13.4.3.tgz"
   integrity sha512-pa1ErjyFensznttAk3EIv77vFbfSYT6cLzVRK5jx4uiRuCQo+m2wCFAREaHKIy63dlgvOyMlzh6R8Inu8H3KrQ==
 
+"@next/font@^13.4.3":
+  version "13.4.3"
+  resolved "https://registry.npmjs.org/@next/font/-/font-13.4.3.tgz"
+  integrity sha512-plrCwj4s9fjjcMdkAo+MAVkKuSemRz6XLcow6RdkesEfNyfSD8eMU9+rR3khrXnCZ9zjsf9mcPG5ubvqDXU0mg==
+
 "@next/swc-win32-x64-msvc@13.4.3":
   version "13.4.3"
   resolved "https://registry.npmjs.org/@next/swc-win32-x64-msvc/-/swc-win32-x64-msvc-13.4.3.tgz"

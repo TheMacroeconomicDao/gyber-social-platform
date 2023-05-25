@@ -4,6 +4,15 @@ body {
 	margin: 0;
 	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
 		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	
+	.page {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		min-height: 100vh;
+		overflow: hidden;
+		background-color: #0B0A08;
+	}
 }
 
 a {
@@ -17,10 +26,6 @@ a {
 	box-sizing: border-box;
 }
 
-.content {
-	display: flex;
-	flex-grow: 1;
-}
 
 @media (prefers-color-scheme: dark) {
 	html {

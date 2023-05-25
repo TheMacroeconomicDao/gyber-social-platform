@@ -1,6 +1,4 @@
 'use client'
-
-import { Layout} from "antd";
 import { AuthFooter } from "widgets/footers/authFooter";
 import { Header } from "widgets/header";
 import RootLayout from "./layout";
@@ -8,16 +6,7 @@ import RootLayout from "./layout";
 export default function Home() {
 	return (
 		<RootLayout>
-			<Layout
-				style={{
-					height: '100vh',
-    				width: '100%',
-					display: 'flex',
-					alignItems: 'center',
-					flexDirection: 'column',
-					background: '#e6f4ff',
-				}}
-			>
+			<div className='page'>
 				<Header/>
 				<main 
 					style={{
@@ -28,10 +17,10 @@ export default function Home() {
 						justifyContent: 'center',
 					}}
 				>
-
+					main
 				</main>
 				<AuthFooter/>
-			</Layout>
+			</div>
 		</RootLayout>
 	);
 }

@@ -1,5 +1,17 @@
 .header {
-    display: flex;
-    flex-direction: row;
     width: 60%;
+    margin-top: 20px;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        .authWrap {
+            display: flex;
+            align-items: center;
+            gap: 45px;
+        }
+    }
 }
