@@ -5,7 +5,7 @@ import styles from './styles.module.scss'
 
 export const Slider:FC = () => {
   return (
-    <>
+    <section className={styles.wrap}>
         <FTitle 
           text='AiC (Artificial Intelligence and Blockchain Community)'
         />
@@ -14,6 +14,6 @@ export const Slider:FC = () => {
             Slider
           </div>
         </div>
-    </>
+    </section>
   )
 }
