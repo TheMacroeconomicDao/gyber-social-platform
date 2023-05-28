@@ -1,6 +1,7 @@
 'use client'
 import { AuthFooter } from "widgets/footers/authFooter";
 import { Header } from "widgets/header";
+import { Slider } from "widgets/slider";
 import RootLayout from "./layout";
 
 export default function Home() {
@@ -8,16 +9,8 @@ export default function Home() {
 		<RootLayout>
 			<div className='page'>
 				<Header/>
-				<main 
-					style={{
-						height: '100%',
-						width: '100%',
-						display: 'flex',
-						alignItems: 'center',
-						justifyContent: 'center',
-					}}
-				>
-					main
+				<main>
+					<Slider/>
 				</main>
 				<AuthFooter/>
 			</div>
