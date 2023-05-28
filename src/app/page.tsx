@@ -43,10 +43,48 @@ export default function Home() {
 			],
 		],
 		[
-			["text1", "text2", "text3"],
-			["text1", "text2", "text3"],
-			["text1", "text2", "text3"],
-			["text1", "text2", "text3"],
+			[
+				"Разработка прототипа Gyber Social Platform ",
+				"Разработка смарт контрактов ERC20, ERC721, The Macro-Economic DAO ",
+				"Разработка Dapp The Macro-Economic DAO ",
+			],
+			[
+				"Seed раунд инвестирования",
+				"Открытие программ Social Bounty и Secure Bounty ",
+				"Тестирование основного кода платформы",
+			],
+			[
+				"PreSale",
+				"Разработка прототипа децентрализованного, мультиплатформенного, вычислительного кластера",
+				"Разработка прототипа Blockchain GiberNet",
+			],
+			[
+				"Работа над проектами участников эксперимента",
+				"Тестовые реализации проектов участников эксперимента",
+				"Релиз Giber Social Platform",
+			],
+		],
+		[
+			[
+				"Разработка прототипа Gyber Social Platform ",
+				"Разработка смарт контрактов ERC20, ERC721, The Macro-Economic DAO ",
+				"Разработка Dapp The Macro-Economic DAO ",
+			],
+			[
+				"Seed раунд инвестирования",
+				"Открытие программ Social Bounty и Secure Bounty ",
+				"Тестирование основного кода платформы",
+			],
+			[
+				"PreSale",
+				"Разработка прототипа децентрализованного, мультиплатформенного, вычислительного кластера",
+				"Разработка прототипа Blockchain GiberNet",
+			],
+			[
+				"Работа над проектами участников эксперимента",
+				"Тестовые реализации проектов участников эксперимента",
+				"Релиз Giber Social Platform",
+			],
 		],
 	];
 
@@ -64,8 +102,8 @@ export default function Home() {
 					<NText text={text}/>
 					<NText text={text}/>
 				</Container>
-				{/* <Roadmap title="Technical roadmap" roadmapList={roadmapList} /> */}
-				<Team />
+				<Roadmap title="Technical roadmap" roadmapList={roadmapList} />
+				{/* <Team /> */}
 				<Container
 					m={"100px 0 0 0"}
 					gap={36}
