@@ -1,0 +1,27 @@
+.wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+
+    .avatar {
+        height: 372px;
+        width: 315px;
+        background-color: aliceblue;
+    }
+
+    .name {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 29px;
+        color: #ffffff;
+    }
+    
+    .skills {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 32px;
+        color: #ffffff;
+    }
+}
