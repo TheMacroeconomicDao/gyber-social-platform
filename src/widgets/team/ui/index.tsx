@@ -6,10 +6,9 @@ type TeamProps = {
 	children: React.ReactNode;
 };
 
-export const Team: FC<TeamProps> = ({ children }) => {
+export const Team: FC<TeamProps> = () => {
 	return (
 		<div className={styles.wrap}>
-			{/* {children} */}
 			<CardMember />
 			<CardMember />
 			<CardMember />

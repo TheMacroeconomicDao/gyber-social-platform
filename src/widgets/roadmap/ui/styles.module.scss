@@ -1,5 +1,5 @@
 .container {
-	margin-top: 20px;
+	margin: 40px 0;
 	color: #fff;
 }
 .title {
@@ -14,16 +14,6 @@
 }
 .yearList {
 	position: relative;
-
-	&::after {
-		position: absolute;
-		content: "";
-		top: 0;
-		left: 0;
-		background: url("/assets/public/images/roadmap-line.svg") no-repeat;
-		width: 100%;
-		height: 100%;
-	}
 }
 .quarterList {
 	display: flex;
@@ -36,12 +26,19 @@
 	align-items: center;
 	justify-content: center;
 
-	margin-bottom: 60px;
+	padding: 55px 0px;
+
 	gap: 50px;
 }
 .quarter {
 	position: relative;
 }
 .subtitle {
-	font-size: 32px;
+	font-size: 48px;
+}
+.roadmap {
+	top: 10px;
+	position: absolute;
+	width: 100%;
+	height: 100%;
 }
