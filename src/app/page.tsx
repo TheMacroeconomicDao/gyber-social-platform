@@ -103,7 +103,7 @@ export default function Home() {
 					<NText text={text}/>
 				</Container>
 				<Roadmap title="Technical roadmap" roadmapList={roadmapList} />
-				{/* <Team /> */}
+				<Team />
 				<Container
 					m={"100px 0 0 0"}
 					gap={36}
