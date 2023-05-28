@@ -10,7 +10,7 @@ export const Slider:FC = () => {
         </h1>
         <div className={styles.sliderWrap}>
           <div className={styles.container}>
-            Container
+            Slider
           </div>
         </div>
     </>

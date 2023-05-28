@@ -3,8 +3,14 @@
 }
 
 .sliderWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: cornsilk;
+    height: 315px;
+    margin-top: 50px;
 
     .container {
-        
+        font-size: 30px;
     }
 }

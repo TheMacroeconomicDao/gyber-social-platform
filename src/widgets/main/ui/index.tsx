@@ -1,6 +1,8 @@
+import styles from './styles.module.scss'
+
 export const Main = ({children}) => {
   return (
-    <main>
+    <main className={styles.main}>
         {children}
     </main>
   )
