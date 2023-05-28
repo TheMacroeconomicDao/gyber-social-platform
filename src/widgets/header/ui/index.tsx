@@ -13,7 +13,7 @@ export const Header:FC = () => {
 
                 <div className={styles.authWrap}>
                     <LangButton/>
-                    <NButton/>
+                    <NButton text={'Регистрация'}/>
                 </div>
             </div>
         </header>

@@ -1,16 +1,25 @@
-.header {
-    color: #ffffff
-}
 
-.sliderWrap {
+.wrap {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    background-color: cornsilk;
-    height: 315px;
-    margin-top: 50px;
+    width: 100%;
 
-    .container {
-        font-size: 30px;
+    .header {
+        color: #ffffff;
+    }
+    
+    .sliderWrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: cornsilk;
+        height: 315px;
+        width: 100%;
+        margin-top: 50px;
+    
+        .container {
+            font-size: 30px;
+        }
     }
 }

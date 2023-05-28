@@ -1,0 +1,1 @@
+export { FTitle } from './ui'

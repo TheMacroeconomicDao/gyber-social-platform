@@ -1,10 +1,12 @@
 "use client";
-import { AuthFooter } from "widgets/footers/authFooter";
 import { Header } from "widgets/header";
 import { Main } from "widgets/main";
 import { Roadmap } from "widgets/roadmap";
 import { Slider } from "widgets/slider";
 import RootLayout from "./layout";
+import { NButton } from "shared/ui/buttons/NButton";
+import { Team } from "widgets/team/ui";
+import { CardMember } from "entities/cardMember";
 
 export default function Home() {
 	const roadmapList = [
@@ -24,7 +26,11 @@ export default function Home() {
 				"Разработка прототипа децентрализованного, мультиплатформенного, вычислительного кластера",
 				"Разработка прототипа Blockchain GiberNet",
 			],
-			["Работа над проектами участников эксперимента", "Тестовые реализации проектов участников эксперимента", "Релиз Giber Social Platform"],
+			[
+				"Работа над проектами участников эксперимента",
+				"Тестовые реализации проектов участников эксперимента",
+				"Релиз Giber Social Platform",
+			],
 		],
 		[
 			["text1", "text2", "text3"],
@@ -33,14 +39,16 @@ export default function Home() {
 			["text1", "text2", "text3"],
 		],
 	];
+
 	return (
 		<div className="page">
 			<Header />
 			<Main>
 				<Slider />
-				<Roadmap title="Technical roadmap" roadmapList={roadmapList} />
+				{/* <Roadmap title="Technical roadmap" roadmapList={roadmapList} /> */}
+				<Team />
 			</Main>
-			<AuthFooter />
+			{/* <AuthFooter /> */}
 		</div>
 	);
 }
