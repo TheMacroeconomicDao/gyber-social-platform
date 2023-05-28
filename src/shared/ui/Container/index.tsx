@@ -1,13 +1,13 @@
 import React, {FC} from 'react'
 import styles from './styles.module.scss'
 
-type TextContainerProps = {
+type ContainerProps = {
     children: React.ReactNode
     m?: string
     gap?: number
 }
 
-export const TextContainer:FC<TextContainerProps> = ({children, m, gap}) => {
+export const Container:FC<ContainerProps> = ({children, m, gap}) => {
   return (
     <section 
         className={styles.wrap}

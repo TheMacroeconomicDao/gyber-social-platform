@@ -1,6 +1,6 @@
 'use client'
 import { NText } from "shared/ui/text/ui";
-import { TextContainer } from "shared/ui/textContainer";
+import { Container } from "shared/ui/Container";
 import { FhTitle } from "shared/ui/titles/FhTitle";
 import { AuthFooter } from "widgets/footers/authFooter";
 import { Header } from "widgets/header";
@@ -18,7 +18,7 @@ export default function Home() {
 				<Header/>
 				<Main>
 					<Slider/>
-					<TextContainer 
+					<Container 
 						m={"100px 0 0 0"}
 						gap={36}
 					>
@@ -26,7 +26,7 @@ export default function Home() {
 						<NText text={text}/>
 						<NText text={text}/>
 						<NText text={text}/>
-					</TextContainer>
+					</Container>
 				</Main>
 				<AuthFooter/>
 			</div>
