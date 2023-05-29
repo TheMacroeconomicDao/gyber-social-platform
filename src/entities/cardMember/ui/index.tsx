@@ -14,6 +14,7 @@ export const CardMember: FC<CardMemberProps> = () => {
 					height={190}
 					sizes="(max-width: 768px) 100vw"
 					alt="Picture of the author"
+					className={styles.image}
 				/>
 			</div>
 			<div className={styles.name}>Otto Kustler</div>
