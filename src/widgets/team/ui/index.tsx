@@ -1,5 +1,6 @@
 import { CardMember } from "entities/cardMember";
 import React, { FC } from "react";
+import { FhTitle } from "shared/ui/titles/FhTitle";
 import styles from "./style.module.scss";
 
 type TeamProps = {};
