@@ -1,14 +1,21 @@
-import React, { FC } from 'react'
-import styles from './styles.module.scss'
+import React, { FC } from "react";
+import { NButton } from "shared/ui/buttons/NButton";
+import styles from "./styles.module.scss";
 
 type NTextProps = {
-    text: string
-}
+	title: string;
+	subtitle: string;
+	button?: string;
+};
 
-export const NText:FC<NTextProps> = ({text}) => {
-  return (
-    <p className={styles.text}>
-        {text}
-    </p>
-  )
-}
+export const NText: FC<NTextProps> = ({ title, subtitle, button }) => {
+	return (
+		<div className={styles.container}>
+			<h2 className={styles.title}>{title}</h2>
+			<p className={styles.subtitle}>{subtitle}</p>
+			<div className={styles.button}>
+				{button ? <NButton text={button} /> : null}
+			</div>
+		</div>
+	);
+};
