@@ -44,3 +44,26 @@ a {
 		background: black;
 	}
 }
+.nextEl {
+	position: absolute;
+
+	width: 100px;
+	height: 100px;
+	background-size: contain;
+	background: url("/images/right-arrow.svg") no-repeat center;
+	top: 30%;
+	right: 0;
+	z-index: 3;
+	cursor: pointer;
+}
+.prevEl {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	background-size: contain;
+	background: url("/images/left-arrow.svg") no-repeat center;
+	top: 30%;
+	left: 0;
+	z-index: 3;
+	cursor: pointer;
+}
