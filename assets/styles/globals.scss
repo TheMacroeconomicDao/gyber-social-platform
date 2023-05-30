@@ -14,6 +14,38 @@ body {
 		max-width: 1920px;
 		min-height: 100vh;
 		margin: 0 auto;
+
+		&::before {
+			content: "";
+			background: linear-gradient(
+				97.3deg,
+				#17a59f 1.12%,
+				#966b08 104.69%
+			);
+			position: absolute;
+
+			filter: blur(100px);
+
+			top: 100%;
+			left: 0;
+			transform: translate(-50%, -50%);
+			width: 100px;
+			height: 500px;
+		}
+		&::after {
+			content: "";
+			background: #d49d32;
+
+			position: absolute;
+
+			filter: blur(100px);
+
+			top: 130%;
+			right: 0;
+			transform: translate(-50%, -50%);
+			width: 100px;
+			height: 300px;
+		}
 	}
 
 	.item {
@@ -48,22 +80,22 @@ a {
 	position: absolute;
 
 	width: 100px;
-	height: 100px;
+	height: 120px;
 	background-size: contain;
 	background: url("/images/right-arrow.svg") no-repeat center;
 	top: 30%;
-	right: 0;
+	right: -20%;
 	z-index: 3;
 	cursor: pointer;
 }
 .prevEl {
 	position: absolute;
 	width: 100px;
-	height: 100px;
+	height: 120px;
 	background-size: contain;
 	background: url("/images/left-arrow.svg") no-repeat center;
 	top: 30%;
-	left: 0;
+	left: -20%;
 	z-index: 3;
 	cursor: pointer;
 }

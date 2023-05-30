@@ -30,7 +30,7 @@ export const Slider: FC = () => {
 					modules={[Navigation, Pagination, Autoplay]}
 					spaceBetween={50}
 					slidesPerView={1}
-					loop={true}
+					// loop={true}
 					pagination={{
 						type: "bullets",
 						clickable: true,
