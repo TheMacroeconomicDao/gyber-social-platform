@@ -1,0 +1,13 @@
+.footer {
+    width: 60%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+    .wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 10px;
+    }
+}

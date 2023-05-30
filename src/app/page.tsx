@@ -9,6 +9,7 @@ import { Team } from "widgets/team/ui";
 import { CardMember } from "entities/cardMember";
 import { useSlider } from "shared/models/store/store";
 import { NText } from "shared/ui/text/ui";
+import { LFooter } from "widgets/footers/LFooter";
 
 const roadmapList = [
 	[
@@ -199,6 +200,7 @@ export default function Home() {
 				<Slider />
 				{getCurrentComponent()}
 			</Main>
+			<LFooter/>
 		</div>
 	);
 }
