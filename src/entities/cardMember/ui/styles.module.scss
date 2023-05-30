@@ -9,8 +9,8 @@
 	.avatar {
 		flex-shrink: 0;
 		margin: 20px;
-		height: calc(150px + 6vw);
-		width: calc(150px + 6vw);
+		height: calc(120px + 6vw);
+		width: calc(130px + 6vw);
 		border: calc(8px + 0.2vw) solid transparent;
 		border-radius: 8%;
 		background-origin: border-box;
@@ -18,7 +18,15 @@
 		background-size: cover;
 		box-sizing: border-box;
 		box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
-		background-image: url('../../../../public/otto.png'), linear-gradient(#7e57c2c2, #7986cb59);
+		background-image: url('../../../../public/otto.png'), linear-gradient(rgb(126 87 194 / 45%), rgb(121 134 203 / 25%));
+    	opacity: 95%;
+		transition: 1s;
+		cursor: pointer;
+
+		&:hover {
+			opacity: 100%;
+			transform: scale(1.2, 1.2);
+		}
 	}
 	
 	.name {
