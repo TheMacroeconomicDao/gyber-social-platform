@@ -29,16 +29,22 @@
 		filter: blur(100px);
 
 		top: 0%;
-		left: 48%;
+		left: 49%;
 		transform: translate(-50%, -50%);
 		width: 200px;
 		height: 500px;
 
-		animation: blinker 2s linear infinite;
+		animation: blinker 2s infinite;
 
 		@keyframes blinker {
-			10% {
-				opacity: 0.7;
+			0% {
+				opacity: 0.8;
+			}
+			50% {
+				opacity: 1;
+			}
+			100% {
+				opacity: 0.8;
 			}
 		}
 	}
