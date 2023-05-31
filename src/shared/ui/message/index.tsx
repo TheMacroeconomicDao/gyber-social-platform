@@ -29,6 +29,7 @@ export const Message:FC<MessageProps> = (props) => {
         >
             <Button 
                 type='text'
+                // @ts-ignore
                 icon={<DeleteOutlined/>}
                 style={{
                     width: '100%'
@@ -38,6 +39,7 @@ export const Message:FC<MessageProps> = (props) => {
             </Button>
             <Button 
                 type='text'
+                // @ts-ignore
                 icon={<SoundOutlined />}
                 style={{
                     width: '100%'
@@ -47,6 +49,7 @@ export const Message:FC<MessageProps> = (props) => {
             </Button>
             <Button 
                 type='text'
+                // @ts-ignore
                 icon={<PushpinOutlined />}
                 style={{
                     width: '100%'
@@ -84,6 +87,7 @@ export const Message:FC<MessageProps> = (props) => {
                     count={numberOfMessages}
                     size='small'
                 >
+                    {/* @ts-ignore */}
                     <Avatar icon={<UserOutlined />}/>
                 </Badge>
             </Col>
@@ -114,6 +118,7 @@ export const Message:FC<MessageProps> = (props) => {
                         top: '5%',
                     }}
                     type='ghost' 
+                    // @ts-ignore
                     icon={<EllipsisOutlined />} 
                     size={'small'}
                 />

@@ -45,6 +45,7 @@ export const LFooter:FC = () => {
                     className={styles.bttn}
                     type="dashed" 
                     shape="circle" 
+                    // @ts-ignore
                     icon={ <MediumWorkmarkOutlined style={{ color: '#fff' }} />}
                     style={{ background: '#000' }}
                     size={'large'}
@@ -61,7 +62,8 @@ export const LFooter:FC = () => {
                 <Button 
                     className={styles.bttn}
                     type="dashed" 
-                    shape="circle" 
+                    shape="circle"
+                    // @ts-ignore 
                     icon={ <RedditOutlined style={{ color: '#fff' }} />}
                     style={{ background: '#000' }}
                     size={'large'}
