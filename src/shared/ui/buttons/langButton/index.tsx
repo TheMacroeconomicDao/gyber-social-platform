@@ -24,6 +24,7 @@ export const LangButton = () => {
             onClick={(e) => e.preventDefault()}>
             <Space>
                 EN
+                {/* @ts-ignore */}
                 <DownOutlined />
             </Space>
             </a>
