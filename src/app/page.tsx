@@ -2,7 +2,8 @@ import {Slider} from "@/widgets/Slider/Slider";
 import {Substrate} from "@/shared/ui/Substrate/Substrate";
 import React from "react";
 import {Team} from "@/widgets/Team";
-import {Section, ThemeBackgroundSection} from "@/shared/ui/Section/Section";
+import {JoinSection} from "@/widgets/JoinSection/JoinSection";
+import {PartnerSection} from "@/widgets/PartnerSection/PartnerSection";
 
 export default function Home() {
   return (
@@ -13,6 +14,8 @@ export default function Home() {
           />
           <Substrate />
           <Team />
+          <JoinSection/>
+          <PartnerSection/>
       </>
 
   )
