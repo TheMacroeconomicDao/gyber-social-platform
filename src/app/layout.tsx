@@ -1,25 +1,34 @@
-import '../../assets/styles/globals.scss'
-import { Montserrat } from '@next/font/google'
+import './styles/reset.scss'
+import './styles/global.scss'
+import type { Metadata } from 'next'
+import { Montserrat } from 'next/font/google'
+import {Header} from "@/widgets/Header/Header";
+import {Navbar} from "@/widgets/Navbar/Navbar";
+import {Footer} from "@/widgets/Footer/Footer";
 
-export const metadata = {
-  title: 'Gyber',
-  description: 'Cyber-social platform',
-}
 
 const montserrat = Montserrat({
   subsets: ['latin'],
-  weight: ['400', '500', '600', '700', '800'],
+  weight: ['300', '400', '500', '600', '700', '800']
 })
+
+export const metadata: Metadata = {
+  title: 'Cyber',
+  description: 'Cyber-social platform',
+}
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode,
+  children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={montserrat.className}>
-      <body>
-        {children}
+    <html lang="en">
+      <body className={montserrat.className}>
+      <Header/>
+      <Navbar/>
+      {children}
+      <Footer />
       </body>
     </html>
   )

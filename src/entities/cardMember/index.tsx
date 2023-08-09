@@ -1,1 +1,0 @@
-export {CardMember} from './ui'

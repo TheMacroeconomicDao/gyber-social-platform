@@ -1,0 +1,69 @@
+.Carousel {
+    width: 100%;
+    position: relative;
+
+    .ControlContainer {
+        position: absolute;
+        z-index: 10;
+        top: 20%;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        gap: 130px;
+    }
+
+    .CarouselContainer {
+        display: flex;
+        height: 400px;
+        margin: 0 auto;
+        max-width: 1000px;
+        position: relative;
+
+        .item {
+            height: 150px;
+            opacity: 1;
+            position: absolute;
+            transition: all 0.3s ease-in-out;
+            z-index: 0;
+            border-radius: 15px;
+            background-size: contain;
+        }
+
+        .item1 {
+            left: 5%;
+            opacity: .4;
+            transform: translateX(-50%);
+        }
+
+        .item2, .item4 {
+            height: 200px;
+            opacity: .8;
+            z-index: 1;
+        }
+
+        .item2 {
+            left: 25%;
+            transform: translateX(-50%);
+        }
+
+        .item3 {
+            height: 250px;
+            opacity: 1;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+        }
+
+        .item4 {
+            left: 75%;
+            transform: translateX(-50%);
+        }
+
+        .item5 {
+            left: 95%;
+            opacity: .4;
+            transform: translateX(-50%);
+        }
+    }
+}

@@ -1,0 +1,41 @@
+.Substrate {
+    margin-top: 50px;
+    border-radius: 26px;
+    background: linear-gradient(318deg, rgba(9, 21, 26, 0.30) 0%, rgba(7, 46, 63, 0.30) 100%);
+    box-shadow: 1px 1px 2px 0 rgba(255, 255, 255, 0.25) inset, -2px -2px 4px 0 rgba(61, 86, 95, 0.25) inset;
+    backdrop-filter: blur(10px);
+    width: 100%;
+    max-width: 1200px;
+    padding: 50px 100px;
+    .text_box {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 2;
+        padding: 0 50px 0 0;
+        height: 400px;
+        overflow-y: auto;
+        scrollbar-width: thin;
+        scrollbar-color: #fff #072B40;
+
+        &::-webkit-scrollbar {
+            width: 2px;
+            background: #B9B9B9;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: #fff;
+            outline: 4px solid #fff;
+            -webkit-border-radius: 2ex;
+        }
+    }
+    h2 {
+        font-size: 32px;
+        font-weight: 600;
+        text-align: center;
+    }
+    h3 {
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 3;
+    }
+}
