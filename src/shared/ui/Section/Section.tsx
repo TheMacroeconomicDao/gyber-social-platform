@@ -4,6 +4,7 @@ import {ReactNode} from "react";
 
 export enum ThemeBackgroundSection {
     FIRST = "url('/images/bg-text-card.jpg')",
+    SECOND = "url('/images/bg-social-platform-roadmapping.svg')"
 }
 
 interface SectionProps {

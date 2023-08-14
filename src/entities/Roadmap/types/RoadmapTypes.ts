@@ -1,9 +1,5 @@
+import {IconStatus} from "@/shared/ui/SvgIcons";
 
-export enum Status {
-    DONE = "Done",
-    IN_PROGRESS = "In Progress",
-    TO_DONE = "To Do"
-}
 
 export enum Period {
     Q1 = "Q1",
@@ -19,7 +15,7 @@ export enum RoadmapColor {
 
 interface StageItem {
     title: string,
-    status: Status
+    status: IconStatus
 }
 
 interface PeriodData {

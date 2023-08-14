@@ -3,7 +3,7 @@ import StartItem from "@/entities/Roadmap/ui/RoadmapCard/lineItems/StartItem";
 import NextPeriodItem from "@/entities/Roadmap/ui/RoadmapCard/lineItems/NextPeriodItem";
 import NextYearItem from "@/entities/Roadmap/ui/RoadmapCard/lineItems/NextYearItem";
 import {RoadmapItem} from "./RoadmapItem/RoadmapItem";
-import {Status} from "@/entities/Roadmap";
+import {IconStatus} from "@/shared/ui/SvgIcons";
 
 interface RoadmapCardProps {
     period: string;
@@ -16,7 +16,7 @@ export const RoadmapCard = ({period, id, color}:RoadmapCardProps) => {
     const data = [
         {
             title: "",
-            status: Status.TO_DONE,
+            status: IconStatus.DEFAULT,
         }
     ]
 
@@ -30,9 +30,9 @@ export const RoadmapCard = ({period, id, color}:RoadmapCardProps) => {
                     <h3 className={cls.title}>2023</h3>
                     <span className={cls.period}>{period}</span>
                     <div className={cls.stages}>
-                        <RoadmapItem status={Status.DONE} title={"Разработка прототипа Gyber Social Platform"}/>
-                        <RoadmapItem status={Status.IN_PROGRESS} title={"Разработка смарт контрактов ERC20, ERC721, The Macro-Economic DAO"}/>
-                        <RoadmapItem status={Status.TO_DONE} title={"Разработка прототипа Gyber Social Platform"}/>
+                        <RoadmapItem status={IconStatus.DONE} title={"Разработка прототипа Gyber Social Platform"}/>
+                        <RoadmapItem status={IconStatus.PROGRESS} title={"Разработка смарт контрактов ERC20, ERC721, The Macro-Economic DAO"}/>
+                        <RoadmapItem status={IconStatus.DEFAULT} title={"Разработка прототипа Gyber Social Platform"}/>
                     </div>
                 </div>
             )
@@ -42,9 +42,9 @@ export const RoadmapCard = ({period, id, color}:RoadmapCardProps) => {
                 <div className={cls.RoadmapCard}>
                     <span className={cls.period}>{period}</span>
                     <div className={cls.stages}>
-                        <RoadmapItem status={Status.DONE} title={"Разработка прототипа Gyber Social Platform"}/>
-                        <RoadmapItem status={Status.IN_PROGRESS} title={"Разработка смарт контрактов ERC20, ERC721, The Macro-Economic DAO"}/>
-                        <RoadmapItem status={Status.TO_DONE} title={"Разработка прототипа Gyber Social Platform"}/>
+                        <RoadmapItem status={IconStatus.DONE} title={"Разработка прототипа Gyber Social Platform"}/>
+                        <RoadmapItem status={IconStatus.PROGRESS} title={"Разработка смарт контрактов ERC20, ERC721, The Macro-Economic DAO"}/>
+                        <RoadmapItem status={IconStatus.DEFAULT} title={"Разработка прототипа Gyber Social Platform"}/>
                     </div>
                 </div>
             )
@@ -55,9 +55,9 @@ export const RoadmapCard = ({period, id, color}:RoadmapCardProps) => {
                     <NextPeriodItem className={cls.svgItem} style={{top: "113px"}} color={color}/>
                     <span className={cls.period}>{period}</span>
                     <div className={cls.stages}>
-                        <RoadmapItem status={Status.DONE} title={"Разработка прототипа Gyber Social Platform"}/>
-                        <RoadmapItem status={Status.IN_PROGRESS} title={"Разработка смарт контрактов ERC20, ERC721, The Macro-Economic DAO"}/>
-                        <RoadmapItem status={Status.TO_DONE} title={"Разработка прототипа Gyber Social Platform"}/>
+                        <RoadmapItem status={IconStatus.DONE} title={"Разработка прототипа Gyber Social Platform"}/>
+                        <RoadmapItem status={IconStatus.PROGRESS} title={"Разработка смарт контрактов ERC20, ERC721, The Macro-Economic DAO"}/>
+                        <RoadmapItem status={IconStatus.DEFAULT} title={"Разработка прототипа Gyber Social Platform"}/>
                     </div>
                 </div>
             )
