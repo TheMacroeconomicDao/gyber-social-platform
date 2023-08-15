@@ -8,10 +8,11 @@
 
     .textContent {
         color: #e1e1e1;
-        font-size: 20px;
+        font-size: 18px;
         font-style: normal;
         font-weight: 400;
-        line-height: 32px; /* 160% */
+        line-height: 2;
+        text-align: justify;
     }
 
     .buttonWrapper {
