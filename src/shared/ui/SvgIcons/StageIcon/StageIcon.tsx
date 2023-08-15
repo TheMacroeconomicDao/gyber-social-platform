@@ -3,7 +3,7 @@ import {classNames} from "@/shared/lib/classNames/classNames";
 import {DoneIcon, ProgressIcon} from "./Icons";
 
 export enum IconStatus {
-    DEFAULT = "default",
+    DEFAULT = "todo",
     DONE = "done",
     PROGRESS = "progress"
 }

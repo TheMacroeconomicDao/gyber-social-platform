@@ -1,13 +1,14 @@
 import cls from './SquareCard.module.scss';
 import {classNames} from "@/shared/lib/classNames/classNames";
+import {FC, ReactNode} from "react";
 interface SquareCardProps {
-    className?: string;
+    children: ReactNode
 }
 
-export const SquareCard = ({className = ''}:SquareCardProps) => {
+export const SquareCard: FC<SquareCardProps>= ({children}) => {
     return (
-        <div className={classNames(cls.SquareCard, {}, [className])}>
-            Some text
+        <div className={cls.SquareCard}>
+            {children}
         </div>
     );
 };

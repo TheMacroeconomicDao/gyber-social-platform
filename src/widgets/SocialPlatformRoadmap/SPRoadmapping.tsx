@@ -1,17 +1,25 @@
 import {Section, ThemeBackgroundSection} from "@/shared/ui/Section/Section";
 import {Container} from "@/shared/ui/Container/Container";
-import {SquareCard} from "@/entities/SocialRoadmapCard/ui/SquareCard/SquareCard";
+import {SocialRoadmapCard} from "@/entities/SocialRoadmapCard";
+import data from "@/entities/SocialRoadmapCard/data/SocialRoadmapData.json";
+import cls from "./SPRoadmapping.module.scss"
 
-interface SPRoadmappingProps {
-    className?: string;
-}
 
-export const SPRoadmapping = ({className}:SPRoadmappingProps) => {
+export const SPRoadmapping = () => {
+
     return (
         <Section background={ThemeBackgroundSection.SECOND}>
             <Container>
-                <SquareCard />
-
+                <div className={cls.wrapper}>
+                    {data.map(item => (
+                        <SocialRoadmapCard
+                            key={item.id}
+                            id={item.id}
+                            stages={item.stages}
+                            description={item.description}
+                        />
+                    ))}
+                </div>
             </Container>
         </Section>
     );
