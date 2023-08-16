@@ -2,37 +2,39 @@ import cls from './RoadmapCard.module.scss';
 import StartItem from "@/entities/Roadmap/ui/RoadmapCard/lineItems/StartItem";
 import NextPeriodItem from "@/entities/Roadmap/ui/RoadmapCard/lineItems/NextPeriodItem";
 import NextYearItem from "@/entities/Roadmap/ui/RoadmapCard/lineItems/NextYearItem";
-import {RoadmapItem} from "./RoadmapItem/RoadmapItem";
-import {IconStatus} from "@/shared/ui/SvgIcons";
+import {RoadmapItem, RoadmapItemProps} from "./RoadmapItem/RoadmapItem";
+import { classNames } from '@/shared/lib/classNames/classNames';
+
+enum ItemColor {
+    BLUE = "#71B7FF",
+    YELLOW = "#D49D32"
+}
 
 interface RoadmapCardProps {
-    period: string;
     id: number;
-    color: string;
+    year: number;
+    period: string;
+    items: RoadmapItemProps[];
 }
-// #71B7FF
-// #D49D32
-export const RoadmapCard = ({period, id, color}:RoadmapCardProps) => {
-    const data = [
-        {
-            title: "",
-            status: IconStatus.DEFAULT,
-        }
-    ]
 
+function isCurrentYear(year:number):boolean {
+    return year > new Date().getFullYear();
+}
+
+export const RoadmapCard = ({id, year, period, items}:RoadmapCardProps) => {
+    const isCurrent = isCurrentYear(year);
     switch (id) {
         case 1: {
             return (
                 <div className={cls.RoadmapCard}>
-                    {color === "#71B7FF" && <StartItem className={cls.svgItem} style={{top: "-80px"}} color={color}/>}
-                    {color === "#D49D32" && <NextYearItem className={cls.svgItem} style={{top: "-260px"}} color={color}/>}
-                    <NextPeriodItem className={cls.svgItem} style={{top: "113px"}} color={color}/>
-                    <h3 className={cls.title}>2023</h3>
-                    <span className={cls.period}>{period}</span>
+                    {!isCurrent && <StartItem className={classNames(cls.svgItem, {})} style={{top: "-80px"}} color={ItemColor.BLUE}/>}
+                    {isCurrent && <NextYearItem className={cls.svgItem} style={{top: "-260px"}} color={ItemColor.YELLOW}/>}
+                    {!isCurrent && <NextPeriodItem className={cls.svgItem} style={{top: "113px"}} color={ItemColor.BLUE}/>}
+                    {isCurrent && <NextPeriodItem className={cls.svgItem} style={{top: "113px"}} color={ItemColor.YELLOW}/>}
+                    <h3 className={classNames(cls.title,  {[cls.yellow]: isCurrent})}>{year}</h3>
+                    <span className={classNames(cls.period, {[cls.yellow]: isCurrent})}>{period}</span>
                     <div className={cls.stages}>
-                        <RoadmapItem status={IconStatus.DONE} title={"Разработка прототипа Gyber Social Platform"}/>
-                        <RoadmapItem status={IconStatus.PROGRESS} title={"Разработка смарт контрактов ERC20, ERC721, The Macro-Economic DAO"}/>
-                        <RoadmapItem status={IconStatus.DEFAULT} title={"Разработка прототипа Gyber Social Platform"}/>
+                        {items.map(item => (<RoadmapItem status={item.status} title={item.title}/>))}
                     </div>
                 </div>
             )
@@ -40,11 +42,9 @@ export const RoadmapCard = ({period, id, color}:RoadmapCardProps) => {
         case 4: {
             return (
                 <div className={cls.RoadmapCard}>
-                    <span className={cls.period}>{period}</span>
+                    <span className={classNames(cls.period, {[cls.yellow]: isCurrent})}>{period}</span>
                     <div className={cls.stages}>
-                        <RoadmapItem status={IconStatus.DONE} title={"Разработка прототипа Gyber Social Platform"}/>
-                        <RoadmapItem status={IconStatus.PROGRESS} title={"Разработка смарт контрактов ERC20, ERC721, The Macro-Economic DAO"}/>
-                        <RoadmapItem status={IconStatus.DEFAULT} title={"Разработка прототипа Gyber Social Platform"}/>
+                         {items.map(item => (<RoadmapItem status={item.status} title={item.title}/>))}
                     </div>
                 </div>
             )
@@ -52,12 +52,11 @@ export const RoadmapCard = ({period, id, color}:RoadmapCardProps) => {
         default: {
             return (
                 <div className={cls.RoadmapCard}>
-                    <NextPeriodItem className={cls.svgItem} style={{top: "113px"}} color={color}/>
-                    <span className={cls.period}>{period}</span>
+                    {!isCurrent && <NextPeriodItem className={cls.svgItem} style={{top: "113px"}} color={ItemColor.BLUE}/>}
+                    {isCurrent && <NextPeriodItem className={cls.svgItem} style={{top: "113px"}} color={ItemColor.YELLOW}/>}
+                    <span className={classNames(cls.period, {[cls.yellow]: isCurrent})}>{period}</span>
                     <div className={cls.stages}>
-                        <RoadmapItem status={IconStatus.DONE} title={"Разработка прототипа Gyber Social Platform"}/>
-                        <RoadmapItem status={IconStatus.PROGRESS} title={"Разработка смарт контрактов ERC20, ERC721, The Macro-Economic DAO"}/>
-                        <RoadmapItem status={IconStatus.DEFAULT} title={"Разработка прототипа Gyber Social Platform"}/>
+                        {items.map(item => (<RoadmapItem status={item.status} title={item.title}/>))}
                     </div>
                 </div>
             )

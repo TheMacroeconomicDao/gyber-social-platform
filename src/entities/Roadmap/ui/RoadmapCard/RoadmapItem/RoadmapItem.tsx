@@ -2,7 +2,7 @@ import cls from './RoadmapItem.module.scss';
 import {classNames} from "@/shared/lib/classNames/classNames";
 import {IconStatus, StageIcon} from "@/shared/ui/SvgIcons";
 
-interface RoadmapItemProps {
+export interface RoadmapItemProps {
     title?: string
     status?: IconStatus
 }

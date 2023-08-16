@@ -8,7 +8,7 @@ const Events = () => {
         <>
             <Slider
                 path={"/images/slides/event-slide.jpg"}
-                title={"Gyber Partys"}
+                title={"Gyber Parties"}
             />
             <Substrate {...data} scrollable={false}/>
 

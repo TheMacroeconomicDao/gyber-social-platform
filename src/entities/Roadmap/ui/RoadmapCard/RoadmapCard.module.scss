@@ -10,11 +10,13 @@
     display: flex;
     align-items: center;
     column-gap: 30px;
+    color: #71B7FF;
 
     .period {
-        color: #71B7FF;
         font-size: 64px;
         font-weight: 700;
+
+        
     }
     .svgItem {
         position: absolute;
@@ -24,7 +26,6 @@
     .title {
         position: absolute;
         left: 46%;
-        color: #71B7FF;
         top: -100px;
         font-size: 36px;
         font-weight: 700;
@@ -35,4 +36,7 @@
         flex-direction: column;
         justify-content: space-around;
     }
+}
+.yellow {
+    color: #D49D32;
 }
