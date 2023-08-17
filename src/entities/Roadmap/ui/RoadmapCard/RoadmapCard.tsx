@@ -34,7 +34,7 @@ export const RoadmapCard = ({id, year, period, items}:RoadmapCardProps) => {
                     <h3 className={classNames(cls.title,  {[cls.yellow]: isCurrent})}>{year}</h3>
                     <span className={classNames(cls.period, {[cls.yellow]: isCurrent})}>{period}</span>
                     <div className={cls.stages}>
-                        {items.map(item => (<RoadmapItem status={item.status} title={item.title}/>))}
+                        {items.map((item, index) => (<RoadmapItem key={index} status={item.status} title={item.title}/>))}
                     </div>
                 </div>
             )
@@ -44,7 +44,7 @@ export const RoadmapCard = ({id, year, period, items}:RoadmapCardProps) => {
                 <div className={cls.RoadmapCard}>
                     <span className={classNames(cls.period, {[cls.yellow]: isCurrent})}>{period}</span>
                     <div className={cls.stages}>
-                         {items.map(item => (<RoadmapItem status={item.status} title={item.title}/>))}
+                         {items.map((item, index) => (<RoadmapItem key={index} status={item.status} title={item.title}/>))}
                     </div>
                 </div>
             )
@@ -56,7 +56,7 @@ export const RoadmapCard = ({id, year, period, items}:RoadmapCardProps) => {
                     {isCurrent && <NextPeriodItem className={cls.svgItem} style={{top: "113px"}} color={ItemColor.YELLOW}/>}
                     <span className={classNames(cls.period, {[cls.yellow]: isCurrent})}>{period}</span>
                     <div className={cls.stages}>
-                        {items.map(item => (<RoadmapItem status={item.status} title={item.title}/>))}
+                        {items.map((item, index) => (<RoadmapItem key={index} status={item.status} title={item.title}/>))}
                     </div>
                 </div>
             )

@@ -19,8 +19,10 @@ export const Slider = (props:SliderProps) => {
         <div className={classNames(cls.Slider, {}, [className])}>
             <Image
                 fill={true}
-                objectFit={'cover'}
-                objectPosition={'center'}
+                style={{
+                    objectFit:'cover',
+                    objectPosition:'center'
+                }}
                 src={path}
                 alt={title || "slide"}
 
