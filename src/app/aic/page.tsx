@@ -3,6 +3,7 @@ import {Slider} from "@/widgets/Slider/Slider";
 import { Substrate } from '@/shared/ui/Substrate/Substrate';
 import { PartnerSection } from '@/widgets/PartnerSection/PartnerSection';
 import { TechnicalRoadmapSection } from '@/widgets/TechnicalRoadmapSection/TechnicalRoadmapSection';
+import { Products } from '@/widgets/Products/Products';
 
 
 const AIC = () => {
@@ -13,11 +14,8 @@ const AIC = () => {
                 title={"Large-scale AI research"}
             />
             <Substrate {...data}/>
-
+            <Products />
             <TechnicalRoadmapSection />
-
-
-
             <PartnerSection>
             Our projects realize a potential opportunity 
             for partners and investors. 
