@@ -2,6 +2,8 @@ import React from 'react';
 import {Slider} from "@/widgets/Slider/Slider";
 import { Substrate } from '@/shared/ui/Substrate/Substrate';
 import { PartnerSection } from '@/widgets/PartnerSection/PartnerSection';
+import { TechnicalRoadmapSection } from '@/widgets/TechnicalRoadmapSection/TechnicalRoadmapSection';
+
 
 const AIC = () => {
     return (
@@ -11,6 +13,10 @@ const AIC = () => {
                 title={"Large-scale AI research"}
             />
             <Substrate {...data}/>
+
+            <TechnicalRoadmapSection />
+
+
 
             <PartnerSection>
             Our projects realize a potential opportunity 

@@ -9,4 +9,11 @@ const DoneIcon = () => (
         <path d="M17 2L7 14L2 8" stroke="#D49D32" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
 )
-export {ProgressIcon, DoneIcon}
+
+const GyberIcon = () => (
+    <svg width="20" height="27" viewBox="0 0 20 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path fillRule="evenodd" clipRule="evenodd" d="M10.1591 0.886155L19.9 8.49556L19.9997 19.8158L10.2859 26.1181L4.09542 21.2771L4.20783 9.0766L10.0071 6.22988L15.8398 10.835L15.8942 17.0179L10.2846 20.868L8.06061 19.5052L7.99112 11.6118L9.88211 10.2871L10.4869 11.1504L9.05005 12.157L9.10951 18.9117L10.2521 19.6119L14.8352 16.4663L14.7902 11.3493L9.87526 7.46882L5.25588 9.73637L5.15425 20.767L10.3429 24.8246L18.9405 19.2465L18.8505 9.01324L10.0478 2.13675L1.15419 6.82978L1.21827 19.6226L0.164197 19.6279L0.0969117 6.19585L10.1591 0.886155Z" fill="#CCFF00"/>
+</svg>
+)
+
+export {ProgressIcon, DoneIcon, GyberIcon}

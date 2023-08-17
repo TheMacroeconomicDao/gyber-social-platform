@@ -1,0 +1,41 @@
+.Card {
+    position: relative;
+    width: 1056px;
+    height: 316px;
+    padding: 32px 36px;
+    border-radius: 26px;
+    background: linear-gradient(146deg, rgba(7, 38, 54, 0.30) 0%, rgba(6, 46, 82, 0.30) 100%);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    border-top: 2px solid rgb(43, 73, 102);
+
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    color: #71B7FF;
+
+    .StageWrapper {
+        width: 120px;
+        font-size: 32px;
+        font-weight: 700;
+        h3 {
+            font-size: 64px;
+            sup {
+                font-size: 32px;
+            }
+        }
+    }
+
+    .ItemWrapper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+    }
+    .Line {
+        position: absolute;
+        left: -113px;
+        top: 160px;
+    }
+}
