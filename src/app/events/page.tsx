@@ -2,6 +2,7 @@ import React from 'react';
 import {Slider} from "@/widgets/Slider/Slider";
 import { Substrate } from '@/shared/ui/Substrate/Substrate';
 import { PartnerSection } from '@/widgets/PartnerSection/PartnerSection';
+import { EventsSection } from '@/widgets/EventsSection/EventsSection';
 
 const Events = () => {
     return (
@@ -11,6 +12,8 @@ const Events = () => {
                 title={"Gyber Parties"}
             />
             <Substrate {...data} scrollable={false}/>
+
+            <EventsSection />
 
             <PartnerSection>
             Our projects realize a potential opportunity 
