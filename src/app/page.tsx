@@ -5,6 +5,7 @@ import {Team} from "@/widgets/Team";
 import {JoinSection} from "@/widgets/JoinSection/JoinSection";
 import {PartnerSection} from "@/widgets/PartnerSection/PartnerSection";
 
+
 export default function Home() {
   return (
       <>

@@ -5,19 +5,19 @@ export const data = [
         id: 1,
         items: [
             {
-                title: "Расширение команды исследователей в области ИИ и машинного обучения",
+                title: "Expansion of the team of researchers in the field of AI and machine learning",
                 status: IconStatus.GYBER
             },
             {
-                title: "Исследование и разработка алгоритмов и моделей глубинного обучения",
+                title: "Research and development of deep learning algorithms and models",
                 status: IconStatus.GYBER
             },
             {
-                title: "Исследование и разработка методов обучения с подкреплением",
+                title: "Research and development of reinforcement learning methods",
                 status: IconStatus.GYBER
             }
             ,{
-                title: "Применение ИИ в медицине: разработка моделей для диагностики и прогнозирования заболеваний",
+                title: "Application of AI in medicine: development of models for diagnosing and predicting diseases",
                 status: IconStatus.GYBER
             }
         ]
@@ -26,19 +26,19 @@ export const data = [
         id: 2,
         items: [
             {
-                title: "Исследование и разработка алгоритмов обработки естественного языка",
+                title: "Research and development of natural language processing algorithms",
                 status: IconStatus.GYBER
             },
             {
-                title: "Разработка интеллектуальных систем управления для автономных транспортных средств",
+                title: "Development of intelligent control systems for autonomous vehiclesК",
                 status: IconStatus.GYBER
             },
             {
-                title: "Исследование применения облачных вычислений в ИИ",
+                title: "Research on the Application of Cloud Computing in AI",
                 status: IconStatus.GYBER
             }
             ,{
-                title: "Применение ИИ в финансах, энергетике и сельском хозяйстве",
+                title: "Application of AI in finance, energy and agriculture",
                 status: IconStatus.GYBER
             }
         ]
@@ -47,19 +47,19 @@ export const data = [
         id: 3,
         items: [
             {
-                title: "Исследование и разработка методов обучения на неразмеченных данных",
+                title: "Research and development of training methods on unlabeled data",
                 status: IconStatus.GYBER
             },
             {
-                title: "Разработка моделей генеративной состязательной сети (GAN)",
+                title: "Developing Generative Adversarial Network (GAN) Models",
                 status: IconStatus.GYBER
             },
             {
-                title: "Уделять внимание этике и прозрачности в разработке и применении ИИ",
+                title: "Attention to ethics and transparency in the development and application of AI",
                 status: IconStatus.GYBER
             }
             ,{
-                title: "Исследование квантового машинного обучения",
+                title: "Research in Quantum Machine Learning",
                 status: IconStatus.GYBER
             }
         ]
@@ -68,19 +68,19 @@ export const data = [
         id: 4,
         items: [
             {
-                title: "Разработка автономных систем с использованием передовых алгоритмов ИИ",
+                title: "Development of autonomous systems using advanced AI algorithms",
                 status: IconStatus.GYBER
             },
             {
-                title: "Исследование и разработка методов обучения с малым количеством данных",
+                title: "Research and development of small data learning methods",
                 status: IconStatus.GYBER
             },
             {
-                title: "Применение ИИ в экологической сфере",
+                title: "Application of AI in the environment",
                 status: IconStatus.GYBER
             }
             ,{
-                title: "Развитие более эффективных алгоритмов оптимизации",
+                title: "Development of more efficient optimization algorithms",
                 status: IconStatus.GYBER
             }
         ]
@@ -89,19 +89,19 @@ export const data = [
         id: 5,
         items: [
             {
-                title: "Разработка универсальных моделей ИИ",
+                title: "Development of universal AI models",
                 status: IconStatus.GYBER
             },
             {
-                title: "Исследование и разработка когнитивных архитектур",
+                title: "Research and development of cognitive architectures",
                 status: IconStatus.GYBER
             },
             {
-                title: "Интеграция ИИ с квантовыми вычислениями",
+                title: "Integrating AI with Quantum Computing",
                 status: IconStatus.GYBER
             }
             ,{
-                title: "Партнерство и коммерциализация научных исследований",
+                title: "Partnership and commercialization of scientific research",
                 status: IconStatus.GYBER
             }
         ]
