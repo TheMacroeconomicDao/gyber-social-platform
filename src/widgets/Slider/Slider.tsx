@@ -28,9 +28,12 @@ export const Slider = (props:SliderProps) => {
 
             />
             { title &&
-                <h1 className={cls.sliderTitle}>
-                    {title}
-                </h1>
+                <div className={cls.sliderTitle}>
+                    <h1>
+                        {title}
+                    </h1>
+                </div>
+                
             }
 
         </div>
