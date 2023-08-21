@@ -4,6 +4,14 @@ import { SPRoadmapping } from "@/widgets/SocialPlatformRoadmap/SPRoadmapping";
 import { Substrate } from '@/shared/ui/Substrate/Substrate';
 import { PartnerSection } from '@/widgets/PartnerSection/PartnerSection';
 
+
+import type { Metadata } from 'next'
+ 
+export const metadata: Metadata = {
+  title: 'Gyber | Social Platform',
+  description: 'Be a part of innovation Gyber Social Platform',
+}
+
 const SocialPlatform = () => {
     return (
         <>

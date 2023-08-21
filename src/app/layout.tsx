@@ -5,6 +5,8 @@ import { Montserrat } from 'next/font/google'
 import {Header} from "@/widgets/Header/Header";
 import {Navbar} from "@/widgets/Navbar/Navbar";
 import {Footer} from "@/widgets/Footer/Footer";
+import Head from 'next/head';
+
 
 
 const montserrat = Montserrat({
@@ -13,8 +15,8 @@ const montserrat = Montserrat({
 })
 
 export const metadata: Metadata = {
-  title: 'Cyber',
-  description: 'Cyber-social platform',
+  title: 'Gybernaty Community',
+  description: 'Gybernaty Community of advanced enthusiasts and developers',
 }
 
 export default function RootLayout({
@@ -24,6 +26,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <Head>
+        <link rel='icon' href='/favicon.ico' sizes='any'/>
+      </Head>
       <body className={montserrat.className}>
       <Header/>
       <Navbar/>

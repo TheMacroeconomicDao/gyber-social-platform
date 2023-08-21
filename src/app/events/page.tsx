@@ -4,6 +4,14 @@ import { Substrate } from '@/shared/ui/Substrate/Substrate';
 import { PartnerSection } from '@/widgets/PartnerSection/PartnerSection';
 import { EventsSection } from '@/widgets/EventsSection/EventsSection';
 
+import type { Metadata } from 'next'
+ 
+export const metadata: Metadata = {
+  title: 'Gyber | Events',
+  description: 'Gyber Parties',
+}
+
+
 const Events = () => {
     return (
         <>

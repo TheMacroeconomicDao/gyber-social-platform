@@ -5,6 +5,13 @@ import { PartnerSection } from '@/widgets/PartnerSection/PartnerSection';
 import { TechnicalRoadmapSection } from '@/widgets/TechnicalRoadmapSection/TechnicalRoadmapSection';
 import { Products } from '@/widgets/Products/Products';
 
+import type { Metadata } from 'next'
+ 
+export const metadata: Metadata = {
+  title: 'Gyber | AIC',
+  description: 'Large-scale AI research',
+}
+
 
 const AIC = () => {
     return (

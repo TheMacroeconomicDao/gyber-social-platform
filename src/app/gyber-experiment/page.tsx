@@ -7,6 +7,13 @@ import { Substrate } from '@/shared/ui/Substrate/Substrate';
 import { PartnerSection } from '@/widgets/PartnerSection/PartnerSection';
 
 
+import type { Metadata } from 'next'
+ 
+export const metadata: Metadata = {
+  title: 'Gyber | Gyber Experiment',
+  description: 'Millions are Billionaires',
+}
+
 const GyberExperiment = () => {
     return (
         <>
