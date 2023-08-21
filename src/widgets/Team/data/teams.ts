@@ -26,7 +26,7 @@ const data = [
     {
         id: 5,
         avatarSrc: "/images/teams/Daniil.jpg",
-        fullName: "Daniil",
+        fullName: "Daniil Borgoykov",
         skills: "AI Engineer"
     },
     {
@@ -38,7 +38,7 @@ const data = [
     {
         id: 7,
         avatarSrc: "/images/teams/Bogdan.jpg",
-        fullName: "Bogdan",
+        fullName: "Bogdan Yusupjanov",
         skills: "DevOps Engineer"
     },
     {

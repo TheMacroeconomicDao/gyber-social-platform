@@ -2,6 +2,7 @@ import {Section, ThemeBackgroundSection} from "@/shared/ui/Section/Section";
 import {Container} from "@/shared/ui/Container/Container";
 import cls from "./JoinSection.module.scss";
 import {Button, ThemeButton} from "@/shared/ui/Button/Button";
+import ExternalLink, { ThemeExternalLink } from "@/shared/ui/ExternalLink/ExternalLink";
 
 interface JoinUsBlockProps {
     className?: string;
@@ -24,7 +25,13 @@ export const JoinSection = ({className = ""}: JoinUsBlockProps) => {
                         ideas and successes. Together, let's embark on a journey of exploration and transformation.
                     </p>
                     <div className={cls.buttonWrapper}>
-                        <Button theme={ThemeButton.BLUE}>Join</Button>
+                        <ExternalLink 
+                            href="https://discord.gg/amzvJ7UTsz" 
+                            theme={ThemeExternalLink.BLUE} 
+                            target="_blank"
+                        >
+                            Join
+                        </ExternalLink>
                     </div>
                 </div>
             </Container>
