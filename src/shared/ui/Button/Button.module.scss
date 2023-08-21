@@ -39,8 +39,8 @@
 }
 
 .disabled {
-    background: none;
+    background: linear-gradient(161deg, #4e4e4e 0%, #10436D 100%);
     &:hover {
-        background: none;
+        filter: none;
     }
 }

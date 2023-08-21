@@ -36,7 +36,7 @@ export const EventCard = (props: EventCardProps) => {
             <h3>{title}</h3>
             <p>{description}</p>
             <div className={cls.buttonWrapper}>
-                <Button theme={ThemeButton.ORANGE}>Jump to event</Button>
+                <Button theme={ThemeButton.ORANGE} disabled>Jump to event</Button>
             </div>
 
         </div>

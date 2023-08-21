@@ -19,9 +19,9 @@ export const Products = () => {
                 and many others. Join us and become part of the 
                 revolution in the development and use of artificial intelligence!
             </p>
-            <div className={cls.buttonWrapper}>
+            {/* <div className={cls.buttonWrapper}>
                 <Button theme={ThemeButton.BLUE}>Try it</Button>
-            </div>
+            </div> */}
         </div>
     )
 }

@@ -14,7 +14,7 @@ export const Header = ({ className = '' }: HeaderProps) => {
         <div className={classNames(cls.Header, {}, [className])}>
             <Logo>Gyber</Logo>
             <div>
-                <Button theme={ThemeButton.ORANGE}>Dapp</Button>
+                <Button theme={ThemeButton.ORANGE} disabled>Dapp</Button>
             </div>
         </div>
     );
