@@ -22,7 +22,7 @@ export const JoinSection = ({className = ""}: JoinUsBlockProps) => {
                         platform for research, development, and knowledge exchange across various IT industry domains. Join
                         us and become part of a movement that fosters collaboration and innovation. Here, you will not only
                         find a team that aids you in project realization but also true friends with whom you can share your
-                        ideas and successes. Together, let's embark on a journey of exploration and transformation.
+                        ideas and successes. Together, let&#39;s embark on a journey of exploration and transformation.
                     </p>
                     <div className={cls.buttonWrapper}>
                         <ExternalLink 

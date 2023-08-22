@@ -9,7 +9,7 @@ const data = [
         id: 2,
         avatarSrc: "/images/teams/Nikita-Juravski.jpg",
         fullName: "Nikita Juravski",
-        skills: "Product manager"
+        skills: "Backend Developer"
     },
     {
         id: 3,
@@ -33,7 +33,7 @@ const data = [
         id: 6,
         avatarSrc: "/images/teams/Artem-Smirnov.jpg",
         fullName: "Artem Smirnov",
-        skills: "Frontend developer"
+        skills: "Frontend Developer"
     },
     {
         id: 7,
