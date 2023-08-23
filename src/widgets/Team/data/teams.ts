@@ -47,6 +47,12 @@ const data = [
         fullName: "Dmitrii Novikov",
         skills: "Software Architector"
     },
+    {
+        id: 9,
+        avatarSrc: "/images/teams/Wis.jpg",
+        fullName: "Wis",
+        skills: "Software Architector"
+    },
 ]
 
 export default data;
