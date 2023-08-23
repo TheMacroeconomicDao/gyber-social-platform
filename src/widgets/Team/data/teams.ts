@@ -19,9 +19,9 @@ const data = [
     },
     {
         id: 4,
-        avatarSrc: "/images/teams/Fedor-Afanasiev.jpg",
-        fullName: "Fedor Afanasiev",
-        skills: ".NET Developer"
+        avatarSrc: "/images/teams/Queen-Meries.jpg",
+        fullName: "Queen Meries",
+        skills: "PR and Community Manager"
     },
     {
         id: 5,
@@ -31,28 +31,50 @@ const data = [
     },
     {
         id: 6,
+        avatarSrc: "/images/teams/Young-Charles.jpg",
+        fullName: "Young Charles",
+        skills: "Media Manager"
+    },
+    {
+        id: 7,
+        avatarSrc: "/images/teams/Fedor-Afanasiev.jpg",
+        fullName: "Fedor Afanasiev",
+        skills: ".NET Developer"
+    },
+    {
+        id: 8,
         avatarSrc: "/images/teams/Artem-Smirnov.jpg",
         fullName: "Artem Smirnov",
         skills: "Frontend Developer"
     },
     {
-        id: 7,
+        id: 9,
+        avatarSrc: "/images/teams/Wisdom-Forbes.jpg",
+        fullName: "Wisdom Forbes",
+        skills: "CMO"
+    },
+    {
+        id: 10,
+        avatarSrc: "/images/teams/Miracle-Obiekwe.jpg",
+        fullName: "Miracle Obiekwe",
+        skills: "Project Manager"
+    },
+    {
+        id: 11,
         avatarSrc: "/images/teams/Bogdan.jpg",
         fullName: "Bogdan Yusupjanov",
         skills: "DevOps Engineer"
     },
     {
-        id: 8,
+        id: 12,
         avatarSrc: "/images/teams/Dmitrii-Novikov.jpg",
         fullName: "Dmitrii Novikov",
         skills: "Software Architector"
     },
-    {
-        id: 9,
-        avatarSrc: "/images/teams/Wis.jpg",
-        fullName: "Wis",
-        skills: "Software Architector"
-    },
+    
+    
+    
+    
 ]
 
 export default data;
