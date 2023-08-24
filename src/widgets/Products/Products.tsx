@@ -15,7 +15,7 @@ export const Products = () => {
         are building a platform for creating models in both commercial and
         non-commercial spheres, such as medicine, finance, transport and many
         others. Join us and become part of the revolution in the development and
-        use of artificial intelligence!
+        use of artificial intelligence! You will be able to touch our products on this page.
       </p>
       <div className={cls.buttonWrapper}>
         <Button theme={ThemeButton.BLUE} disabled>

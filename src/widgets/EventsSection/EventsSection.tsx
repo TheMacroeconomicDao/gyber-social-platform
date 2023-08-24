@@ -25,37 +25,34 @@ const data = [
   {
     id: 1,
     imageSrc: "/images/events/163.png",
-    date: "20 june 2023",
+    date: "30 SEP 2023",
     title: "Invest Event",
     description:
-      "AiC is an open community that unites people interested in the development and use of artificial intelligence models in the blockchain environment. Using DAO contracts, we ensure transparency, security and openness of the process of developing and using AI models. In AiC, you can share knowledge, experience and create models with minimal costs.",
+      "Wake Up Africa. Private Technical Party for invited guests We will publish the main topics of the event and invited guests and artists in the near future.",
     link: "/",
   },
   {
     id: 2,
     imageSrc: "/images/events/164.png",
-    date: "",
+    date: "30 DEC 2023",
     title: "Invest Event",
-    description:
-      "AiC is an open community that unites people interested in the development and use of artificial intelligence models in the blockchain environment. Using DAO contracts, we ensure transparency, security and openness of the process of developing and using AI models. In AiC, you can share knowledge, experience and create models with minimal costs.",
+    description: "Technical Night in Dubai. Hello, Gyber Party. We will publish the main topics of the event and invited guests and artists in the near future",
     link: "/",
   },
   {
     id: 3,
     imageSrc: "/images/events/165.png",
-    date: "20 june 2023",
+    date: "30 MAR 2024",
     title: "Invest Event",
-    description:
-      "AiC is an open community that unites people interested in the development and use of artificial intelligence models in the blockchain environment. Using DAO contracts, we ensure transparency, security and openness of the process of developing and using AI models. In AiC, you can share knowledge, experience and create models with minimal costs.",
+    description: "Cybernat Community in Berlin Welcome Party",
     link: "/",
   },
   {
     id: 4,
     imageSrc: "/images/events/166.png",
-    date: "20 june 2023",
+    date: "30 june 2024",
     title: "Invest Event",
-    description:
-      "AiC is an open community that unites people interested in the development and use of artificial intelligence models in the blockchain environment. Using DAO contracts, we ensure transparency, security and openness of the process of developing and using AI models. In AiC, you can share knowledge, experience and create models with minimal costs.",
+    description: "Soon to be determined by the community",
     link: "/",
   },
 ];
