@@ -1,21 +1,21 @@
 .icon {
-    flex-shrink: 0;
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    background: #0D394F;
-    box-shadow: 1px 1px 1px #21688f inset;
-    filter: drop-shadow(0px 2px 8px #041C30) drop-shadow(0px -2px 7px #10436D);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    &.done {
-        background: #1b5978;
-        box-shadow: 1px 1px 1px #2a7ead inset;
-        color: #D49D32;
-    }
-    &.progress {
-        background: #0D394F;
-        color: #42B8F3;
-    }
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background: #0d394f;
+  box-shadow: 1px 1px 1px #21688f inset;
+  filter: drop-shadow(0px 2px 8px #041c30) drop-shadow(0px -2px 7px #10436d);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &.done {
+    background: #1b5978;
+    box-shadow: 1px 1px 1px #2a7ead inset;
+    color: var(--c-orange);
+  }
+  &.progress {
+    background: #0d394f;
+    color: var(--c-blue);
+  }
 }

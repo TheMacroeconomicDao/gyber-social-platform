@@ -1,31 +1,28 @@
 .RoadmapItem {
-    display: flex;
-    column-gap: 20px;
-    align-items: center;
-    color: #B8B8B8;
-    .title {
-        color:  #B8B8B8;
-        font-size: 20px;
-        font-weight: 600;
-        line-height: 24px;
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+  color: var(--c-grey);
+  .title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
 
-        &.done {
-            color: #D49D32;
-        }
-        &.progress {
-            color: #42B8F3;
-        }
+    &.done {
+      color: var(--c-orange);
     }
-    .status {
-        color: #B8B8B8;
-        font-size: 12px;
-        font-weight: 400;
-        &.done {
-            color: #D49D32;
-        }
-        &.progress {
-            color: #42B8F3;
-        }
+    &.progress {
+      color: var(--c-blue);
     }
+  }
+  .status {
+    font-size: 12px;
+    font-weight: 400;
+    &.done {
+      color: var(--c-orange);
+    }
+    &.progress {
+      color: var(--c-blue);
+    }
+  }
 }
-

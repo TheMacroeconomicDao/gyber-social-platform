@@ -1,10 +1,10 @@
 .Logo {
-    display: flex;
-    align-items: center;
-    span {
-        margin-left: 10px;
-        color: #B9B9B9;
-        font-size: 30px;
-        font-weight: 500;
-    }
+  display: flex;
+  align-items: center;
+  span {
+    margin-left: 10px;
+    color: var(--c-grey);
+    font-size: 30px;
+    font-weight: 500;
+  }
 }

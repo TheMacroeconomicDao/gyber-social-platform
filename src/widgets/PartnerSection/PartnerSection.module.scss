@@ -1,31 +1,24 @@
 .wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    padding: 0 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 0 100px;
 
-    .title {
-        color: #FFF;
-        font-size: 32px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 36px;
-    }
-    .textContent {
-        color: #e1e1e1;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 2;
-        text-align: justify;
-    }
+  .textContent {
+    color: #e1e1e1;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2;
+    text-align: justify;
+  }
 
-    .buttonWrapper {
-        padding: 40px 46px;
-        border-radius: 20px;
-        background: #072B40;
-        box-shadow: 0 0 50px 0 #072B40;
-    }
+  .buttonWrapper {
+    padding: 40px 46px;
+    border-radius: 20px;
+    background: #072b40;
+    box-shadow: 0 0 50px 0 #072b40;
+  }
 }

@@ -1,3 +1,22 @@
+html {
+    font-size: 16px;
+}
+:root {
+    --c-white: #E1E1E1;
+    --c-orange: #D49D32;
+    --c-blue: #42B8F3;
+    --c-grey: #B8B8B8;
+
+    --fs-s: 0.75rem;
+    --fs-xs: 0.875rem;
+    --fs-1: 1rem;
+    --fs-2: 1.25rem;
+    --fs-3: 1.5rem;
+    --fs-4: 2rem;
+    --fs-5: 2.5rem;
+    --fs-6: 3rem; 
+}
+
 body {
     background-color: #072B40;
     background-image:
@@ -13,7 +32,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #fff;
+    color: var(--c-white);
     overflow-y: auto;
     &::-webkit-scrollbar {
         width: 4px;
@@ -28,6 +47,12 @@ body {
 main {
     width: 900px;
     margin: 0 auto;
-
 }
-
+h1 {
+    font-size: var(--fs-5);
+    line-height: 1.5;
+}
+h2 {
+    font-size: var(--fs-4);
+    line-height: 1.5;
+}
