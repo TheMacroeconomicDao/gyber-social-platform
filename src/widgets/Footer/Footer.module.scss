@@ -7,9 +7,15 @@
 
   .wrapper {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1280px;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .Footer {
+    padding: 20px 40px;
   }
 }
