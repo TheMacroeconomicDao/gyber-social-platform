@@ -18,6 +18,7 @@ const AIC = () => {
         <>
             <Slider
                 path={"/images/slides/aic-slide.jpg"}
+                mobilePath={"/images/slides/gyber-experiment-mobile-slide.jpg"}
                 title={"Large-scale AI research"}
             />
             <Substrate {...data}/>

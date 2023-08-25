@@ -1,26 +1,20 @@
 import cls from "./Slider.module.scss";
 import { classNames } from "@/shared/lib/classNames/classNames";
 import Image from "next/image";
+import SlideImage from "./SlideImage";
 
 interface SliderProps {
   className?: string;
   path: string;
+  mobilePath?: string;
   title?: string;
 }
 
 export const Slider = (props: SliderProps) => {
-  const { className = "", path, title } = props;
+  const { className = "", path, mobilePath, title } = props;
   return (
     <div className={classNames(cls.Slider, {}, [className])}>
-      <Image
-        fill={true}
-        style={{
-          objectFit: "cover",
-          objectPosition: "center",
-        }}
-        src={path}
-        alt={title || "slide"}
-      />
+      <SlideImage path={path} mobilePath={mobilePath || ""} title={title}/>
       {title && (
         <div className={cls.sliderTitle}>
           <h1>{title}</h1>

@@ -17,6 +17,7 @@ const SocialPlatform = () => {
         <>
             <Slider
                 path={"/images/slides/gyber-social-platform-slide.jpg"}
+                mobilePath={"/images/slides/gybernaty-mobile-slide.jpg"}
                 title={"Be a part of innovation Gyber Social Platform"}
             />
             <Substrate {...data} scrollable={false}/>
