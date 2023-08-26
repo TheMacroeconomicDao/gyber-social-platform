@@ -17,7 +17,7 @@ const Events = () => {
         <>
             <Slider
                 path={"/images/slides/event-slide.jpg"}
-                mobilePath={"/images/slides/gybernaty-mobile-slide.jpg"}
+                mobilePath={"/images/slides/event-mobile-slide.jpg"}
                 title={"Welcome to Gyber Reality"}
             />
             <Substrate {...data} scrollable={false}/>
