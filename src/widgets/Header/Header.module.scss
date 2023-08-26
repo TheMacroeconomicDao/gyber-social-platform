@@ -18,8 +18,23 @@
     }
   }
   .Header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #072B40;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
     .btnGroup {
       gap: 1rem;
     }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .Header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #072B40;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
   }
 }
