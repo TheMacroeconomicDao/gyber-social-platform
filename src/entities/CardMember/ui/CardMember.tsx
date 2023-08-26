@@ -18,7 +18,11 @@ export const CardMember = (props: CardMemberProps) => {
   return (
     <div className={classNames(cls.CardMember, {}, [className])}>
       <div className={cls.avatar}>
-        <Image fill={true} src={avatarSrc} alt={fullName} />
+        <Image 
+        fill={true} 
+        src={avatarSrc} 
+        alt={fullName} sizes="(max-width: 768px) 100vw"
+        />
       </div>
       <h3>{fullName}</h3>
       <p>{skills}</p>

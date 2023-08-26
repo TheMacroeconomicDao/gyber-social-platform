@@ -11,3 +11,15 @@
   }
 }
 
+@media screen and (max-width: 490px) {
+  .isMobile {
+    span {
+      display: none;
+    }
+  }
+  .Header {
+    .btnGroup {
+      gap: 1rem;
+    }
+  }
+}

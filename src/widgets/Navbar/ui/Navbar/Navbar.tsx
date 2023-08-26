@@ -2,19 +2,13 @@
 import cls from "./Navbar.module.scss";
 import { classNames } from "@/shared/lib/classNames/classNames";
 import { usePathname } from "next/navigation";
+import navbarItems from "../../data/routesData";
 import Link from "next/link";
 interface NavbarProps {
   className?: string;
 }
 
 export const Navbar = ({}: NavbarProps) => {
-  const navbarItems = [
-    { title: "Gybernaty", link: "/" },
-    { title: "Gyber Experiment", link: "/gyber-experiment" },
-    { title: "Gyber Social Platform", link: "/gyber-social-platform" },
-    { title: "AIC", link: "/aic" },
-    { title: "Events", link: "/events" },
-  ];
   const pathName = usePathname();
 
   return (

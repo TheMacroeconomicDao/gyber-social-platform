@@ -5,13 +5,15 @@
   text-decoration: none;
   border-radius: 8px;
   padding: 14px 60px;
+  text-align: center;
   font-family: inherit;
   font-size: 20px;
   font-weight: 500;
-  color: #fff;
+  color: var(--c-white);
   outline: none;
   cursor: pointer;
   display: flex;
+  column-gap: 10px;
   align-items: center;
   transition: 0.2s;
   &:hover {
@@ -40,4 +42,10 @@
 .clear {
   padding: 0;
   border-radius: 0;
+}
+
+@media screen and (max-width: 490px) {
+    .ExternalLink {
+      padding: 14px 30px;
+    }
 }

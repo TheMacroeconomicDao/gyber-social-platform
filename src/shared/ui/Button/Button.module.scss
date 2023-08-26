@@ -47,3 +47,9 @@
     filter: none;
   }
 }
+
+@media screen and (max-width: 490px) {
+  .Button {
+    padding: 14px 30px;
+  }
+}

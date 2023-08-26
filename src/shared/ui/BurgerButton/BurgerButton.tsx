@@ -1,17 +1,27 @@
-"use client"
-import { useState } from "react"
-import { Button, ThemeButton } from "../Button/Button"
-import BurgerIcon from "../SvgIcons/BurgerIcon/Burger"
-import cls from './BurgerButton.module.scss'
+"use client";
+import { useEffect, useState } from "react";
+import { Button, ThemeButton } from "../Button/Button";
+import BurgerIcon from "../SvgIcons/BurgerIcon/Burger";
+import cls from "./BurgerButton.module.scss";
 
-
-const BurgerButton = () => {
-    const [isActive, setIsActive] = useState(false);
-  return (
-    <Button className={cls.BurgerBtn} onClick={() => setIsActive(!isActive)} theme={ThemeButton.BLUE}>
-        <BurgerIcon active={isActive}/>
-    </Button>
-  )
+interface BurgerButtonProps {
+  isShow: (isShow: boolean) => void;
+  close: boolean;
 }
 
-export default BurgerButton
+const BurgerButton = ({ isShow, close }: BurgerButtonProps) => {
+  const handleClick = () => {
+    isShow(!close);
+  };
+  return (
+    <Button
+      className={cls.BurgerBtn}
+      onClick={handleClick}
+      theme={ThemeButton.BLUE}
+    >
+      <BurgerIcon active={close} />
+    </Button>
+  );
+};
+
+export default BurgerButton;
