@@ -3,7 +3,7 @@ import './styles/global.scss'
 import type { Metadata } from 'next'
 import { Montserrat } from 'next/font/google'
 import {Header} from "@/widgets/Header/Header";
-import {Navbar} from "@/widgets/Navbar";
+import {Navbar, NavbarMobile} from "@/widgets/Navbar";
 import {Footer} from "@/widgets/Footer/Footer";
 import Head from 'next/head';
 
@@ -34,6 +34,7 @@ export default function RootLayout({
       <Navbar/>
         {children}
       <Footer />
+      <NavbarMobile/>
       </body>
     </html>
   )

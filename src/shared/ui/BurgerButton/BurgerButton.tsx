@@ -1,5 +1,3 @@
-"use client";
-import { useEffect, useState } from "react";
 import { Button, ThemeButton } from "../Button/Button";
 import BurgerIcon from "../SvgIcons/BurgerIcon/Burger";
 import cls from "./BurgerButton.module.scss";

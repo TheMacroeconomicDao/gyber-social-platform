@@ -12,17 +12,12 @@
 }
 
 @media screen and (max-width: 490px) {
-  .isMobile {
-    span {
-      display: none;
-    }
-  }
   .Header {
     position: sticky;
     top: 0;
     z-index: 10;
-    background-color: #072B40;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    background-color: #072b40;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     .btnGroup {
       gap: 1rem;
     }
@@ -34,7 +29,15 @@
     position: sticky;
     top: 0;
     z-index: 10;
-    background-color: #072B40;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    padding: 20px 20px;
+    background: linear-gradient(
+      318deg,
+      rgba(9, 21, 26, 0.8) 0%,
+      rgba(7, 46, 63, 0.8) 100%
+    );
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
   }
 }

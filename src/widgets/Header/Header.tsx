@@ -19,7 +19,7 @@ export const Header = ({ className = "" }: HeaderProps) => {
       <Logo>Gyber</Logo>
       <div className={cls.btnGroup}>
         <ExternalLink 
-          className={cls.isMobile}
+          className={cls.isPdf}
           href="/documents/GYBER_White_paper_eng.pdf" 
           target="_blank"
           theme={ThemeExternalLink.CLEAR}>

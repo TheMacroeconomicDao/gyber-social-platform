@@ -2,6 +2,7 @@ import React from 'react';
 import {Slider} from "@/widgets/Slider/Slider";
 
 import type { Metadata } from 'next'
+import { NavbarMobile } from '@/widgets/Navbar';
  
 export const metadata: Metadata = {
   title: 'Gyber | AIC',
@@ -18,7 +19,7 @@ const AIC = () => {
                 title={"Large-scale AI research"}
             />
             
-            
+            <NavbarMobile />
         </>
     );
 };
