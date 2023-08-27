@@ -26,11 +26,18 @@
   .sliderTitle {
     left: 0;
     justify-content: center;
-    align-items: flex-end;
-    padding-bottom: 4rem;
+    padding: 11rem 1rem 0;
     h1 {
       text-align: center;
       font-size: 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .sliderTitle {
+    h1 {
+      font-size: 1.75rem;
     }
   }
 }

@@ -6,6 +6,7 @@ import { Logo } from "@/shared/ui/Logo/Logo";
 import { NavbarTablet } from "../Navbar";
 import ExternalLink, { ThemeExternalLink } from "@/shared/ui/ExternalLink/ExternalLink";
 import DownloadIcon from "@/shared/ui/SvgIcons/DownloadIcon/DownloadIcon";
+import Link from "next/link";
 
 
 interface HeaderProps {
@@ -16,7 +17,10 @@ interface HeaderProps {
 export const Header = ({ className = "" }: HeaderProps) => {
   return (
     <div className={classNames(cls.Header, {}, [className])}>
+      <Link href={'/'}>
       <Logo>Gyber</Logo>
+      </Link>
+  
       <div className={cls.btnGroup}>
         <ExternalLink 
           className={cls.isPdf}
