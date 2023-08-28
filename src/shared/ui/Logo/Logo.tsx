@@ -14,7 +14,7 @@ export const Logo = (props: LogoProps) => {
   return (
     <div className={classNames(cls.Logo, {}, [className])}>
       <Image
-        src={"/images/logo.svg"}
+        src={"/images/Logo.svg"}
         alt={"logo"}
         width={width}
         height={height}

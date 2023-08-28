@@ -29,6 +29,7 @@ export function useMediaQuery(query: string): boolean | undefined {
         return () => {
             matchMedia.removeEventListener('change', handleChange);
         };
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [query])
     
     return initialLoad ? undefined : hasMatch;
