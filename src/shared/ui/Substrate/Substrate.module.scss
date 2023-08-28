@@ -61,3 +61,19 @@
     }
   }
 }
+@media screen and (max-width: 576px) {
+  .Substrate {
+    padding: 50px 20px 50px 30px;
+
+    .scroll {
+      padding: 0 20px 0 0;
+      touch-action: pan-y;
+    }
+
+    h3 {
+      font-size: 20px;
+      line-height: 2;
+    }
+  }
+  
+}

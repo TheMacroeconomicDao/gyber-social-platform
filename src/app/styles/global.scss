@@ -62,3 +62,15 @@ h2 {
     font-size: var(--fs-4);
     line-height: 1.5;
 }
+
+
+@media screen and (max-width: 576px) {
+    h1 {
+        font-size: var(--fs-4);
+        line-height: 1.5;
+    }
+    h2 {
+        font-size: var(--fs-3);
+        line-height: 1.5;
+    }
+}
