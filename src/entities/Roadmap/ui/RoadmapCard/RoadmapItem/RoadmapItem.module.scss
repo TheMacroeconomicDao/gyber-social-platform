@@ -26,3 +26,19 @@
     }
   }
 }
+
+@media screen and (max-width: 1280px) {
+  .RoadmapItem {
+    margin: 1rem 0;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .RoadmapItem {
+    .title {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 24px;
+    }
+  }
+}

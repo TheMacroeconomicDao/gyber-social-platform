@@ -29,29 +29,25 @@ export const RoadmapCard = ({ id, year, period, items }: RoadmapCardProps) => {
         <div className={cls.RoadmapCard}>
           {!isCurrent && (
             <StartItem
-              className={classNames(cls.svgItem, {})}
-              style={{ top: "-80px" }}
+              className={classNames(cls.svgItem, {}, [cls.Start])}
               color={ItemColor.BLUE}
             />
           )}
           {isCurrent && (
             <NextYearItem
-              className={cls.svgItem}
-              style={{ top: "-260px" }}
+              className={classNames(cls.svgItem, {}, [cls.NextYear])}
               color={ItemColor.YELLOW}
             />
           )}
           {!isCurrent && (
             <NextPeriodItem
-              className={cls.svgItem}
-              style={{ top: "113px" }}
+              className={classNames(cls.svgItem, {}, [cls.Next])}
               color={ItemColor.BLUE}
             />
           )}
           {isCurrent && (
             <NextPeriodItem
-              className={cls.svgItem}
-              style={{ top: "113px" }}
+              className={classNames(cls.svgItem, {}, [cls.Next])}
               color={ItemColor.YELLOW}
             />
           )}
@@ -96,15 +92,13 @@ export const RoadmapCard = ({ id, year, period, items }: RoadmapCardProps) => {
         <div className={cls.RoadmapCard}>
           {!isCurrent && (
             <NextPeriodItem
-              className={cls.svgItem}
-              style={{ top: "113px" }}
+              className={classNames(cls.svgItem, {}, [cls.Next])}
               color={ItemColor.BLUE}
             />
           )}
           {isCurrent && (
             <NextPeriodItem
-              className={cls.svgItem}
-              style={{ top: "113px" }}
+              className={classNames(cls.svgItem, {}, [cls.Next])}
               color={ItemColor.YELLOW}
             />
           )}
