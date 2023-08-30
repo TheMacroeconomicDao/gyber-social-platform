@@ -73,6 +73,12 @@ const data = [
         fullName: "Miracle Obiekwe",
         skills: "Project Manager"
     },
+    {
+        id: 13,
+        avatarSrc: "/images/teams/Frank-Zulu.jpg",
+        fullName: "Frank Zulu",
+        skills: "Marketing officer"
+    },
  
 ]
 
