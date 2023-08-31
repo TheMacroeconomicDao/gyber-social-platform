@@ -25,7 +25,7 @@ const data = [
   {
     id: 1,
     imageSrc: "/images/events/163.png",
-    date: "30 SEP 2023",
+    date: "30 OCT 2023",
     title: "Invest Event",
     description:
       "Wake Up Africa. Private Technical Party for invited guests We will publish the main topics of the event and invited guests and artists in the near future.",
@@ -34,7 +34,7 @@ const data = [
   {
     id: 2,
     imageSrc: "/images/events/164.png",
-    date: "30 DEC 2023",
+    date: "30 JAN 2023",
     title: "Invest Event",
     description: "Technical Night in Dubai. Hello, Gyber Party. We will publish the main topics of the event and invited guests and artists in the near future",
     link: "/",
@@ -42,7 +42,7 @@ const data = [
   {
     id: 3,
     imageSrc: "/images/events/165.png",
-    date: "30 MAR 2024",
+    date: "30 APR 2024",
     title: "Invest Event",
     description: "Cybernat Community in Berlin Welcome Party",
     link: "/",
@@ -50,7 +50,7 @@ const data = [
   {
     id: 4,
     imageSrc: "/images/events/166.png",
-    date: "30 june 2024",
+    date: "30 JULY 2024",
     title: "Invest Event",
     description: "Soon to be determined by the community",
     link: "/",
