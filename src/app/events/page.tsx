@@ -7,7 +7,7 @@ import { EventsSection } from '@/widgets/EventsSection/EventsSection';
 import type { Metadata } from 'next'
  
 export const metadata: Metadata = {
-  title: 'Gyber | Events',
+  title: 'Welcome to Future | Events',
   description: 'Gyber Parties',
 }
 

@@ -15,11 +15,11 @@ export const data = [
             {
               title:
                 "Development of smart contracts ERC20, ERC721, The Macroeconomic DAO",
-              status: IconStatus.PROGRESS,
+              status: IconStatus.DONE,
             },
             {
               title: "Development Dapp The Macroeconomic DAO",
-              status: IconStatus.DEFAULT,
+              status: IconStatus.DONE,
             },
           ],
         },
@@ -29,15 +29,15 @@ export const data = [
           items: [
             {
               title: "Seed investment round",
-              status: IconStatus.DEFAULT,
+              status: IconStatus.PROGRESS,
             },
             {
               title: "Opening Social Bounty and Secure Bounty programs",
-              status: IconStatus.DEFAULT,
+              status: IconStatus.PROGRESS,
             },
             {
               title: "Testing the main platform code",
-              status: IconStatus.DEFAULT,
+              status: IconStatus.PROGRESS,
             },
           ],
         },
@@ -47,16 +47,16 @@ export const data = [
           items: [
             {
               title: "PreSale",
-              status: IconStatus.DEFAULT,
+              status: IconStatus.PROGRESS,
             },
             {
               title:
                 "Development of a prototype of a decentralized, multi-platform, computing cluster",
-              status: IconStatus.DEFAULT,
+              status: IconStatus.PROGRESS,
             },
             {
               title: "Blockchain GyberNet Prototype Development",
-              status: IconStatus.DEFAULT,
+              status: IconStatus.PROGRESS,
             },
           ],
         },

@@ -8,7 +8,7 @@ import { Products } from '@/widgets/Products/Products';
 import type { Metadata } from 'next'
  
 export const metadata: Metadata = {
-  title: 'Gyber | AIC',
+  title: 'Welcome to Future | AIC',
   description: 'Large-scale AI research',
 }
 

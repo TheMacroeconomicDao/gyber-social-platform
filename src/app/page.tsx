@@ -9,7 +9,7 @@ import {PartnerSection} from "@/widgets/PartnerSection/PartnerSection";
 import type { Metadata } from 'next'
  
 export const metadata: Metadata = {
-  title: 'Gyber | Gybernaty Community',
+  title: 'Welcome to Future | Gybernaty Community',
   description: 'Gybernaty Community of advanced enthusiasts and developers',
 }
 

@@ -10,7 +10,7 @@ import { PartnerSection } from '@/widgets/PartnerSection/PartnerSection';
 import type { Metadata } from 'next'
  
 export const metadata: Metadata = {
-  title: 'Gyber | Gyber Experiment',
+  title: 'Welcome to Future | Gyber Experiment',
   description: 'Millions are Billionaires',
 }
 

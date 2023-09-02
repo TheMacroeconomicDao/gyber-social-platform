@@ -1,7 +1,7 @@
 import './styles/reset.scss'
 import './styles/global.scss'
 import type { Metadata } from 'next'
-import { Montserrat } from 'next/font/google'
+import { Montserrat, Grape_Nuts } from 'next/font/google'
 import {Header} from "@/widgets/Header/Header";
 import {Navbar, NavbarMobile} from "@/widgets/Navbar";
 import {Footer} from "@/widgets/Footer/Footer";
@@ -12,6 +12,11 @@ import Head from 'next/head';
 const montserrat = Montserrat({
   subsets: ['latin'],
   weight: ['300', '400', '500', '600', '700', '800']
+})
+
+export const grape_nuts = Grape_Nuts({
+  subsets: ['latin'],
+  weight: ['400']
 })
 
 export const metadata: Metadata = {

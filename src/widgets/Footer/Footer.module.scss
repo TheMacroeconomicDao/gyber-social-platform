@@ -10,7 +10,24 @@
     max-width: 1280px;
     width: 100%;
     display: grid;
+    align-items: center;
+    justify-items: center;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 'logo social copyright';
+    gap: 1rem;
+
+    .logo {
+      grid-area: logo;
+    }
+
+    .social {
+      grid-area: social;
+    }
+
+    .Copyright {
+      grid-area: copyright;
+      color: var(--c-white);
+    }
   }
 }
 
@@ -23,5 +40,11 @@
 @media screen and (max-width: 480px) {
   .Footer {
     margin-bottom: 70px;
+    .wrapper {
+      grid-template-columns: 30px 1fr;
+      grid-template-areas: 
+      'logo social '
+       '. copyright';
+    }
   }
 }

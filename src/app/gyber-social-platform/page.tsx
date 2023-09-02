@@ -8,7 +8,7 @@ import { PartnerSection } from '@/widgets/PartnerSection/PartnerSection';
 import type { Metadata } from 'next'
  
 export const metadata: Metadata = {
-  title: 'Gyber | Social Platform',
+  title: 'Welcome to Future | Social Platform',
   description: 'Be a part of innovation Gyber Social Platform',
 }
 
