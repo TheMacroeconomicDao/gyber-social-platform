@@ -62,7 +62,7 @@
         .title {
             position: absolute;
             left: 46%;
-            top: -100px;
+            top: -70px;
             font-size: 36px;
             font-weight: 700;
         }
@@ -86,9 +86,15 @@
         .title {
             position: absolute;
             left: 42%;
-            top: -80px;
+            top: -70px;
             font-size: 36px;
             font-weight: 700;
+        }
+        .svgItem {
+            left: 50%;
+            &.Next {
+                top: 106%;              
+            }
         }
     }
 }
