@@ -14,11 +14,13 @@ interface NavbarTabletProps {
 
 const variants:Variants = {
   visible: {
+    display: 'flex',
     opacity: 1,
     y: 0,
     transition: { type: "spring", stiffness: 300, damping: 24 },
   },
   hidden: {
+    display: 'none',
     opacity: 0,
     y: 20,
     transition: { duration: 0.2 },
