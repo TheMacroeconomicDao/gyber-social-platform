@@ -21,6 +21,7 @@ const SlideImage = ({ path, mobilePath, title }: SlideImageProps) => {
             objectFit: "cover",
             objectPosition: "center",
           }}
+          quality={70}
         />
       )}
 

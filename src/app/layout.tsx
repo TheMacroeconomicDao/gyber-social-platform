@@ -31,9 +31,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Head>
+      {/* <Head>
         <link rel='icon' href='/favicon.ico' sizes='any'/>
-      </Head>
+      </Head> */}
       <body className={montserrat.className}>
       <Header/>
       <Navbar/>

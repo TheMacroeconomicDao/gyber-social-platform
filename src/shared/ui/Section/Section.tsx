@@ -1,10 +1,11 @@
 import cls from "./Section.module.scss";
 import { classNames } from "@/shared/lib/classNames/classNames";
+import Image from "next/image";
 import { ReactNode } from "react";
 
 export enum ThemeBackgroundSection {
-  FIRST = "url('/images/bg-text-card.jpg')",
-  SECOND = "url('/images/bg-social-platform-roadmapping.svg')",
+  FIRST = '/images/bg-text-card.jpg',
+  SECOND = '/images/bg-social-platform-roadmapping.svg',
 }
 
 interface SectionProps {
@@ -14,12 +15,21 @@ interface SectionProps {
 }
 
 export const Section = (props: SectionProps) => {
-  const { className = "", children, background = "" } = props;
+  const { className = "", children, background } = props;
   return (
     <div
       className={classNames(cls.Section, {}, [className])}
-      style={{ backgroundImage: background }}
     >
+      { background && (
+        <Image 
+        fill
+        src={background}
+        alt='bg-section'
+        className={cls.image}
+        quality={70}
+      />
+      )}
+      
       {children}
     </div>
   );

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Slider } from "@/widgets/Slider/Slider";
 import { SPRoadmapping } from "@/widgets/SocialPlatformRoadmap/SPRoadmapping";
 import { Substrate } from '@/shared/ui/Substrate/Substrate';

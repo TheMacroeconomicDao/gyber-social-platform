@@ -1,11 +1,12 @@
 html {
     font-size: 16px;
+    background: #072b40;
 }
 :root {
-    --c-white: #E1E1E1;
-    --c-orange: #D49D32;
-    --c-blue: #42B8F3;
-    --c-grey: #B8B8B8;
+    --c-white: #e1e1e1;
+    --c-orange: #d49d32;
+    --c-blue: #42b8f3;
+    --c-grey: #b8b8b8;
 
     --fs-s: 0.75rem;
     --fs-xs: 0.875rem;
@@ -14,24 +15,33 @@ html {
     --fs-3: 1.5rem;
     --fs-4: 2rem;
     --fs-5: 2.5rem;
-    --fs-6: 3rem; 
+    --fs-6: 3rem;
 
     --bp-s: 576px;
     --bp-m: 768px;
     --bp-l: 960px;
     --bp-xl: 1280px;
-
 }
 
 body {
-    background-color: #072B40;
-    background-image:
-            linear-gradient(
-                            to right, transparent 0%,
-                            rgba(0, 0, 0, .4) 30%,
-                            rgba(0, 0, 0, .4) 70%,
-                            transparent 100%),
-            url("../../../public/images/bg-shapes.svg");
+    background: #072b40;
+    background: linear-gradient(
+            to right,
+            transparent 0%,
+            rgba(0, 0, 0, 0.4) 30%,
+            rgba(0, 0, 0, 0.4) 70%,
+            transparent 100%
+        ),
+        url("../../../public/images/bg-shapes.svg");
+    background: -moz-linear-gradient(
+            to right,
+            transparent 0%,
+            rgba(0, 0, 0, 0.4) 30%,
+            rgba(0, 0, 0, 0.4) 70%,
+            transparent 100%
+        ),
+        url("../../../public/images/bg-shapes.svg");
+    
     background-position: 0 200px;
     background-size: auto;
     background-repeat: repeat-y;
@@ -42,11 +52,11 @@ body {
     overflow-y: auto;
     &::-webkit-scrollbar {
         width: 4px;
-        background: #072B40;
+        background: #072b40;
     }
 
     &::-webkit-scrollbar-thumb {
-        background-color: #A46B17;
+        background-color: #a46b17;
         -webkit-border-radius: 2ex;
     }
 }
@@ -62,7 +72,6 @@ h2 {
     font-size: var(--fs-4);
     line-height: 1.5;
 }
-
 
 @media screen and (max-width: 576px) {
     h1 {

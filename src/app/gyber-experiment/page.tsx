@@ -1,6 +1,4 @@
-import React from 'react';
 import {Slider} from "@/widgets/Slider/Slider";
-import {Team} from "@/widgets/Team";
 import {Container} from "@/shared/ui/Container/Container";
 import {Roadmap} from "@/entities/Roadmap";
 import { Substrate } from '@/shared/ui/Substrate/Substrate';
