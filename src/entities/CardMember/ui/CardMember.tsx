@@ -1,6 +1,9 @@
+"use client"
 import cls from "./CardMember.module.scss";
 import { classNames } from "@/shared/lib/classNames/classNames";
 import Image from "next/image";
+import { motion, Variants } from "framer-motion";
+
 interface CardMemberProps {
   className?: string;
   avatarSrc?: string;
@@ -16,7 +19,13 @@ export const CardMember = (props: CardMemberProps) => {
     skills = "Python/C/Dart/TypeScript developer",
   } = props;
   return (
-    <div className={classNames(cls.CardMember, {}, [className])}>
+    <motion.div 
+    className={classNames(cls.CardMember, {}, [className])}
+      initial={{scale: 0.8}}
+      whileInView={{scale: 1, transition: { type: "spring", bounce: 0.2, duration: .8}}}
+      viewport={{ once: true, amount: 0.8 }}
+    
+    >
       <div className={cls.avatar}>
         <Image 
         fill={true} 
@@ -26,6 +35,6 @@ export const CardMember = (props: CardMemberProps) => {
       </div>
       <h3>{fullName}</h3>
       <p>{skills}</p>
-    </div>
+    </motion.div>
   );
 };
