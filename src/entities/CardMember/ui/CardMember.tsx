@@ -23,7 +23,7 @@ export const CardMember = (props: CardMemberProps) => {
     className={classNames(cls.CardMember, {}, [className])}
       initial={{scale: 0.8}}
       whileInView={{scale: 1, transition: { type: "spring", bounce: 0.2, duration: .8}}}
-      viewport={{ once: true, amount: 0.8 }}
+      viewport={{ once: true, amount: 0.5 }}
     
     >
       <div className={cls.avatar}>
