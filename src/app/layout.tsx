@@ -5,8 +5,6 @@ import { Montserrat, Grape_Nuts } from 'next/font/google'
 import {Header} from "@/widgets/Header/Header";
 import {Navbar, NavbarMobile} from "@/widgets/Navbar";
 import {Footer} from "@/widgets/Footer/Footer";
-import Head from 'next/head';
-
 
 
 const montserrat = Montserrat({

@@ -34,6 +34,7 @@ export const EventCard = (props: EventCardProps) => {
             objectFit: "cover",
             objectPosition: "bottom",
           }}
+          sizes="(max-width: 768px) 100vw"
         />
       </div>
       <span>{formatDate(date)}</span>
