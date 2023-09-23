@@ -1,20 +1,26 @@
 "use client";
 import { useMediaQuery } from "@/shared/hooks/mediaQuery/useMediaQuery";
 import { SVGProps } from "react";
-import { motion, useScroll } from "framer-motion";
-import { useRef } from "react";
+import { easeInOut, motion, Variants } from "framer-motion";
+
+const cardVariants: Variants = {
+    initialLaptop: {
+        pathLength: 0,
+    },
+    viewLaptop: {
+        pathLength: 1,
+        transition: {
+            type: "spring",
+            bounce: 0.2,
+            duration: 3,
+        },
+    },
+};
 
 const RoadLine = (props: SVGProps<SVGSVGElement>) => {
     const isLaptop = useMediaQuery("(max-width: 1280px)");
-    const ref = useRef(null);
-
-    const { scrollYProgress } = useScroll({
-        target: ref,
-        offset: ["1 0.6", "0 0"],
-    });
-
     return (
-        <div ref={ref}>
+        <>
             {(!isLaptop || isLaptop === undefined) && (
                 <svg
                     {...props}
@@ -28,8 +34,10 @@ const RoadLine = (props: SVGProps<SVGSVGElement>) => {
                         d="M1171.17 2.80078H1228.54L1282 71.1539V125.185V162.201L1228.54 230.554H1182.21H1135.88H56.25L2 311.924V408.756L55.6667 485.762L115.167 485.801"
                         stroke="#71B7FF"
                         strokeWidth="4"
-                        pathLength="1"
-                        style={{ pathLength: scrollYProgress }}
+                        initial={"initialLaptop"}
+                        whileInView={"viewLaptop"}
+                        variants={cardVariants}
+                        viewport={{ once: true, amount: 0.2 }}
                     />
                 </svg>
             )}
@@ -49,12 +57,14 @@ const RoadLine = (props: SVGProps<SVGSVGElement>) => {
                         y2="80"
                         stroke="#71B7FF"
                         strokeWidth="6"
-                        pathLength="1"
-                        style={{ pathLength: scrollYProgress }}
+                        initial={"initialLaptop"}
+                        whileInView={"viewLaptop"}
+                        variants={cardVariants}
+                        viewport={{ once: true, amount: 0.5 }}
                     />
                 </svg>
             )}
-        </div>
+        </>
     );
 };
 
