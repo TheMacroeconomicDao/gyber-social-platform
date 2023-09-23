@@ -1,7 +1,7 @@
 "use client";
 import { useMediaQuery } from "@/shared/hooks/mediaQuery/useMediaQuery";
 import { SVGProps } from "react";
-import { easeInOut, motion, Variants } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 
 const cardVariants: Variants = {
     initialLaptop: {
