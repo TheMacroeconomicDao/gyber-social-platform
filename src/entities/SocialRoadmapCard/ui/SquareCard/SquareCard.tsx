@@ -1,5 +1,4 @@
 import cls from './SquareCard.module.scss';
-import {classNames} from "@/shared/lib/classNames/classNames";
 import {FC, ReactNode} from "react";
 interface SquareCardProps {
     children: ReactNode

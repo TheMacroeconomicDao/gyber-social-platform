@@ -18,7 +18,7 @@ function formatDate(date: string | undefined): string {
       date.substring(date.length - 4)
     );
   }
-  return "Date is uncertain";
+  return "date not specified";
 }
 
 export const EventCard = (props: EventCardProps) => {
