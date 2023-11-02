@@ -9,7 +9,7 @@ const data = [
         id: 2,
         avatarSrc: "/images/teams/Karina.jpg",
         fullName: "Karina Yanyshevskaya",
-        skills: "lead-dev of AiC division, AI-engineer"
+        skills: "Lead-dev of AiC division, AI-engineer"
     },
     {
         id: 3,
