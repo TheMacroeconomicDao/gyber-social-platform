@@ -7,7 +7,7 @@ const data = [
     },
     {
         id: 2,
-        avatarSrc: "/images/teams/karina.jpg",
+        avatarSrc: "/images/teams/Karina.jpg",
         fullName: "Karina Yanyshevskaya",
         skills: "lead-dev of AiC division, AI-engineer"
     },
