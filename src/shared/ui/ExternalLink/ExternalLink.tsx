@@ -8,6 +8,7 @@ export enum ThemeExternalLink {
   ORANGE = "orange",
   BLUE = "blue",
   GREEN = "green_blue",
+  FIRE = "fire"
 }
 
 interface ExternalLinkProps {

@@ -8,6 +8,7 @@ export enum ThemeButton {
   ORANGE = "orange",
   BLUE = "blue",
   GREEN = "green_blue",
+  FIRE = "fire"
 }
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {

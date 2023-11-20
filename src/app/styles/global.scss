@@ -83,3 +83,18 @@ h2 {
         line-height: 1.5;
     }
 }
+
+.show-counter {
+    display: flex;
+    align-items: center;
+    color: #fcfcfc;
+
+    .countdown {
+        line-height: 1.25rem;
+        padding: 0 0.75rem 0 0.75rem;
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
