@@ -4,6 +4,7 @@
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
+  
 }
 .numblock {
   display: flex;
@@ -18,4 +19,7 @@
     font-size: 14px;
     color: #4d7da9;
   }
+}
+.stopped {
+  color: #4d7da9;
 }

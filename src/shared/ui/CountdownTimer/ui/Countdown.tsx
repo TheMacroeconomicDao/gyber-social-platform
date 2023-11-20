@@ -2,7 +2,7 @@
 import CountdownTimer from "./Timer/CoundownTimer";
 import ProgressTimer from "./ProgressTimer/ProgressTimer";
 import {useCountdown} from "@/shared/ui/CountdownTimer/hooks/useCountdown";
-import {useEffect, useState} from "react";
+import {useEffect} from "react";
 import {NumericRange} from "@/shared/types/types";
 
 interface CountdownTimerProps {
@@ -36,6 +36,7 @@ const CountdownProgressTimer = (props: CountdownTimerProps) => {
     return (
         <>
             <CountdownTimer
+                stopped={timerStopped}
                 days={timer.days}
                 hours={timer.hours}
                 minutes={timer.minutes}

@@ -7,6 +7,7 @@ import {NavbarTablet} from "../Navbar";
 import ExternalLink, {ThemeExternalLink} from "@/shared/ui/ExternalLink/ExternalLink";
 import DownloadIcon from "@/shared/ui/SvgIcons/DownloadIcon/DownloadIcon";
 import Link from "next/link";
+import Documents from "@/widgets/Documents/ui/Documents";
 
 
 interface HeaderProps {
@@ -22,14 +23,7 @@ export const Header = ({className = ""}: HeaderProps) => {
             </Link>
 
             <div className={cls.btnGroup}>
-                <ExternalLink
-                    className={cls.isPdf}
-                    href="/documents/GYBER_White_paper_eng.pdf"
-                    target="_blank"
-                    theme={ThemeExternalLink.CLEAR}>
-                    <span>PDF</span>
-                    <DownloadIcon/>
-                </ExternalLink>
+                <Documents />
                 <Button theme={ThemeButton.ORANGE} disabled>
                     Dapp
                 </Button>

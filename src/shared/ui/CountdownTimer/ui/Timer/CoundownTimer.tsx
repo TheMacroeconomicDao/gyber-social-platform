@@ -1,18 +1,20 @@
 "use client"
 import cls from "./CountDownTimer.module.scss"
 import TimerUnit from "@/shared/ui/CountdownTimer/ui/Timer/TimerUnit";
+import {classNames} from "@/shared/lib/classNames/classNames";
 
 interface CountdownTimerProps {
     days: number;
     hours: number;
     minutes: number;
     seconds: number;
+    stopped?: boolean;
 }
 
-const CountdownTimer = ({days, hours, minutes, seconds}: CountdownTimerProps) => {
+const CountdownTimer = ({days, hours, minutes, seconds, stopped=true}: CountdownTimerProps) => {
 
     return (
-        <div className={cls.timerContainer}>
+        <div className={classNames(cls.timerContainer, {[cls.stopped]: stopped }, [])}>
             <TimerUnit
                 value={days > 0 ? days : 0}
                 label={"D"}/>
