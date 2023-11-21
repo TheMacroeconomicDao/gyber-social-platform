@@ -6,6 +6,7 @@ import {useEffect} from "react";
 import {NumericRange} from "@/shared/types/types";
 
 interface CountdownTimerProps {
+    isActive: boolean;
     isStopped: () => void;
     year: number;
     month: NumericRange<1, 12>;
@@ -16,6 +17,7 @@ interface CountdownTimerProps {
 
 const CountdownProgressTimer = (props: CountdownTimerProps) => {
     const {
+        isActive,
         isStopped,
         year,
         month,
@@ -29,13 +31,14 @@ const CountdownProgressTimer = (props: CountdownTimerProps) => {
     const {timer, timerStopped} = useCountdown(date)
 
     useEffect(() => {
-        if (timerStopped) {
+        if (isActive || timerStopped) {
             isStopped();
         }
-    }, [timerStopped, isStopped]);
+    }, [timerStopped, isStopped, isActive]);
     return (
         <>
             <CountdownTimer
+                isActive={isActive}
                 stopped={timerStopped}
                 days={timer.days}
                 hours={timer.hours}

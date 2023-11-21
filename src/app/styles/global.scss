@@ -50,6 +50,7 @@ body {
     align-items: center;
     color: var(--c-white);
     overflow-y: auto;
+    overflow-x: hidden;
     &::-webkit-scrollbar {
         width: 4px;
         background: #072b40;

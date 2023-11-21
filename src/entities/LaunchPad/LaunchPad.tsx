@@ -6,19 +6,20 @@ import {useState} from "react";
 import {Button, ThemeButton} from "@/shared/ui/Button/Button";
 import {CountdownProgressTimer} from "@/shared/ui/CountdownTimer";
 
+const TIMER_IS_ACTIVE = false;
 
 const endTime = {
     year: 2023,
     month: 11,
     day: 21,
-    hour: 2,
-    minutes: 31
+    hour: 16,
+    minutes: 19
 } as const;
 
 const LaunchPad = () => {
     const [timerIsStopped, setTimerIsStopped] = useState(false);
     const handleClick = () => {
-        window.open("https://google.com", "_blank")
+        window.open("https://discord.gg/amzvJ7UTsz", "_blank")
     }
     return (
         <div className={cls.bgWrapper}>
@@ -32,6 +33,7 @@ const LaunchPad = () => {
                     day={endTime.day}
                     hour={endTime.hour}
                     minutes={endTime.minutes}
+                    isActive={TIMER_IS_ACTIVE}
                     isStopped={() => setTimerIsStopped(true)}
                 />
                 <div className={cls.infoWrapper}>
@@ -46,7 +48,7 @@ const LaunchPad = () => {
                     </div>
                 </div>
                 <div className={cls.buttonWrapper}>
-                    <Button onClick={handleClick} theme={ThemeButton.FIRE} disabled={!timerIsStopped}>
+                    <Button onClick={handleClick} theme={ThemeButton.FIRE} disabled={!timerIsStopped && !TIMER_IS_ACTIVE}>
                         Join
                     </Button>
                 </div>

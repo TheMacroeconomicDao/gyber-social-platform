@@ -9,12 +9,13 @@ interface CountdownTimerProps {
     minutes: number;
     seconds: number;
     stopped?: boolean;
+    isActive: boolean;
 }
 
-const CountdownTimer = ({days, hours, minutes, seconds, stopped=true}: CountdownTimerProps) => {
+const CountdownTimer = ({days, hours, minutes, seconds, stopped=true, isActive}: CountdownTimerProps) => {
 
     return (
-        <div className={classNames(cls.timerContainer, {[cls.stopped]: stopped }, [])}>
+        <div className={classNames(cls.timerContainer, {[cls.stopped]: stopped || !isActive }, [])}>
             <TimerUnit
                 value={days > 0 ? days : 0}
                 label={"D"}/>
