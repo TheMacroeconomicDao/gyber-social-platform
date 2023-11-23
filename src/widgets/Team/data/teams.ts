@@ -25,7 +25,7 @@ const data = [
     },
     {
         id: 5,
-        avatarSrc: "/images/teams/Wisdom-Forbes.jpg",
+        avatarSrc: "/images/teams/placeholder.jpg",
         fullName: "Wisdom Forbes",
         skills: "CMO, Community Lead Manager"
     },
