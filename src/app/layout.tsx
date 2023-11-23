@@ -18,8 +18,23 @@ export const grape_nuts = Grape_Nuts({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://gyber.org'),
+  alternates: {
+    canonical: '/',
+  },
   title: 'Gybernaty Community',
   description: 'Gybernaty Community of advanced enthusiasts and developers',
+  openGraph: {
+    title: 'Gybernaty Community',
+    description: 'Gybernaty Community of advanced enthusiasts and developers',
+    url: 'https://gyber.org',
+    images: ['/images/teams/placeholder.jpg']
+  },
+  twitter: {
+    title: 'Gybernaty Community',
+    description: 'Gybernaty Community of advanced enthusiasts and developers',
+    images: ['/images/teams/placeholder.jpg']
+  },
 }
 
 export default function RootLayout({
