@@ -28,3 +28,12 @@
     padding: 0 20px;
   }
 }
+
+@media screen and (max-width: 490px) {
+  .wrapper {
+    .buttonWrapper {
+      padding: 40px 40px;
+      font-size: 18px;
+    }
+  }
+}

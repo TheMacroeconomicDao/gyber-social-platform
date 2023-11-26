@@ -90,7 +90,6 @@ const Documents = () => {
                 </motion.div>
             }
             <Button onClick={handleClick} theme={ThemeButton.CLEAR}>
-
                 <motion.span
                     className={cls.pdf}
                     initial={"visible"}

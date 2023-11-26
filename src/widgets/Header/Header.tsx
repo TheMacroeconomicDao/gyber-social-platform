@@ -4,8 +4,6 @@ import React from "react";
 import {Button, ThemeButton} from "@/shared/ui/Button/Button";
 import {Logo} from "@/shared/ui/Logo/Logo";
 import {NavbarTablet} from "../Navbar";
-import ExternalLink, {ThemeExternalLink} from "@/shared/ui/ExternalLink/ExternalLink";
-import DownloadIcon from "@/shared/ui/SvgIcons/DownloadIcon/DownloadIcon";
 import Link from "next/link";
 import Documents from "@/widgets/Documents/ui/Documents";
 
