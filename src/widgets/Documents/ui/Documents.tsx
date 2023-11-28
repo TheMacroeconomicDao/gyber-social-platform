@@ -72,7 +72,7 @@ const Documents = () => {
                     <motion.span variants={item}>
                         <ExternalLink
                             className={cls.pdf}
-                            href="/documents/pitch_deck.pdf"
+                            href="/documents/gyber_pitch_deck.pdf"
                             target="_blank"
                             theme={ThemeExternalLink.CLEAR}>
                             Pitch Deck
@@ -81,10 +81,10 @@ const Documents = () => {
                     <motion.span variants={item}>
                         <ExternalLink
                             className={cls.pdf}
-                            href="/documents/white_paper_eng.pdf"
+                            href="/documents/gyber_theory.pdf"
                             target="_blank"
                             theme={ThemeExternalLink.CLEAR}>
-                            Article
+                            Theory
                         </ExternalLink>
                     </motion.span>
                 </motion.div>
