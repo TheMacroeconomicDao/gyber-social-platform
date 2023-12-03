@@ -38,7 +38,7 @@ const LaunchPad = () => {
                 />
                 <div className={cls.infoWrapper}>
                     <div className={cls.infoLeft}>
-                        <h4>Quantity: 9B Gbr</h4>
+                        <h4>Quantity: 9T Gbr</h4>
                         <p>Start date: 16.12.2023</p>
                     </div>
                     <div className={cls.separator}></div>
