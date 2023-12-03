@@ -10,10 +10,10 @@ const TIMER_IS_ACTIVE = false;
 
 const endTime = {
     year: 2023,
-    month: 11,
-    day: 21,
-    hour: 16,
-    minutes: 19
+    month: 12,
+    day: 16,
+    hour: 0,
+    minutes: 0
 } as const;
 
 const LaunchPad = () => {
@@ -39,12 +39,12 @@ const LaunchPad = () => {
                 <div className={cls.infoWrapper}>
                     <div className={cls.infoLeft}>
                         <h4>Quantity: 9B Gbr</h4>
-                        <p>Start date: -- . -- . ----</p>
+                        <p>Start date: 16.12.2023</p>
                     </div>
                     <div className={cls.separator}></div>
                     <div className={cls.infoRight}>
                         <h4>Price: 0.00002286 <span>BNB</span></h4>
-                        <p>End date: -- . -- . ----</p>
+                        <p>End date: 30.12.2023</p>
                     </div>
                 </div>
                 <div className={cls.buttonWrapper}>
