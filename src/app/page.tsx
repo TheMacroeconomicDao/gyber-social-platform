@@ -1,208 +1,49 @@
-"use client";
-import { Header } from "widgets/header";
-import { Main } from "widgets/main";
-import { Roadmap } from "widgets/roadmap";
-import { Slider } from "widgets/slider";
-import RootLayout from "./layout";
-import { NButton } from "shared/ui/buttons/NButton";
-import { Team } from "widgets/team/ui";
-import { CardMember } from "entities/cardMember";
-import { useSlider } from "shared/models/store/store";
-import { NText } from "shared/ui/text/ui";
-import { LFooter } from "widgets/footers/LFooter";
+import {Slider} from "@/widgets/Slider/Slider";
+import {Substrate} from "@/shared/ui/Substrate/Substrate";
+import React from "react";
+import {Team} from "@/widgets/Team";
+import {JoinSection} from "@/widgets/JoinSection/JoinSection";
+import {PartnerSection} from "@/widgets/PartnerSection/PartnerSection";
 
-const roadmapList = [
-	[
-		[
-			"Разработка прототипа Gyber Social Platform ",
-			"Разработка смарт контрактов ERC20, ERC721, The Macro-Economic DAO ",
-			"Разработка Dapp The Macro-Economic DAO ",
-		],
-		[
-			"Seed раунд инвестирования",
-			"Открытие программ Social Bounty и Secure Bounty ",
-			"Тестирование основного кода платформы",
-		],
-		[
-			"PreSale",
-			"Разработка прототипа децентрализованного, мультиплатформенного, вычислительного кластера",
-			"Разработка прототипа Blockchain GiberNet",
-		],
-		[
-			"Работа над проектами участников эксперимента",
-			"Тестовые реализации проектов участников эксперимента",
-			"Релиз Giber Social Platform",
-		],
-	],
-	[
-		[
-			"Разработка прототипа Gyber Social Platform ",
-			"Разработка смарт контрактов ERC20, ERC721, The Macro-Economic DAO ",
-			"Разработка Dapp The Macro-Economic DAO ",
-		],
-		[
-			"Seed раунд инвестирования",
-			"Открытие программ Social Bounty и Secure Bounty ",
-			"Тестирование основного кода платформы",
-		],
-		[
-			"PreSale",
-			"Разработка прототипа децентрализованного, мультиплатформенного, вычислительного кластера",
-			"Разработка прототипа Blockchain GiberNet",
-		],
-		[
-			"Работа над проектами участников эксперимента",
-			"Тестовые реализации проектов участников эксперимента",
-			"Релиз Giber Social Platform",
-		],
-	],
-	[
-		[
-			"Разработка прототипа Gyber Social Platform ",
-			"Разработка смарт контрактов ERC20, ERC721, The Macro-Economic DAO ",
-			"Разработка Dapp The Macro-Economic DAO ",
-		],
-		[
-			"Seed раунд инвестирования",
-			"Открытие программ Social Bounty и Secure Bounty ",
-			"Тестирование основного кода платформы",
-		],
-		[
-			"PreSale",
-			"Разработка прототипа децентрализованного, мультиплатформенного, вычислительного кластера",
-			"Разработка прототипа Blockchain GiberNet",
-		],
-		[
-			"Работа над проектами участников эксперимента",
-			"Тестовые реализации проектов участников эксперимента",
-			"Релиз Giber Social Platform",
-		],
-	],
-];
+
+import type { Metadata } from 'next'
+ 
+export const metadata: Metadata = {
+  title: 'Welcome to Future | Gybernaty Community',
+  description: 'Gybernaty Community of advanced enthusiasts and developers',
+}
+
 
 export default function Home() {
-	const slide = useSlider((store) => store.slide);
+  return (
+      <>
+          <Slider
+              path={"/images/slides/gybernaty-slide.jpg"}
+              mobilePath={"/images/slides/gybernaty-mobile-slide.jpg"}
+              title={"Gybernaty Community of advanced enthusiasts and developers"}
+          />
+          <Substrate {...data} />
+          <Team />
+          <JoinSection/>
+          <PartnerSection>
+          Our projects realize a potential opportunity for partners and investors. 
+          We invite you to take advantage of our initiative and participate in the development of technologies 
+          important to society in the fields of discovery, social networks, distributed computing and artificial 
+          intelligence. Your participation in our community contributes to the development of 
+          innovative technologies that are used in various areas of life - from economics 
+          and finance to medicine and education. Together we can make a significant impact 
+          on the future of humanity and create a world where technology is used to achieve 
+          optimal results in all areas.
+          </PartnerSection>
+      </>
 
-	const getCurrentComponent = () => {
-		switch (slide) {
-			case 0:
-				return (
-					<div className="item">
-						<NText
-							title="Добро пожаловать в будущее"
-							subtitle="Уникальный эксперимент в области криптографии, компьютерной науки, социологии и экономики, который объединил всех участников для создания Кибер-социальной корпорации. Мы стремимся создать механизм прямого социально-экономического взаимодействия, принадлежащий всем участникам и позволяющий концентрировать общественные и финансовые ресурсы для реализации самых масштабных, глобальных проектов и децентрализованного управления ими по средствам блокчейн."
-						/>
-						<Team />
+  )
+}
+const data = {
+    title: "Welcome to future",
+    subtitle: "Revolution in corporate development",
+    text: `An open community where ideas become reality. Here you will find like-minded people who can help you realize your projects and unlock your potential. This is an association of people who are passionate about technology and striving for new discoveries! We create large-scale open source projects, research current technologies and help each other realize their ideas. Here you can find a platform for research, development and exchange of experience in completely different areas of the IT industry. Join us to become a part of the movement. Here you will find not only a team that will help you in the implementation of projects, but also real friends with whom you can share your ideas and successes.
 
-						<NText
-							title=" "
-							subtitle="Мы ищем талантливых и мотивированных людей, готовых участвовать в исследованиях и разработке проектов на базе открытых технологий и программного обеспечения. Для того чтобы присоединиться к нашему сообществу и принять участие в его деятельности, необходимо пройти через стартовый шлюз, опишите свои навыки, опыт работы и владение технологиями, которые могут быть полезны для развития нашего сообщества."
-							button="Join"
-						/>
-
-						<div style={{ marginBottom: "80px" }}></div>
-
-						<NText
-							title="Партнеры"
-							subtitle="Уникальный эксперимент в области криптографии, компьютерной науки, социологии и экономики, который объединил всех участников для создания Кибер-социальной корпорации. Мы стремимся создать механизм прямого социально-экономического взаимодействия, принадлежащий всем участникам и позволяющий концентрировать общественные и финансовые ресурсы для реализации самых масштабных, глобальных проектов и децентрализованного управления ими по средствам блокчейн. "
-							button="Стать нашим партнером"
-						/>
-					</div>
-				);
-
-			case 1:
-				return (
-					<div className="item">
-						<NText
-							title="Миллионы - миллиардеры"
-							subtitle="Уникальный эксперимент в области криптографии, компьютерной науки, социологии и экономики, который объединил всех участников для создания Кибер-социальной корпорации. Мы стремимся создать механизм прямого социально-экономического взаимодействия, принадлежащий всем участникам и позволяющий концентрировать общественные и финансовые ресурсы для реализации самых масштабных, глобальных проектов и децентрализованного управления ими по средствам блокчейн."
-							button="Live Paper"
-						/>
-						<NText
-							title="The Macro-Economic DAO"
-							subtitle="Экосистема DAO представляет собой уникальную концепцию организации проектов и идей на базе децентрализованных автономных организаций. Каждое DAO в экосистеме предполагает реализацию конкретного проекта, предприятия, мероприятия, принятие решения или какого-либо еще общественного действия, предложенного сообществом участников эксперимента и разработчиками."
-						/>
-						<Roadmap
-							title="Technical roadmap"
-							roadmapList={roadmapList}
-						/>
-
-						<NText
-							title="Партнеры"
-							subtitle="Уникальный эксперимент в области криптографии, компьютерной науки, социологии и экономики, который объединил всех участников для создания Кибер-социальной корпорации. Мы стремимся создать механизм прямого социально-экономического взаимодействия, принадлежащий всем участникам и позволяющий концентрировать общественные и финансовые ресурсы для реализации самых масштабных, глобальных проектов и децентрализованного управления ими по средствам блокчейн. "
-							button="Стать нашим партнером"
-						/>
-					</div>
-				);
-
-			case 2:
-				return (
-					<div className="item">
-						<NText
-							title="Миллионы - миллиардеры"
-							subtitle="Уникальный эксперимент в области криптографии, компьютерной науки, социологии и экономики, который объединил всех участников для создания Кибер-социальной корпорации. Мы стремимся создать механизм прямого социально-экономического взаимодействия, принадлежащий всем участникам и позволяющий концентрировать общественные и финансовые ресурсы для реализации самых масштабных, глобальных проектов и децентрализованного управления ими по средствам блокчейн."
-							button="Live Paper"
-						/>
-
-						<NText
-							title="Партнеры"
-							subtitle="Уникальный эксперимент в области криптографии, компьютерной науки, социологии и экономики, который объединил всех участников для создания Кибер-социальной корпорации. Мы стремимся создать механизм прямого социально-экономического взаимодействия, принадлежащий всем участникам и позволяющий концентрировать общественные и финансовые ресурсы для реализации самых масштабных, глобальных проектов и децентрализованного управления ими по средствам блокчейн. "
-							button="Стать нашим партнером"
-						/>
-					</div>
-				);
-
-			case 3:
-				return (
-					<div className="item">
-						<NText
-							title="Будущее ИИ: исследование, раскрывающее новые горизонты"
-							subtitle="AiC - это открытое сообщество, которое объединяет людей, заинтересованных в разработке и использовании моделей искусственного интеллекта в блокчейн среде. Используя DAO-контракты, мы обеспечиваем прозрачность, безопасность и открытость процесса разработки и использования моделей ИИ. В AiC вы можете обмениваться знаниями, опытом и создавать модели с минимальными затратами. Мы строим платформу для создания моделей ИИ в коммерческих и некоммерческих сферах, таких как медицина, финансы, транспорт и многие другие. Присоединяйтесь к нам и станьте частью революции в разработке и использовании искусственного интеллекта!"
-						/>
-						<NText
-							title="Chat GPT"
-							subtitle="Мы разработали для вас бесплатную модель GPT ...."
-							button="Try it"
-						/>
-						<Roadmap title="Ai roadmap" roadmapList={roadmapList} />
-
-						<NText
-							title="Партнеры"
-							subtitle="Уникальный эксперимент в области криптографии, компьютерной науки, социологии и экономики, который объединил всех участников для создания Кибер-социальной корпорации. Мы стремимся создать механизм прямого социально-экономического взаимодействия, принадлежащий всем участникам и позволяющий концентрировать общественные и финансовые ресурсы для реализации самых масштабных, глобальных проектов и децентрализованного управления ими по средствам блокчейн. "
-							button="Стать нашим партнером"
-						/>
-					</div>
-				);
-			case 4:
-				return (
-					<div className="item">
-						<NText
-							title="Будущее ИИ: исследование, раскрывающее новые горизонты"
-							subtitle="AiC - это открытое сообщество, которое объединяет людей, заинтересованных в разработке и использовании моделей искусственного интеллекта в блокчейн среде. Используя DAO-контракты, мы обеспечиваем прозрачность, безопасность и открытость процесса разработки и использования моделей ИИ. В AiC вы можете обмениваться знаниями, опытом и создавать модели с минимальными затратами. Мы строим платформу для создания моделей ИИ в коммерческих и некоммерческих сферах, таких как медицина, финансы, транспорт и многие другие. Присоединяйтесь к нам и станьте частью революции в разработке и использовании искусственного интеллекта!"
-							button="Купить билет"
-						/>
-
-						<NText
-							title="Партнеры"
-							subtitle="Уникальный эксперимент в области криптографии, компьютерной науки, социологии и экономики, который объединил всех участников для создания Кибер-социальной корпорации. Мы стремимся создать механизм прямого социально-экономического взаимодействия, принадлежащий всем участникам и позволяющий концентрировать общественные и финансовые ресурсы для реализации самых масштабных, глобальных проектов и децентрализованного управления ими по средствам блокчейн. "
-							button="Стать нашим партнером"
-						/>
-					</div>
-				);
-
-			default:
-				break;
-		}
-	};
-
-	return (
-		<div className="page">
-			<Header />
-			<Main>
-				<Slider />
-				{getCurrentComponent()}
-			</Main>
-			<LFooter/>
-		</div>
-	);
+    An open community where ideas become reality. Here you will find like-minded people who can help you realize your projects and unlock your potential. This is an association of people who are passionate about technology and striving for new discoveries! We create large-scale open source projects, research current technologies and help each other realize their ideas. Here you can find a platform for research, development and exchange of experience in completely different areas of the IT industry. Join us to become a part of the movement. Here you will find not only a team that will help you in the implementation of projects, but also real friends with whom you can share your ideas and successes.
+    `
 }

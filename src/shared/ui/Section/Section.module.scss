@@ -1,0 +1,15 @@
+.Section {
+  width: 100%;
+  margin-top: 50px;
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.image {
+  object-fit: cover;
+  object-position: center;
+  z-index: -1;
+  opacity: .8;
+}
