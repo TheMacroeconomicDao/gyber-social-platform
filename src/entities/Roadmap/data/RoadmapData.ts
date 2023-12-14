@@ -10,16 +10,16 @@ export const data = [
           items: [
             {
               title: "Gyber Social Platform prototype development",
-              status: IconStatus.DONE,
+              status: IconStatus.PROGRESS,
             },
             {
               title:
                 "Development of smart contracts ERC20, ERC721, The Macroeconomic DAO",
-              status: IconStatus.DONE,
+              status: IconStatus.PROGRESS,
             },
             {
               title: "Development Dapp The Macroeconomic DAO",
-              status: IconStatus.DONE,
+              status: IconStatus.PROGRESS,
             },
           ],
         },
