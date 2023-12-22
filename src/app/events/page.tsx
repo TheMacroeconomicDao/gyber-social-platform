@@ -19,7 +19,6 @@ const Events = () => {
                 title={"Welcome to Gyber Reality"}
             />
             <Substrate {...data} scrollable={false} />
-
             <EventsSection />
 
             <PartnerSection>
