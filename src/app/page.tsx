@@ -19,7 +19,7 @@ export default function Home() {
       <>
           <Slider
               path={"/images/slides/new-gybernaty-slide.jpg"}
-              mobilePath={"/images/slides/new-gybernaty-mobile-slide.jpg"}
+              mobilePath={"/images/slides/new-gybernaty-mobile-2-slide.jpg"}
               title={"Gybernaty Community of advanced enthusiasts and developers"}
           />
           <Substrate {...data} />
