@@ -85,6 +85,18 @@ const data = [
         fullName: "Frank Zulu",
         skills: "Marketing officer"
     },
+    {
+        id: 15,
+        avatarSrc: "/images/teams/IrinaCheckalina.jpg",
+        fullName: "Irina Chikalina",
+        skills: "Frontend Developer"
+    },
+    {
+        id: 16,
+        avatarSrc: "/images/teams/RoyHensley.jpg",
+        fullName: "Roy Hensley",
+        skills: "Web3 Developer"
+    },
     
 ]
 
