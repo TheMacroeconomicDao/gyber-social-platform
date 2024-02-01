@@ -19,6 +19,7 @@ export const Team = ({ className = "" }: TeamProps) => {
             avatarSrc={el.avatarSrc}
             fullName={el.fullName}
             skills={el.skills}
+            link={el.link}
           />
         ))}
       </div>

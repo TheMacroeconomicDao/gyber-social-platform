@@ -9,6 +9,7 @@ interface CardMemberProps {
   avatarSrc?: string;
   fullName?: string;
   skills?: string;
+  link?: string;
 }
 
 export const CardMember = (props: CardMemberProps) => {
@@ -17,6 +18,7 @@ export const CardMember = (props: CardMemberProps) => {
     avatarSrc = "/images/teams/member-placeholder.png",
     fullName = "Otto Kustler",
     skills = "Python/C/Dart/TypeScript developer",
+    link = "#",
   } = props;
   return (
     <motion.div 
@@ -27,11 +29,13 @@ export const CardMember = (props: CardMemberProps) => {
     
     >
       <div className={cls.avatar}>
-        <Image 
-        fill={true} 
-        src={avatarSrc} 
-        alt={fullName} sizes="(max-width: 768px) 100vw"
-        />
+        <a href={link}>
+          <Image
+            fill={true}
+            src={avatarSrc}
+            alt={fullName} sizes="(max-width: 768px) 100vw"
+          />
+        </a>
       </div>
       <h3>{fullName}</h3>
       <p>{skills}</p>

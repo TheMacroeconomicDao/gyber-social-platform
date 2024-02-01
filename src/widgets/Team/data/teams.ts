@@ -3,13 +3,15 @@ const data = [
         id: 1,
         avatarSrc: "/images/teams/Giber.jpg",
         fullName: "Lll CIlician",
-        skills: "Founder, Architector, CEO of GybernatyCommunity"
+        skills: "Founder, Architector, CEO of GybernatyCommunity",
+        link: "https://t.me/themacroeconomicdao"
     },
     {
         id: 2,
         avatarSrc: "/images/teams/Karina.jpg",
         fullName: "Karina Yanyshevskaya",
-        skills: "Lead-dev of AiC division, AI-engineer"
+        skills: "Lead-dev of AiC division, AI-engineer",
+        link: "https://t.me/fanoti"
     },
     {
         id: 3,
@@ -27,7 +29,8 @@ const data = [
         id: 5,
         avatarSrc: "/images/teams/wisdom.jpg",
         fullName: "Wisdom Forbes",
-        skills: "CMO, Community Lead Manager"
+        skills: "CMO, Community Lead Manager",
+        link: "https://t.me/ProfWisdomforbes"
     },
     {
         id: 6,
@@ -51,7 +54,8 @@ const data = [
         id: 9,
         avatarSrc: "/images/teams/Artem-Smirnov.jpg",
         fullName: "Artem Smirnov",
-        skills: "Architector, Lead Frontend Developer"
+        skills: "Architector, Lead Frontend Developer",
+        link: "https://t.me/webency"
     },
     {
         id:10,
@@ -87,15 +91,22 @@ const data = [
     },
     {
         id: 15,
-        avatarSrc: "/images/teams/IrinaCheckalina.jpg",
-        fullName: "Irina Chikalina",
-        skills: "Frontend Developer"
+        avatarSrc: "/images/teams/IrinaChekalina.jpg",
+        fullName: "Irina Chekalina",
+        skills: "Frontend Developer",
+        link: "https://t.me/irina_may_be"
     },
     {
         id: 16,
         avatarSrc: "/images/teams/RoyHensley.jpg",
         fullName: "Roy Hensley",
         skills: "Web3 Developer"
+    },
+    {
+        id: 17,
+        avatarSrc: "/images/teams/ChimdaluNnenne.jpg",
+        fullName: "Chimdalu Nnenne (Fantasy)",
+        skills: "Content Marketer/Writer"
     },
     
 ]
