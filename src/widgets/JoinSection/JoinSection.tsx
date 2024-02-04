@@ -54,7 +54,7 @@ export const JoinSection = ({ className = "" }: JoinUsBlockProps) => {
                     </motion.p>
                     <div className={cls.buttonWrapper}>
                         <ExternalLink
-                            href="https://discord.gg/amzvJ7UTsz"
+                            href="https://t.me/GybernatyCommunity"
                             theme={ThemeExternalLink.BLUE}
                             target="_blank"
                         >
