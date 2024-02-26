@@ -98,12 +98,6 @@ const data = [
     },
     {
         id: 16,
-        avatarSrc: "/images/teams/RoyHensley.jpg",
-        fullName: "Roy Hensley",
-        skills: "Web3 Developer"
-    },
-    {
-        id: 17,
         avatarSrc: "/images/teams/ChimdaluNnenne.jpg",
         fullName: "Chimdalu Nnenne (Fantasy)",
         skills: "Content Marketer/Writer"
