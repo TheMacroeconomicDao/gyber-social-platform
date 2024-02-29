@@ -18,5 +18,5 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          port: 2415
+          port: ${{ secrets.PORT}}
           script: |
