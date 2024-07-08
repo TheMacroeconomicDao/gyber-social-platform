@@ -14,7 +14,7 @@ const TicketOffering = () => {
             <Slider
                 path={"/images/slides/gyber-social-platform-slide.jpg"}
                 mobilePath={"/images/slides/gyber-social-platform-mobile-slide.jpg"}
-                title={"Community Coin Offering"}
+                title={"Community Projects"}
             />
             <LaunchPad />
             <PartnerSection>

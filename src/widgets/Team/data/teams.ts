@@ -102,6 +102,12 @@ const data = [
         fullName: "Chimdalu Nnenne (Fantasy)",
         skills: "Content Marketer/Writer"
     },
+    {
+        id: 17,
+        avatarSrc: "/images/teams/Kamran.jpg",
+        fullName: "Kamran Pulatov",
+        skills: "Backend Developer"
+    },
     
 ]
 

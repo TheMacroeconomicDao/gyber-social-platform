@@ -5,13 +5,14 @@ import LogoGemPad from "./LogoGempad";
 import {useState} from "react";
 import {Button, ThemeButton} from "@/shared/ui/Button/Button";
 import {CountdownProgressTimer} from "@/shared/ui/CountdownTimer";
+import LogoPowerSwap from "./LogoPowerSwap";
 
 const TIMER_IS_ACTIVE = false;
 
 const endTime = {
     year: 2024,
-    month: 5,
-    day: 1,
+    month: 8,
+    day: 15,
     hour: 0,
     minutes: 0
 } as const;
@@ -23,10 +24,10 @@ const LaunchPad = () => {
     }
     return (
         <div className={cls.bgWrapper}>
-            <h2>Launch Pad</h2>
-            <h3>For the first time, the GBR token will be offered to a wide range of investors through the Launch Pad platforms.</h3>
+            <h2>Launch List</h2>
+            <h3>Community projects information before going public</h3>
             <div className={cls.timeCard}>
-                <LogoGemPad />
+                <LogoPowerSwap/>
                 <CountdownProgressTimer
                     year={endTime.year}
                     month={endTime.month}
@@ -38,13 +39,13 @@ const LaunchPad = () => {
                 />
                 <div className={cls.infoWrapper}>
                     <div className={cls.infoLeft}>
-                        <h4>Quantity: 9T Gbr</h4>
-                        <p>Start date: 01.05.2024</p>
+                        <h4>Quantity: --.--- Gbr</h4>
+                        <p>Start date: --.--.----</p>
                     </div>
                     <div className={cls.separator}></div>
                     <div className={cls.infoRight}>
-                        <h4>Price: 0.00002286 <span>BNB</span></h4>
-                        <p>End date: 20.05.2024</p>
+                        <h4>Price: --.---- <span>BNB</span></h4>
+                        <p>End date: --.--.----</p>
                     </div>
                 </div>
                 <div className={cls.buttonWrapper}>

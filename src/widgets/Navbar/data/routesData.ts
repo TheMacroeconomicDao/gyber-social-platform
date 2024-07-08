@@ -5,7 +5,7 @@ const navbarItems = [
   { title: "Gyber Social Platform", link: "/gyber-social-platform" },
   { title: "AIC", link: "/aic" },
   { title: "Events", link: "/events" },
-  { title: "Coin Offering", link: "/offering" },
+  { title: "Projects", link: "/offering" },
 ];
 
 export default navbarItems;
