@@ -18,7 +18,7 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{ secrets.PORT }}
           command: |
-              cd ~/trycicd
+              cd ~/gyber-social-platform
               eval `ssh-agent -s`
               ssh-add ~/.ssh/id_rsa
               git pull
