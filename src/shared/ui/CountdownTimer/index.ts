@@ -1,5 +1,5 @@
 import CountdownTimer from './ui/Timer/CoundownTimer'
-import ProgressTimer from "./ui/ProgressTimer/ProgressTimer";
+import ProgressBar from "@/shared/ui/CountdownTimer/ui/ProgressBar/ProgressBar";
 import CountdownProgressTimer from "./ui/Countdown";
 
-export {CountdownTimer, ProgressTimer, CountdownProgressTimer}
+export {CountdownTimer, ProgressBar, CountdownProgressTimer}

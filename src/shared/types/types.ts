@@ -7,3 +7,11 @@ export type NumericRange<
 > = ARR['length'] extends END
     ? ACC | START | END
     : NumericRange<START, END, [...ARR, 1], ARR[START] extends undefined ? ACC : ACC | ARR['length']>
+
+export interface Time {
+    year: number;
+    month: NumericRange<1, 12>;
+    day: NumericRange<0, 31>;
+    hour: NumericRange<0, 23>
+    minutes: NumericRange<0, 59>;
+}
