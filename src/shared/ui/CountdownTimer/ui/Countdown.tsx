@@ -3,18 +3,15 @@ import CountdownTimer from "./Timer/CoundownTimer";
 import ProgressBar from "@/shared/ui/CountdownTimer/ui/ProgressBar/ProgressBar";
 import {useCountdown} from "@/shared/ui/CountdownTimer/hooks/useCountdown";
 import {useEffect} from "react";
-import {NumericRange, Time} from "@/shared/types/types";
+import {NumericRange, Time, TimerValues} from "@/shared/types/types";
 
 interface CountdownTimerProps {
+    timer: TimerValues,
     startDate: Time,
     endDate: Time,
     isActive: boolean;
     isStopped: () => void;
-    year: number;
-    month: NumericRange<1, 12>;
-    day: NumericRange<0, 31>;
-    hour?: NumericRange<0, 23>
-    minutes?: NumericRange<0, 59>;
+
 }
 
 const CountdownProgressTimer = (props: CountdownTimerProps) => {
@@ -39,15 +36,12 @@ const CountdownProgressTimer = (props: CountdownTimerProps) => {
             <CountdownTimer
                 isActive={isActive}
                 stopped={timerStopped}
-                days={timer.days}
-                hours={timer.hours}
-                minutes={timer.minutes}
-                seconds={timer.seconds} />
+                timer={timer}
+            />
             <ProgressBar
-                initDays={endDate.day}
-                days={timer.days}
-                hours={timer.hours}
-                minutes={timer.minutes}
+                startDate={startDate}
+                endDate={endDate}
+                timer={timer}
                 isStopped={timerStopped} />
         </>
     )

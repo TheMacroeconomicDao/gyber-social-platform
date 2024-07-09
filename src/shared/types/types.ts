@@ -15,3 +15,9 @@ export interface Time {
     hour: NumericRange<0, 23>
     minutes: NumericRange<0, 59>;
 }
+export type TimerValues = {
+    days: number;
+    hours: number;
+    minutes: number;
+    seconds: number;
+}

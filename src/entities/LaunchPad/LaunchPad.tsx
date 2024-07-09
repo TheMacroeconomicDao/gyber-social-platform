@@ -22,7 +22,7 @@ const startDate = {
 const endDate = {
     year: 2024,
     month: 8,
-    day: 15,
+    day: 1,
     hour: 0,
     minutes: 0
 } as const;
@@ -56,11 +56,6 @@ const LaunchPad = () => {
                 <CountdownProgressTimer
                     startDate={startDate}
                     endDate={endDate}
-                    year={endDate.year}
-                    month={endDate.month}
-                    day={endDate.day}
-                    hour={endDate.hour}
-                    minutes={endDate.minutes}
                     isActive={TIMER_IS_ACTIVE}
                     isStopped={() => setTimerIsStopped(true)}
                 />
