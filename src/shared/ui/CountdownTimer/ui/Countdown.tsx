@@ -1,33 +1,29 @@
 'use client'
 import CountdownTimer from "./Timer/CoundownTimer";
-import ProgressTimer from "./ProgressTimer/ProgressTimer";
+import ProgressBar from "@/shared/ui/CountdownTimer/ui/ProgressBar/ProgressBar";
 import {useCountdown} from "@/shared/ui/CountdownTimer/hooks/useCountdown";
 import {useEffect} from "react";
-import {NumericRange} from "@/shared/types/types";
+import {NumericRange, Time, TimerValues} from "@/shared/types/types";
 
 interface CountdownTimerProps {
+    timer: TimerValues,
+    startDate: Time,
+    endDate: Time,
     isActive: boolean;
     isStopped: () => void;
-    year: number;
-    month: NumericRange<1, 12>;
-    day: NumericRange<0, 31>;
-    hour?: NumericRange<0, 23>
-    minutes?: NumericRange<0, 59>;
+
 }
 
 const CountdownProgressTimer = (props: CountdownTimerProps) => {
     const {
+        endDate,
+        startDate,
         isActive,
         isStopped,
-        year,
-        month,
-        day,
-        hour = 0,
-        minutes = 0
     } = props;
 
     const handle = (value: number) => (value < 10 ? "0" + value : value);
-    const date = `${handle(year)}-${handle(month)}-${handle(day)}T${handle(hour)}:${handle(minutes)}:00`
+    const date = `${handle(endDate.year)}-${handle(endDate.month)}-${handle(endDate.day)}T${handle(endDate.hour)}:${handle(endDate.minutes)}:00`
     const {timer, timerStopped} = useCountdown(date)
 
     useEffect(() => {
@@ -40,15 +36,12 @@ const CountdownProgressTimer = (props: CountdownTimerProps) => {
             <CountdownTimer
                 isActive={isActive}
                 stopped={timerStopped}
-                days={timer.days}
-                hours={timer.hours}
-                minutes={timer.minutes}
-                seconds={timer.seconds} />
-            <ProgressTimer
-                initDays={day}
-                days={timer.days}
-                hours={timer.hours}
-                minutes={timer.minutes}
+                timer={timer}
+            />
+            <ProgressBar
+                startDate={startDate}
+                endDate={endDate}
+                timer={timer}
                 isStopped={timerStopped} />
         </>
     )
