@@ -63,7 +63,7 @@ const Documents = () => {
                     <motion.span variants={item}>
                         <ExternalLink
                             className={cls.pdf}
-                            href="/documents/gyber_white_paper_v2.pdf"
+                            href="https://docs.gyber.org"
                             target="_blank"
                             theme={ThemeExternalLink.CLEAR}>
                             White Paper
@@ -76,15 +76,6 @@ const Documents = () => {
                             target="_blank"
                             theme={ThemeExternalLink.CLEAR}>
                             Pitch Deck
-                        </ExternalLink>
-                    </motion.span>
-                    <motion.span variants={item}>
-                        <ExternalLink
-                            className={cls.pdf}
-                            href="/documents/gyber_theory.pdf"
-                            target="_blank"
-                            theme={ThemeExternalLink.CLEAR}>
-                            Theory
                         </ExternalLink>
                     </motion.span>
                 </motion.div>
