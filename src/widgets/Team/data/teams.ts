@@ -26,29 +26,10 @@ const data = [
     skills: "Head Designer, Community Manager",
   },
   {
-    id: 5,
-    avatarSrc: "/images/teams/wisdom.jpg",
-    fullName: "Wisdom Forbes",
-    skills: "CMO, Community Lead Manager",
-    link: "https://t.me/ProfWisdomforbes",
-  },
-  {
     id: 7,
     avatarSrc: "/images/teams/Novikov-Egor.jpg",
     fullName: "Novikov Egor",
     skills: "Lead Frontend Developer, Web Designer",
-  },
-  {
-    id: 8,
-    avatarSrc: "/images/teams/Queen-Meries.jpg",
-    fullName: "Queen Meries",
-    skills: "PR and Community Manager",
-  },
-  {
-    id: 9,
-    avatarSrc: "/images/teams/Young-Charles.jpg",
-    fullName: "Young Charles",
-    skills: "Media Manager",
   },
   {
     id: 10,
@@ -60,7 +41,7 @@ const data = [
     id: 11,
     avatarSrc: "/images/teams/Artem-Smirnov.jpg",
     fullName: "Artem Smirnov",
-    skills: "Architector, Lead Frontend Developer",
+    skills: "Architector, Fullstack Developer",
     link: "https://t.me/webency",
   },
   {
