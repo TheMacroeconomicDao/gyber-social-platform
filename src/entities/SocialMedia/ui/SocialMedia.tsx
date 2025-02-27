@@ -12,18 +12,13 @@ export const SocialMedia = ({ className = "" }: SocialMediaProps) => {
   const icons = [
     {
       path: "/images/icons/github-icon.svg",
-      link: "https://github.com/OpenDevCommune",
+      link: "https://github.com/GyberExperiment",
       title: "github",
     },
     {
       path: "/images/icons/telegram-icon.svg",
-      link: "https://t.me/+ts6hNf21bwU5N2Uy",
+      link: "https://t.me/GybernatyCommunity",
       title: "telegram",
-    },
-    {
-      path: "/images/icons/discord-icon.svg",
-      link: "https://discord.gg/amzvJ7UTsz",
-      title: "discord",
     },
     {
       path: "/images/icons/twitter-icon.svg",
