@@ -21,6 +21,9 @@
   max-width: 750px;
   display: flex;
   align-items: center;
+  h1{
+    color: #E8C1B0;
+  }
 }
 @media screen and (max-width: 760px) {
   .sliderTitle {
@@ -38,6 +41,7 @@
   .sliderTitle {
     h1 {
       font-size: 1.75rem;
+      font-weight: 400;
     }
   }
 }
