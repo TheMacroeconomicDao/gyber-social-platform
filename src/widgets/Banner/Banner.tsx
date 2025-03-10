@@ -7,8 +7,8 @@ export const Banner = () => {
     <div className={cls.Banner}>
       <Image
         src={"/images/slides/test-banner2.png"}
-        width={1600}
-        height={500}
+        width={3000}
+        height={1000}
         alt="banner"
         className={cls.BannerImage}
       />
