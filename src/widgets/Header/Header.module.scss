@@ -58,5 +58,11 @@
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
+    .btnGroup{
+      button{
+        max-width: 135px;
+        width: 100%;
+      }
+    }
   }
 }
