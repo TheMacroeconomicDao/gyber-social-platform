@@ -15,6 +15,10 @@
   max-width: 1200px;
   padding: 50px 100px;
 
+  @media screen and (max-width: 900px) {
+  
+  }
+
   .text_box {
     font-size: 16px;
     font-weight: 300;
@@ -58,6 +62,8 @@
 @media screen and (max-width: 1200px) {
   .Substrate {
     padding: 40px;
+    margin: 50px 32px 0 32px;
+    width: auto;
 
     .scroll {
       padding: 0 30px 0 0;
@@ -66,7 +72,7 @@
 }
 @media screen and (max-width: 576px) {
   .Substrate {
-    margin-top: 0;
+    margin: 50px 16px 0 16px;
     padding: 50px 20px 50px 30px;
 
     .scroll {

@@ -9,11 +9,14 @@
     display: flex;
     gap: 2rem;
   }
-
 }
 
 .bgGradient {
-  background: radial-gradient(circle, rgba(0,81,155,0.7) 0%, rgba(0,0,0,0) 100%);
+  background: radial-gradient(
+    circle,
+    rgba(0, 81, 155, 1) 0%,
+    rgba(0, 0, 0, 0) 70%
+  );
   width: 70vw;
   height: 70vh;
   border-radius: 50%;
@@ -21,6 +24,10 @@
   z-index: -2;
   top: -22%;
   right: -8%;
+
+  @media screen and (max-width: 900px) {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 490px) {

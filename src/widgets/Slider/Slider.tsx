@@ -1,7 +1,6 @@
 "use client";
 import cls from "./Slider.module.scss";
 import { classNames } from "@/shared/lib/classNames/classNames";
-import Image from "next/image";
 import SlideImage from "./SlideImage";
 import { motion, AnimatePresence } from "framer-motion";
 
