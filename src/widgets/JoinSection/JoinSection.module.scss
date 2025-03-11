@@ -1,6 +1,13 @@
 .section {
   display: block;
-
+  .line_container{
+    width: 100%;
+    > svg{
+      position: absolute;
+      width: 100vw;
+      height: 0.5vw;
+    }
+  }
   .buttonWrapper {
     padding: 40px 46px;
     border-radius: 20px;

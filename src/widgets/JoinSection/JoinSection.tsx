@@ -16,7 +16,7 @@ interface JoinUsBlockProps {
 export const JoinSection = ({ className = "" }: JoinUsBlockProps) => {
     return (
         <Section className={cls.section}>
-            <div>
+            <div className={cls.line_container}>
                 <Line />
                 <div className={cls.buttonWrapper}>
                     <ExternalLink
