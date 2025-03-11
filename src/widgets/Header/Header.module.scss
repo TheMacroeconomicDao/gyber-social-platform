@@ -5,6 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
   .btnGroup {
     display: flex;
     gap: 2rem;
@@ -17,13 +18,13 @@
     rgba(0, 81, 155, 1) 0%,
     rgba(0, 0, 0, 0) 70%
   );
-  width: 70vw;
-  height: 70vh;
+  width: 1000px;
+  height: 1000px;
   border-radius: 50%;
   position: absolute;
   z-index: -2;
-  top: -22%;
-  right: -8%;
+  top: -700px;
+  right: -300px;
 
   @media screen and (max-width: 900px) {
     display: none;
