@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import ExternalLink, {
     ThemeExternalLink,
 } from "@/shared/ui/ExternalLink/ExternalLink";
+import { Line } from "@/shared/ui/Line/Line";
 
 interface JoinUsBlockProps {
     className?: string;
@@ -14,7 +15,19 @@ interface JoinUsBlockProps {
 
 export const JoinSection = ({ className = "" }: JoinUsBlockProps) => {
     return (
-        <Section background={ThemeBackgroundSection.FIRST}>
+        <Section className={cls.section}>
+            <div>
+                <Line />
+                <div className={cls.buttonWrapper}>
+                    <ExternalLink
+                        href="https://t.me/GybernatyCommunity"
+                        theme={ThemeExternalLink.BLUE}
+                        target="_blank"
+                    >
+                        Join
+                    </ExternalLink>
+                </div>
+            </div>
             <Container>
                 <div className={cls.wrapper}>
                     <motion.p
@@ -52,15 +65,6 @@ export const JoinSection = ({ className = "" }: JoinUsBlockProps) => {
                         Together, let&#39;s embark on a journey of exploration
                         and transformation.
                     </motion.p>
-                    <div className={cls.buttonWrapper}>
-                        <ExternalLink
-                            href="https://t.me/GybernatyCommunity"
-                            theme={ThemeExternalLink.BLUE}
-                            target="_blank"
-                        >
-                            Join
-                        </ExternalLink>
-                    </div>
                 </div>
             </Container>
         </Section>
