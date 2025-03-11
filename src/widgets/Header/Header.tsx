@@ -16,13 +16,14 @@ interface HeaderProps {
 export const Header = ({className = ""}: HeaderProps) => {
     return (
         <div className={classNames(cls.Header, {}, [className])}>
+            <div className={cls.bgGradient} />
             <Link href={'/'}>
                 <Logo>Gyber</Logo>
             </Link>
 
             <div className={cls.btnGroup}>
                 <Documents />
-                <Button theme={ThemeButton.ORANGE} disabled>
+                <Button theme={ThemeButton.ORANGE} disabled={false}>
                     Dapp
                 </Button>
                 <NavbarTablet/>

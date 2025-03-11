@@ -7,20 +7,20 @@ import { PartnerSection } from "@/widgets/PartnerSection/PartnerSection";
 
 import type { Metadata } from "next";
 import { Banner } from "@/widgets/Banner/Banner";
-import { JoinSection } from "@/widgets/JoinSection/JoinSection";
+import { JoinSection } from "@/widgets/TestJoinSection/JoinSection";
 
 export const metadata: Metadata = {
   title: "Welcome to Future | Gybernaty Community",
   description: "Gybernaty Community of advanced enthusiasts and developers",
 };
 
-export default function Home() {
+const Sahifa = () => {
   return (
     <>
       <Slider
         path={"/images/slides/test-banner.png"}
-        mobilePath={"/images/slides/MAIN_BANNER_MOBILE.png"}
-        title={"Community of Progressive Enthusiasts "}
+        mobilePath={"/images/slides/new-gybernaty-mobile-2-slide.jpg"}
+        title={"Gybernaty Community of advanced enthusiasts and developers"}
       />
       <Substrate {...data} />
       <Team />
@@ -48,3 +48,5 @@ const data = {
     An open community where ideas become reality. Here you will find like-minded people who can help you realize your projects and unlock your potential. This is an association of people who are passionate about technology and striving for new discoveries! We create large-scale open source projects, research current technologies and help each other realize their ideas. Here you can find a platform for research, development and exchange of experience in completely different areas of the IT industry. Join us to become a part of the movement. Here you will find not only a team that will help you in the implementation of projects, but also real friends with whom you can share your ideas and successes.
     `,
 };
+
+export default Sahifa;

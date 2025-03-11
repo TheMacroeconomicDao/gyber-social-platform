@@ -19,7 +19,7 @@ const SlideImage = ({ path, mobilePath, title }: SlideImageProps) => {
           alt={title || "slide"}
           style={{
             objectFit: "cover",
-            objectPosition: "center",
+            objectPosition: "24% 50%",
           }}
           quality={70}
           priority
@@ -33,7 +33,7 @@ const SlideImage = ({ path, mobilePath, title }: SlideImageProps) => {
           alt={title || "slide"}
           style={{
             objectFit: "cover",
-            objectPosition: "center",
+            objectPosition: "center 26%",
           }}
           priority
         />
