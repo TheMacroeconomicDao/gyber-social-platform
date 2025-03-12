@@ -13,7 +13,15 @@
   justify-content: space-between;
   padding: 3rem 0;
 }
-
+.WithMaskImg{
+  mask-image: linear-gradient(
+    to top,
+    transparent 0%,
+    #02121c 10%,
+    #02121c 90%,
+    transparent 100%
+  );
+}
 @media screen and (max-width: 1400px) {
   .Roadmap {
     gap: 120px;

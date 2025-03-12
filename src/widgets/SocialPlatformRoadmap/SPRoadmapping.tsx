@@ -6,7 +6,10 @@ import cls from "./SPRoadmapping.module.scss";
 
 export const SPRoadmapping = () => {
   return (
-    <Section background={ThemeBackgroundSection.SECOND}>
+    <Section 
+      background={ThemeBackgroundSection.SECOND}
+      className={cls.WithMaskImg}
+    >
       <Container>
         <div className={cls.Wrapper}>
           <h2>Social Platform Roadmapping</h2>

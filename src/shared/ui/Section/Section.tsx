@@ -12,6 +12,7 @@ interface SectionProps {
   children: ReactNode;
   className?: string;
   background?: ThemeBackgroundSection;
+  isMaskImg?: boolean;
 }
 
 export const Section = (props: SectionProps) => {
