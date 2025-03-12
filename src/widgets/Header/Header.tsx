@@ -16,7 +16,6 @@ interface HeaderProps {
 export const Header = ({className = ""}: HeaderProps) => {
     return (
         <div className={classNames(cls.Header, {}, [className])}>
-            <div className={cls.bgGradient} />
             <Link href={'/'}>
                 <Logo>Gyber</Logo>
             </Link>

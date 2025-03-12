@@ -1,6 +1,5 @@
 html {
     font-size: 16px;
-    background: #001019;
 }
 :root {
     --c-white: #e1e1e1;
@@ -25,23 +24,6 @@ html {
 
 body {
     background: #001019;
-    background: linear-gradient(
-            to right,
-            transparent 0%,
-            rgba(0, 0, 0, 0.4) 30%,
-            rgba(0, 0, 0, 0.4) 70%,
-            transparent 100%
-        ),
-        url("../../../public/images/bg-shapes.svg");
-    background: -moz-linear-gradient(
-            to right,
-            transparent 0%,
-            rgba(0, 0, 0, 0.4) 30%,
-            rgba(0, 0, 0, 0.4) 70%,
-            transparent 100%
-        ),
-        url("../../../public/images/bg-shapes.svg");
-    
     background-position: 0 200px;
     background-size: auto;
     background-repeat: repeat-y;
@@ -51,15 +33,10 @@ body {
     color: var(--c-white);
     overflow-y: auto;
     overflow-x: hidden;
-    &::-webkit-scrollbar {
-        width: 4px;
-        background: #072b40;
-    }
-
-    &::-webkit-scrollbar-thumb {
-        background-color: #a46b17;
-        -webkit-border-radius: 2ex;
-    }
+    background-image: url("../../../public/images/bodyBackground.svg");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 main {
     width: 900px;
