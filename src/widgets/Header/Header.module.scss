@@ -12,25 +12,6 @@
   }
 }
 
-.bgGradient {
-  background: radial-gradient(
-    circle,
-    rgba(0, 81, 155, 1) 0%,
-    rgba(0, 0, 0, 0) 70%
-  );
-  width: 1000px;
-  height: 1000px;
-  border-radius: 50%;
-  position: absolute;
-  z-index: -2;
-  top: -700px;
-  right: -300px;
-
-  @media screen and (max-width: 900px) {
-    display: none;
-  }
-}
-
 @media screen and (max-width: 490px) {
   .Header {
     position: sticky;
@@ -50,11 +31,6 @@
     top: 0;
     z-index: 10;
     padding: 20px 20px;
-    background: linear-gradient(
-      318deg,
-      rgba(9, 21, 26, 0.8) 0%,
-      rgba(7, 46, 63, 0.8) 100%
-    );
     backdrop-filter: blur(10px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
     border-bottom-left-radius: 1rem;

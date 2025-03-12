@@ -16,7 +16,7 @@
   }
 
   @media screen and (max-width: 768px) {
-    margin-bottom: 2rem;
+    height: 400px;
   }
   
 }
@@ -25,7 +25,7 @@
   z-index: 1;
   top: 0;
   bottom: 0;
-  left: 37%;
+  left: 33%;
   right: 0;
   max-width: 750px;
   display: flex;
@@ -33,8 +33,9 @@
 
   h1 {
     font-size: 3rem;
-    font-weight: 500;
+    font-weight: 600;
     color: #E8C1B0;
+    line-height: 1;
 
     @media screen and (max-width: 900px) {
       font-size: 2rem;
@@ -46,7 +47,7 @@
   .sliderTitle {
     left: 0;
     justify-content: center;
-    padding: 11rem 1rem 0;
+    padding: 11rem 1rem 1rem 2rem;
 
     h1 {
       font-size: 1.5rem;
