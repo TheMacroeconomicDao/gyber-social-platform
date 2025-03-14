@@ -12,25 +12,6 @@
   }
 }
 
-.bgGradient {
-  background: radial-gradient(
-    circle,
-    rgba(0, 81, 155, 1) 0%,
-    rgba(0, 0, 0, 0) 70%
-  );
-  width: 1000px;
-  height: 1000px;
-  border-radius: 50%;
-  position: absolute;
-  z-index: -2;
-  top: -700px;
-  right: -300px;
-
-  @media screen and (max-width: 900px) {
-    display: none;
-  }
-}
-
 @media screen and (max-width: 490px) {
   .Header {
     position: sticky;
