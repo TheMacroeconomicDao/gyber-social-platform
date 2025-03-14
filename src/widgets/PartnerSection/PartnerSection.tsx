@@ -54,7 +54,7 @@ export const PartnerSection = ({
                                 duration: 1,
                             },
                         }}
-                        viewport={{once:true, amount: 'all' }}
+                        viewport={{once:true, amount: 0.4 }}
                         className={cls.textContent}
                     >
                         {children}
