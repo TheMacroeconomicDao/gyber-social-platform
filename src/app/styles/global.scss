@@ -44,24 +44,18 @@ body {
         background-color: #a46b17;
         -webkit-border-radius: 2ex;
     }
-    background: linear-gradient(
+    background: 
+    linear-gradient(
         to right,
         transparent 0%,
         rgba(0, 0, 0, 0.4) 30%,
         rgba(0, 0, 0, 0.4) 70%,
         transparent 100%
     ),
-    url("../../../public/images/bg-xl.svg");
-    background: -moz-linear-gradient(
-        to right,
-        transparent 0%,
-        rgba(0, 0, 0, 0.4) 30%,
-        rgba(0, 0, 0, 0.4) 70%,
-        transparent 100%
-    ),
-    url("../../../public/images/bg-xl.svg");
+    url("./bg-img/bg-xl.svg"); /* Указываем путь через /, если файл в public */
+
     background-size: cover;
-    background-repeat: repeat-y;
+    background-repeat: no-repeat;
     background-position: center -500px;
 }
 main {
@@ -79,43 +73,29 @@ h2 {
 
 @media screen and (max-width: 900px) {
     body{
-        background: linear-gradient(
+        background: 
+        linear-gradient(
             to right,
             transparent 0%,
             rgba(0, 0, 0, 0.4) 30%,
             rgba(0, 0, 0, 0.4) 70%,
             transparent 100%
         ),
-        url("../../../public/images/bg-lg.svg");
-        background: -moz-linear-gradient(
-            to right,
-            transparent 0%,
-            rgba(0, 0, 0, 0.4) 30%,
-            rgba(0, 0, 0, 0.4) 70%,
-            transparent 100%
-        ),
-        url("../../../public/images/bg-lg.svg");
+        url("./bg-img/bg-lg.svg");
         background-position: center -750px;
     }        
 }
 @media screen and (max-width: 576px) {
     body{
-        background: linear-gradient(
+        background: 
+        linear-gradient(
             to right,
             transparent 0%,
             rgba(0, 0, 0, 0.4) 30%,
             rgba(0, 0, 0, 0.4) 70%,
             transparent 100%
         ),
-        url("../../../public/images/bg-md.svg");
-        background: -moz-linear-gradient(
-            to right,
-            transparent 0%,
-            rgba(0, 0, 0, 0.4) 30%,
-            rgba(0, 0, 0, 0.4) 70%,
-            transparent 100%
-        ),
-        url("../../../public/images/bg-md.svg");
+        url("./bg-img/bg-md.svg");
         background-position: center -500px;
     }    
     h1 {
