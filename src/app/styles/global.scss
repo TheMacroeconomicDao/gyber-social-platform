@@ -44,15 +44,8 @@ body {
         background-color: #a46b17;
         -webkit-border-radius: 2ex;
     }
-    background: 
-    linear-gradient(
-        to right,
-        transparent 0%,
-        rgba(0, 0, 0, 0.4) 30%,
-        rgba(0, 0, 0, 0.4) 70%,
-        transparent 100%
-    ),
-    url("../../../public/images/bg-xl.svg"); 
+    background: url("../../../public/images/bg-md-3.svg");
+    background-position: center -500px;
 }
 main {
     width: 900px;
@@ -68,31 +61,22 @@ h2 {
 }
 
 @media screen and (max-width: 900px) {
-    body{
-        background: 
-        linear-gradient(
-            to right,
-            transparent 0%,
-            rgba(0, 0, 0, 0.4) 30%,
-            rgba(0, 0, 0, 0.4) 70%,
-            transparent 100%
-        ),
-    url("../../../public/images/bg-lg.svg");
-        background-position: center -750px;
-    }        
+    // body{
+    //     background: 
+    //     linear-gradient(
+    //         to right,
+    //         transparent 0%,
+    //         rgba(0, 0, 0, 0.4) 30%,
+    //         rgba(0, 0, 0, 0.4) 70%,
+    //         transparent 100%
+    //     ),
+    // url("../../../public/images/bg-lg.svg");
+    //     background-position: center -750px;
+    // }        
 }
 @media screen and (max-width: 576px) {
     body{
-        background: 
-        linear-gradient(
-            to right,
-            transparent 0%,
-            rgba(0, 0, 0, 0.4) 30%,
-            rgba(0, 0, 0, 0.4) 70%,
-            transparent 100%
-        ),
-    url("../../../public/images/bg-md-2.svg");
-        background-position: center -500px;
+
 
     }    
     h1 {
