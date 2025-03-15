@@ -54,9 +54,9 @@ body {
     ),
     url("./bg-img/bg-xl.svg"); /* Указываем путь через /, если файл в public */
 
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position: center -500px;
+    background-position: center top;    
 }
 main {
     width: 900px;
@@ -82,7 +82,7 @@ h2 {
             transparent 100%
         ),
         url("./bg-img/bg-lg.svg");
-        background-position: center -750px;
+        // background-position: center -750px;
     }        
 }
 @media screen and (max-width: 576px) {
@@ -96,7 +96,7 @@ h2 {
             transparent 100%
         ),
         url("./bg-img/bg-md.svg");
-        background-position: center -500px;
+        // background-position: center -500px;
     }    
     h1 {
         font-size: var(--fs-4);
