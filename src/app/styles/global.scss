@@ -1,6 +1,6 @@
 html {
     font-size: 16px;
-    background: #001019;
+    background: #072b40;
 }
 :root {
     --c-white: #e1e1e1;
@@ -25,6 +25,22 @@ html {
 
 body {
     background: #072b40;
+    background: linear-gradient(
+            to right,
+            transparent 0%,
+            rgba(0, 0, 0, 0.4) 30%,
+            rgba(0, 0, 0, 0.4) 70%,
+            transparent 100%
+        ),
+        url("../../../public/images/bg-shapes.svg");
+    background: -moz-linear-gradient(
+            to right,
+            transparent 0%,
+            rgba(0, 0, 0, 0.4) 30%,
+            rgba(0, 0, 0, 0.4) 70%,
+            transparent 100%
+        ),
+        url("../../../public/images/bg-shapes.svg");
     
     background-position: 0 200px;
     background-size: auto;
@@ -44,8 +60,6 @@ body {
         background-color: #a46b17;
         -webkit-border-radius: 2ex;
     }
-    background: url("../../../public/images/bg-md-3.svg");
-    background-position: center -500px;
 }
 main {
     width: 900px;
@@ -60,25 +74,7 @@ h2 {
     line-height: 1.5;
 }
 
-@media screen and (max-width: 900px) {
-    // body{
-    //     background: 
-    //     linear-gradient(
-    //         to right,
-    //         transparent 0%,
-    //         rgba(0, 0, 0, 0.4) 30%,
-    //         rgba(0, 0, 0, 0.4) 70%,
-    //         transparent 100%
-    //     ),
-    // url("../../../public/images/bg-lg.svg");
-    //     background-position: center -750px;
-    // }        
-}
 @media screen and (max-width: 576px) {
-    body{
-
-
-    }    
     h1 {
         font-size: var(--fs-4);
         line-height: 1.5;
@@ -102,4 +98,3 @@ h2 {
         flex-direction: column;
     }
 }
-
