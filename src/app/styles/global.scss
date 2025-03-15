@@ -53,10 +53,6 @@ body {
         transparent 100%
     ),
     url("../../../public/images/bg-xl.svg"); 
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center center;   
 }
 main {
     width: 900px;
@@ -82,11 +78,7 @@ h2 {
             transparent 100%
         ),
     url("../../../public/images/bg-lg.svg");
-        // background-position: center -750px;
-        background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center center;   
+        background-position: center -750px;
     }        
 }
 @media screen and (max-width: 576px) {
@@ -99,12 +91,9 @@ h2 {
             rgba(0, 0, 0, 0.4) 70%,
             transparent 100%
         ),
-    url("../../../public/images/bg-md.svg");
-        // background-position: center -500px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center center;   
+    url("../../../public/images/bg-md-2.svg");
+        background-position: center -500px;
+
     }    
     h1 {
         font-size: var(--fs-4);
