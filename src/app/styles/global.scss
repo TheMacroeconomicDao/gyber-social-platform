@@ -51,7 +51,7 @@ body {
         rgba(0, 0, 0, 0.4) 70%,
         transparent 100%
     ),
-    url("../../../public/images/123123.svg");
+    url("../../../public/images/bg-xl.svg");
     background: -moz-linear-gradient(
         to right,
         transparent 0%,
@@ -59,7 +59,7 @@ body {
         rgba(0, 0, 0, 0.4) 70%,
         transparent 100%
     ),
-    url("../../../public/images/123123.svg");
+    url("../../../public/images/bg-xl.svg");
     background-size: cover;
     background-repeat: repeat-y;
     background-position: center -500px;
@@ -86,7 +86,7 @@ h2 {
             rgba(0, 0, 0, 0.4) 70%,
             transparent 100%
         ),
-        url("../../../public/images/123123.svg");
+        url("../../../public/images/bg-lg.svg");
         background: -moz-linear-gradient(
             to right,
             transparent 0%,
@@ -94,7 +94,7 @@ h2 {
             rgba(0, 0, 0, 0.4) 70%,
             transparent 100%
         ),
-        url("../../../public/images/123123.svg");
+        url("../../../public/images/bg-lg.svg");
         background-position: center -750px;
     }        
 }
@@ -107,7 +107,7 @@ h2 {
             rgba(0, 0, 0, 0.4) 70%,
             transparent 100%
         ),
-        url("../../../public/images/123123.svg");
+        url("../../../public/images/bg-shapes.svg");
         background: -moz-linear-gradient(
             to right,
             transparent 0%,
@@ -115,8 +115,7 @@ h2 {
             rgba(0, 0, 0, 0.4) 70%,
             transparent 100%
         ),
-        url("../../../public/images/123123.svg");
-        background-position: center -500px;
+        url("../../../public/images/bg-shapes.svg");
     }    
     h1 {
         font-size: var(--fs-4);
