@@ -1,8 +1,8 @@
 
 const navbarItems = [
-  { title: "Gybernaty", link: "/" },
+  { title: "Сommunity", link: "/" },
   { title: "Experiment", link: "/experiment" },
-  { title: "Gyber Social Platform", link: "/gyber-social-platform" },
+  { title: "Platform", link: "/platform" },
   { title: "AIC", link: "/aic" },
   // { title: "Events", link: "/events" },
   // { title: "Projects", link: "/offering" },
