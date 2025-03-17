@@ -2,7 +2,7 @@ import { IconStatus } from "@/shared/ui/SvgIcons";
 
 export const data = [
     {
-      year: 2023,
+      year: 2025,
       periods: [
         {
           id: 1,
@@ -10,7 +10,7 @@ export const data = [
           items: [
             {
               title: "Gyber Social Platform prototype development",
-              status: IconStatus.PROGRESS,
+              status: IconStatus.DONE,
             },
             {
               title:
@@ -29,15 +29,15 @@ export const data = [
           items: [
             {
               title: "Seed investment round",
-              status: IconStatus.PROGRESS,
+              status: IconStatus.DEFAULT,
             },
             {
               title: "Opening Social Bounty and Secure Bounty programs",
-              status: IconStatus.PROGRESS,
+              status: IconStatus.DEFAULT,
             },
             {
               title: "Testing the main platform code",
-              status: IconStatus.PROGRESS,
+              status: IconStatus.DEFAULT,
             },
           ],
         },
@@ -47,16 +47,16 @@ export const data = [
           items: [
             {
               title: "PreSale",
-              status: IconStatus.PROGRESS,
+              status: IconStatus.DEFAULT,
             },
             {
               title:
                 "Development of a prototype of a decentralized, multi-platform, computing cluster",
-              status: IconStatus.PROGRESS,
+              status: IconStatus.DEFAULT,
             },
             {
               title: "Blockchain GyberNet Prototype Development",
-              status: IconStatus.PROGRESS,
+              status: IconStatus.DEFAULT,
             },
           ],
         },
@@ -82,7 +82,7 @@ export const data = [
       ],
     },
     {
-      year: 2024,
+      year: 2026,
       periods: [
         {
           id: 1,
