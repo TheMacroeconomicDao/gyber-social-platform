@@ -1,49 +1,6 @@
 .Substrate {
   margin-top: 50px;
   border-radius: 26px;
-  // background: radial-gradient(
-  //       circle at 100% 100%,
-  //       #072b40 0,
-  //       #072b40 37px,
-  //       transparent 37px
-  //     )
-  //     0% 0%/40px 40px no-repeat,
-  //   radial-gradient(circle at 0 100%, #072b40 0, #072b40 37px, transparent 37px)
-  //     100% 0%/40px 40px no-repeat,
-  //   radial-gradient(circle at 100% 0, #072b40 0, #072b40 37px, transparent 37px)
-  //     0% 100%/40px 40px no-repeat,
-  //   radial-gradient(circle at 0 0, #072b40 0, #072b40 37px, transparent 37px)
-  //     100% 100%/40px 40px no-repeat,
-  //   linear-gradient(rgba(7, 46, 63, 1) 0%, rgba(9, 21, 26, 1) 100%) 50% 50% /
-  //     calc(100% - 6px) calc(100% - 80px) no-repeat,
-  //   linear-gradient(rgba(7, 46, 63, 1) 0%, rgba(9, 21, 26, 1) 100%) 50% 50% /
-  //     calc(100% - 80px) calc(100% - 6px) no-repeat,
-  //   conic-gradient(
-  //     from 301deg,
-  //     #808a91 0%,
-  //     #101d24 6%,
-  //     #101d24 11%,
-  //     #3c413f 17%,
-  //     #6b706e 22%,
-  //     #6d8670 24%,
-  //     #628e69 26%,
-  //     #416756 31%,
-  //     #416756 40%,
-  //     #2d3f4a 46%,
-  //     #263448 51%,
-  //     #2e5150 54%,
-  //     #478260 58%,
-  //     #536b66 64%,
-  //     #1d2c33 70%,
-  //     #1d2c33 83%,
-  //     #808a91 100%
-  //   );
-  // background: rgb(7, 46, 63);
-  // background: linear-gradient(
-  //   120deg,
-  //   rgba(7, 46, 63, 1) 0%,
-  //   rgba(9, 21, 26, 1) 100%
-  // );
   background-image: url("../../../../public/images/substrate_bg.svg");
   box-shadow: 0px 0px 0px 0 rgba(255, 255, 255, 0.25) inset,
     0px 0px 0px 0 rgba(61, 86, 95, 0.25) inset,
@@ -68,30 +25,30 @@
     overflow-y: auto;
 
     &::-webkit-scrollbar-track {
-      background: #0f1c22;
+      background: #14232a;
       background: -moz-linear-gradient(
         90deg,
-        #0f1c22 0%,
-        #0f1c22 45%,
+        #14232a 0%,
+        #14232a 45%,
         rgba(255, 255, 255, 1) 50%,
-        #0f1c22 55%,
-        #0f1c22 100%
+        #14232a 55%,
+        #14232a 100%
       );
       background: -webkit-linear-gradient(
         90deg,
-        #0f1c22 0%,
-        #0f1c22 45%,
+        #14232a 0%,
+        #14232a 45%,
         rgba(255, 255, 255, 1) 50%,
-        #0f1c22 55%,
-        #0f1c22 100%
+        #14232a 55%,
+        #14232a 100%
       );
       background: linear-gradient(
         90deg,
-        #0f1c22 0%,
-        #0f1c22 45%,
+        #14232a 0%,
+        #14232a 45%,
         rgba(255, 255, 255, 1) 50%,
-        #0f1c22 55%,
-        #0f1c22 100%
+        #14232a 55%,
+        #14232a 100%
       );
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#072b40",endColorstr="#072b40",GradientType=1);
     }

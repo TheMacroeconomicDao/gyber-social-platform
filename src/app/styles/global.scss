@@ -25,10 +25,8 @@ html {
 
 body {
     background: #072b40;
-    
-    background-position: 0 200px;
     background-size: auto;
-    background-repeat: repeat-y;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
