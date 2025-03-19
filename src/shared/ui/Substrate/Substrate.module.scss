@@ -1,22 +1,16 @@
 .Substrate {
   margin-top: 50px;
   border-radius: 26px;
-  background: radial-gradient(circle at 100% 100%, #072b40 0, #072b40 37px, transparent 37px) 0% 0%/40px 40px no-repeat,
-  radial-gradient(circle at 0 100%, #072b40 0, #072b40 37px, transparent 37px) 100% 0%/40px 40px no-repeat,
-  radial-gradient(circle at 100% 0, #072b40 0, #072b40 37px, transparent 37px) 0% 100%/40px 40px no-repeat,
-  radial-gradient(circle at 0 0, #072b40 0, #072b40 37px, transparent 37px) 100% 100%/40px 40px no-repeat,
-  linear-gradient(#072b40, #072b40) 50% 50%/calc(100% - 6px) calc(100% - 80px) no-repeat,
-  linear-gradient(#072b40, #072b40) 50% 50%/calc(100% - 80px) calc(100% - 6px) no-repeat,
-  conic-gradient(from 301deg, #808a91 0%, #101d24 6%, #101d24 11%, #3c413f 17%, #6b706e 22%, #6d8670 24%, #628e69 26%, #416756 31%, #416756 40%, #2d3f4a 46%, #263448 51%, #2e5150 54%, #478260 58%, #536b66 64%, #1d2c33 70%, #1d2c33 83%, #808a91 100%);
+  background-image: url("../../../../public/images/substrate_bg.svg");
   box-shadow: 0px 0px 0px 0 rgba(255, 255, 255, 0.25) inset,
-  0px 0px 0px 0 rgba(61, 86, 95, 0.25) inset,
-  900px -200px 500px -20px rgba(123, 68, 0, 0.20),
-  -1000px 400px 700px 0px rgba(33, 209, 220, 0.15);
+    0px 0px 0px 0 rgba(61, 86, 95, 0.25) inset,
+    900px -200px 500px -20px rgba(123, 68, 0, 0.2),
+    -1000px 400px 700px 0px rgba(33, 209, 220, 0.15);
   width: 100%;
   max-width: 1200px;
   padding: 50px 100px;
 
-  border-radius: 40px;
+  // border-radius: 40px;
 
   .text_box {
     font-size: 16px;
@@ -29,24 +23,42 @@
     padding: 0 50px 0 0;
     height: 400px;
     overflow-y: auto;
-    
-    &::-webkit-scrollbar-track
-    {
-      background: rgb(7,43,64);
-      background: -moz-linear-gradient(90deg, rgba(7,43,64,1) 0%, rgba(7,43,64,1) 45%, rgba(255,255,255,1) 50%, rgba(7,43,64,1) 55%, rgba(7,43,64,1) 100%);
-      background: -webkit-linear-gradient(90deg, rgba(7,43,64,1) 0%, rgba(7,43,64,1) 45%, rgba(255,255,255,1) 50%, rgba(7,43,64,1) 55%, rgba(7,43,64,1) 100%);
-      background: linear-gradient(90deg, rgba(7,43,64,1) 0%, rgba(7,43,64,1) 45%, rgba(255,255,255,1) 50%, rgba(7,43,64,1) 55%, rgba(7,43,64,1) 100%);
+
+    &::-webkit-scrollbar-track {
+      background: #14232a;
+      background: -moz-linear-gradient(
+        90deg,
+        #14232a 0%,
+        #14232a 45%,
+        rgba(255, 255, 255, 1) 50%,
+        #14232a 55%,
+        #14232a 100%
+      );
+      background: -webkit-linear-gradient(
+        90deg,
+        #14232a 0%,
+        #14232a 45%,
+        rgba(255, 255, 255, 1) 50%,
+        #14232a 55%,
+        #14232a 100%
+      );
+      background: linear-gradient(
+        90deg,
+        #14232a 0%,
+        #14232a 45%,
+        rgba(255, 255, 255, 1) 50%,
+        #14232a 55%,
+        #14232a 100%
+      );
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#072b40",endColorstr="#072b40",GradientType=1);
     }
-    
-    &::-webkit-scrollbar
-    {
+
+    &::-webkit-scrollbar {
       width: 13px;
-      background-color: #F5F5F5;
+      background-color: #f5f5f5;
     }
-    
-    &::-webkit-scrollbar-thumb
-    {
+
+    &::-webkit-scrollbar-thumb {
       background-color: #fff;
       border-radius: 6px;
     }
@@ -74,8 +86,6 @@
   box-shadow: 0 0 20px 0 #072b40;
 }
 
-
-
 @media screen and (max-width: 1200px) {
   .Substrate {
     padding: 40px;
@@ -86,7 +96,7 @@
       padding: 0 30px 0 0;
     }
   }
-  .with_button{
+  .with_button {
     padding-bottom: 160px;
     .scroll {
       height: 216px;
@@ -113,12 +123,12 @@
       line-height: 2;
     }
   }
-  .with_button{
+  .with_button {
     padding-bottom: 80px;
     .scroll {
       height: 216px;
     }
-    h2{
+    h2 {
       font-size: 1rem;
       font-weight: 400;
     }
@@ -129,13 +139,13 @@
   }
 }
 @media screen and (max-width: 480px) {
-  .with_button{
+  .with_button {
     padding-bottom: 80px;
     .scroll {
       height: 216px;
       font-size: 0.875rem;
     }
-    h2{
+    h2 {
       font-size: 1rem;
       font-weight: 400;
     }

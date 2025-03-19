@@ -38,14 +38,10 @@ interface RoadmapCardProps {
 function isCurrentYear(year: number): boolean {
     return year > new Date().getFullYear();
 }
-// TODO: Delete in 2024
-function getTempYear(year: number):number {
-    return year + 1;
-}
 
 export const RoadmapCard = ({ id, year, period, items }: RoadmapCardProps) => {
     const isCurrent = isCurrentYear(year);
-
+    
     switch (id) {
         case 1: {
             return (
@@ -87,7 +83,7 @@ export const RoadmapCard = ({ id, year, period, items }: RoadmapCardProps) => {
                             [cls.yellow]: isCurrent,
                         })}
                     >
-                        {getTempYear(year)}
+                        {year}
                     </h3>
                     <span
                         className={classNames(cls.period, {
