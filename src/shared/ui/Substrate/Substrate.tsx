@@ -9,7 +9,7 @@ interface SubstrateProps {
   subtitle?: string;
   text?: string;
   buttonText?: string;
-  buttonLink?: string; 
+  buttonLink?: string;
 }
 
 export const Substrate = (props: SubstrateProps) => {

@@ -25,7 +25,7 @@ html {
 
 body {
     background: #072b40;
-    background-size: auto;
+    background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
@@ -60,22 +60,23 @@ h2 {
 
 @media screen and (max-width: 576px) {
     body{
-        background: linear-gradient(
-            to right,
-            transparent 0%,
-            rgba(22, 41, 60, 0.4) 30%,
-            rgba(22, 41, 60, 0.4) 70%,
-            transparent 100%
-        ),
-        url("../../../public/images/bg-shapes.svg");
-        background: -moz-linear-gradient(
-            to right,
-            transparent 0%,
-            rgba(0, 0, 0, 0.4) 30%,
-            rgba(0, 0, 0, 0.4) 70%,
-            transparent 100%
-        ),
-        url("../../../public/images/bg-shapes.svg");
+        // background: linear-gradient(
+        //     to right,
+        //     transparent 0%,
+        //     rgba(22, 41, 60, 0.4) 30%,
+        //     rgba(22, 41, 60, 0.4) 70%,
+        //     transparent 100%
+        // ),
+        // url("../../../public/images/bg-shapes.svg");
+        // background: -moz-linear-gradient(
+        //     to right,
+        //     transparent 0%,
+        //     rgba(0, 0, 0, 0.4) 30%,
+        //     rgba(0, 0, 0, 0.4) 70%,
+        //     transparent 100%
+        // ),
+        // url("../../../public/images/bg-shapes.svg");
+        background-image: url("../../../public/images/gyber_bg_mobile.svg");
     }    
     h1 {
         font-size: var(--fs-4);
