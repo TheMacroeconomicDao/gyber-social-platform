@@ -1,16 +1,30 @@
 .Substrate {
   margin-top: 50px;
-  border-radius: 26px;
-  background-image: url("../../../../public/images/substrate_bg.svg");
-  box-shadow: 0px 0px 0px 0 rgba(255, 255, 255, 0.25) inset,
-    0px 0px 0px 0 rgba(61, 86, 95, 0.25) inset,
-    900px -200px 500px -20px rgba(123, 68, 0, 0.2),
-    -1000px 400px 700px 0px rgba(33, 209, 220, 0.15);
+  border: 3px solid transparent;
+  box-shadow: 32px 32px 32px 0 rgba(0, 0, 0, 0.3);
   width: 100%;
   max-width: 1200px;
-  padding: 50px 100px;
-
-  // border-radius: 40px;
+  padding: 41px 100px;
+  background: linear-gradient(
+        53deg,
+        rgb(20, 39, 49),
+        rgb(18, 31, 38),
+        rgb(18, 31, 38),
+        rgb(65, 67, 60)
+      )
+      padding-box,
+    linear-gradient(
+        138deg,
+        rgb(130, 133, 140),
+        rgb(16, 28, 35),
+        rgb(16, 28, 35),
+        rgb(111, 114, 114),
+        rgb(111, 134, 113),
+        rgb(93, 148, 105),
+        rgb(37, 50, 72)
+      )
+      border-box;
+  border-radius: 40px;
 
   .text_box {
     font-size: 16px;
@@ -21,36 +35,67 @@
   }
   .scroll {
     padding: 0 50px 0 0;
-    height: 400px;
+    height: 338px;
     overflow-y: auto;
 
     &::-webkit-scrollbar-track {
-      background: #14232a;
+      background: #242d2e;
       background: -moz-linear-gradient(
         90deg,
-        #14232a 0%,
-        #14232a 45%,
+        #242d2e 0%,
+        #242d2e 45%,
         rgba(255, 255, 255, 1) 50%,
-        #14232a 55%,
-        #14232a 100%
+        #242d2e 55%,
+        #242d2e 100%
       );
       background: -webkit-linear-gradient(
         90deg,
-        #14232a 0%,
-        #14232a 45%,
+        #242d2e 0%,
+        #242d2e 45%,
         rgba(255, 255, 255, 1) 50%,
-        #14232a 55%,
-        #14232a 100%
+        #242d2e 55%,
+        #242d2e 100%
       );
       background: linear-gradient(
         90deg,
-        #14232a 0%,
-        #14232a 45%,
+        #242d2e 0%,
+        #242d2e 45%,
         rgba(255, 255, 255, 1) 50%,
-        #14232a 55%,
-        #14232a 100%
+        #242d2e 55%,
+        #242d2e 100%
       );
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#072b40",endColorstr="#072b40",GradientType=1);
+    }
+
+    @media screen and (max-width: 576px) {
+      &::-webkit-scrollbar-track {
+        background: #152227;
+        background: -moz-linear-gradient(
+          90deg,
+          #152227 0%,
+          #152227 45%,
+          rgba(255, 255, 255, 1) 50%,
+          #152227 55%,
+          #152227 100%
+        );
+        background: -webkit-linear-gradient(
+          90deg,
+          #152227 0%,
+          #152227 45%,
+          rgba(255, 255, 255, 1) 50%,
+          #152227 55%,
+          #152227 100%
+        );
+        background: linear-gradient(
+          90deg,
+          #152227 0%,
+          #152227 45%,
+          rgba(255, 255, 255, 1) 50%,
+          #152227 55%,
+          #152227 100%
+        );
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#072b40",endColorstr="#072b40",GradientType=1);
+      }
     }
 
     &::-webkit-scrollbar {
