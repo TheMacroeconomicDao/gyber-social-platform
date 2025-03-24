@@ -77,10 +77,10 @@ const data = [
   },
   {
     id: 17,
-    avatarSrc: '/images/teams/IrinaChekalina.jpg',
-    fullName: 'Irina Chekalina',
+    avatarSrc: '/images/teams/Fuad-Topchiyev.jpg',
+    fullName: 'Fuad Topchiyev',
     skills: 'Frontend Developer',
-    link: 'https://t.me/irina_may_be',
+    link: 'https://t.me/fuadtopchiyev',
   },
   {
     id: 18,
@@ -88,12 +88,13 @@ const data = [
     fullName: 'Chimdalu Nnenne (Fantasy)',
     skills: 'Content Marketer/Writer',
   },
-  // {
-  //   id: 19,
-  //   avatarSrc: "/images/teams/Kamran.jpg",
-  //   fullName: "Kamran Pulatov",
-  //   skills: "Backend Developer",
-  // },
+  {
+    id: 19,
+    avatarSrc: '/images/teams/IrinaChekalina.jpg',
+    fullName: 'Irina Chekalina',
+    skills: 'Frontend Developer',
+    link: 'https://t.me/irina_may_be',
+  },
 ]
 
 export default data
