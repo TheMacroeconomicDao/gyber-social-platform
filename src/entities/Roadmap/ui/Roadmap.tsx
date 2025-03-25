@@ -1,13 +1,13 @@
-import cls from "./Roadmap.module.scss";
-import { classNames } from "@/shared/lib/classNames/classNames";
-import { RoadmapCard } from "@/entities/Roadmap/ui/RoadmapCard/RoadmapCard";
-import { data } from "../data/RoadmapData";
+import cls from './Roadmap.module.scss'
+import { classNames } from '@/shared/lib/classNames/classNames'
+import { RoadmapCard } from '@/entities/Roadmap/ui/RoadmapCard/RoadmapCard'
+import { data } from '../data/RoadmapData'
 
 interface RoadmapProps {
-  className?: string;
+  className?: string
 }
 
-export const Roadmap = ({ className = "" }: RoadmapProps) => {
+export const Roadmap = ({ className = '' }: RoadmapProps) => {
   return (
     <div className={classNames(cls.Roadmap, {}, [className])}>
       {data.map((items) =>
@@ -22,5 +22,5 @@ export const Roadmap = ({ className = "" }: RoadmapProps) => {
         ))
       )}
     </div>
-  );
-};
+  )
+}
