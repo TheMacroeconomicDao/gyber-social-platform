@@ -59,24 +59,26 @@ h2 {
 }
 
 @media screen and (max-width: 576px) {
-    body{
-        // background: linear-gradient(
-        //     to right,
-        //     transparent 0%,
-        //     rgba(22, 41, 60, 0.4) 30%,
-        //     rgba(22, 41, 60, 0.4) 70%,
-        //     transparent 100%
-        // ),
-        // url("../../../public/images/bg-shapes.svg");
-        // background: -moz-linear-gradient(
-        //     to right,
-        //     transparent 0%,
-        //     rgba(0, 0, 0, 0.4) 30%,
-        //     rgba(0, 0, 0, 0.4) 70%,
-        //     transparent 100%
-        // ),
-        // url("../../../public/images/bg-shapes.svg");
-        background-image: url("../../../public/images/gyber_bg_mobile.svg");
+    body {
+        background: 
+        linear-gradient(
+            to right,
+            transparent 0%,
+            rgba(22, 41, 60, 0.4) 30%,
+            rgba(22, 41, 60, 0.4) 70%,
+            transparent 100%
+        ),
+        radial-gradient(circle at 70% 0%, rgba(51, 73, 151, 0.2) 10px, transparent 400px),
+        radial-gradient(circle at 10% 10%, rgba(51, 73, 151, 0.3) 10px, transparent 400px),
+        radial-gradient(circle at 80% 13%, rgba(226, 255, 179, 0.2) 10px, transparent 600px),
+        radial-gradient(circle at 10% 30%, rgba(81, 133, 141, 0.3) 15px, transparent 400px),
+        radial-gradient(circle at 70% 50%, rgba(81, 133, 141, 0.3) 15px, transparent 400px),
+        radial-gradient(circle at 30% 63%, rgb(0, 221, 255, 0.2) 15px, transparent 600px),
+        radial-gradient(circle at 10% 80%, rgba(69, 82, 64, 0.6) 4px, transparent 500px),
+        radial-gradient(circle at 90% 100%, rgba(81, 133, 141, 0.3) 10px, transparent 600px),
+        url("../../../public/images/bg-shapes.svg");
+    
+        // background-image: url("../../../public/images/bg-shapes.svg");
     }    
     h1 {
         font-size: var(--fs-4);
