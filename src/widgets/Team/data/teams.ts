@@ -32,12 +32,6 @@ const data = [
     skills: 'Lead Frontend Developer, Web Designer',
   },
   {
-    id: 10,
-    avatarSrc: '/images/teams/Fedor-Afanasiev.jpg',
-    fullName: 'Fedor Afanasiev',
-    skills: 'QA, Blockchain Developer',
-  },
-  {
     id: 11,
     avatarSrc: '/images/teams/Artem-Smirnov.jpg',
     fullName: 'Artem Smirnov',

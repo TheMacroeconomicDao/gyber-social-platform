@@ -1,8 +1,8 @@
-import { Section, ThemeBackgroundSection } from "@/shared/ui/Section/Section";
-import { Container } from "@/shared/ui/Container/Container";
-import { SocialRoadmapCard } from "@/entities/SocialRoadmapCard";
-import data from "@/entities/SocialRoadmapCard/data/SocialRoadmapData.json";
-import cls from "./SPRoadmapping.module.scss";
+import { Section, ThemeBackgroundSection } from '@/shared/ui/Section/Section'
+import { Container } from '@/shared/ui/Container/Container'
+import { SocialRoadmapCard } from '@/entities/SocialRoadmapCard'
+import data from '@/entities/SocialRoadmapCard/data/SocialRoadmapData.json'
+import cls from './SPRoadmapping.module.scss'
 
 export const SPRoadmapping = () => {
   return (
@@ -23,5 +23,5 @@ export const SPRoadmapping = () => {
         </div>
       </Container>
     </Section>
-  );
-};
+  )
+}

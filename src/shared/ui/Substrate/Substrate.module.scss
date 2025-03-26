@@ -34,8 +34,8 @@
     mask-image: linear-gradient(
       to top,
       transparent 0%,
-      #02121c 2%,
-      #02121c 98%,
+      #02121c 6%,
+      #02121c 94%,
       transparent 100%
     );
   }
@@ -71,7 +71,22 @@
       );
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#072b40",endColorstr="#072b40",GradientType=1);
     }
-
+    &::-webkit-scrollbar {
+      width: 10px;
+      height: 10px;
+  }
+  &::-webkit-scrollbar-button {
+      background-size: 100%;
+      height: 5px;
+      width: 5px;
+      background: #242d2e;
+  }
+  &::-webkit-scrollbar-button:end {
+      display: block;
+  }
+  &::-webkit-scrollbar-button:start {
+      display: block;
+  }
     @media screen and (max-width: 576px) {
       &::-webkit-scrollbar-track {
         background: #152227;
@@ -112,6 +127,7 @@
       background-color: #fff;
       border-radius: 6px;
     }
+
   }
   h2 {
     font-weight: 600;
@@ -161,7 +177,7 @@
 @media screen and (max-width: 576px) {
   .Substrate {
     margin: 50px 16px 0 16px;
-    padding: 50px 20px 50px 30px;
+    padding: 30px 20px 30px 20px;
 
     .scroll {
       padding: 0 20px 0 0;

@@ -9,6 +9,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+
   &.done {
     background: #1b5978;
     box-shadow: 1px 1px 1px #2a7ead inset;
@@ -17,5 +19,16 @@
   &.progress {
     background: #0d394f;
     color: var(--c-blue);
+  }
+}
+.todo{
+  
+  &::after{
+    content: '';
+    position: absolute;
+    width: 25%;
+    height: 25%;
+    border-radius: 50px;
+    border: 2px solid #b8b8b8;
   }
 }
