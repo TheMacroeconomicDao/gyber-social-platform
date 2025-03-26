@@ -25,19 +25,24 @@
       )
       border-box;
   border-radius: 40px;
-
   .text_box {
     font-size: 16px;
     font-weight: 300;
     line-height: 2;
     text-align: justify;
     white-space: pre-line;
+    mask-image: linear-gradient(
+      to top,
+      transparent 0%,
+      #02121c 2%,
+      #02121c 98%,
+      transparent 100%
+    );
   }
   .scroll {
     padding: 0 50px 0 0;
     height: 338px;
     overflow-y: auto;
-
     &::-webkit-scrollbar-track {
       background: #242d2e;
       background: -moz-linear-gradient(
