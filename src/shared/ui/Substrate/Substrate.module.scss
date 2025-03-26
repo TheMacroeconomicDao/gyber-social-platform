@@ -178,7 +178,9 @@
   .Substrate {
     margin: 50px 16px 0 16px;
     padding: 30px 5px 30px 20px;
-    
+    .text_box{
+      height: 400px;
+    }
     .scroll {
       padding: 0 20px 0 0;
       touch-action: pan-y;
