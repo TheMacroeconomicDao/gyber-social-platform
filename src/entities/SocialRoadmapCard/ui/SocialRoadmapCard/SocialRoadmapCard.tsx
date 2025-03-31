@@ -34,16 +34,19 @@ export const SocialRoadmapCard = (props: SocialRoadmapCardProps) => {
         ? IconStatus.PROGRESS
         : IconStatus.DEFAULT,
   }))
+
+  console.log(id);
+  
   return (
     <>
-      <div className={classNames(cls.SocialRoadmapCard, {}, [className])}>
+      <div className={`${classNames(cls.SocialRoadmapCard, {}, [className])} ${ id === 3 && cls.Third}`}>
         <SquareCard>
           {items.map((item) => (
             <StageItem key={item.title} {...item} />
           ))}
           <p>{description}</p>
         </SquareCard>
-        {id !== 1 && <ArrowLeft className={cls.ArrowLeft} />}
+        {id !== 1 && <ArrowLeft className={`${cls.ArrowLeft} ${id === 2 && cls.ArrowId2}`} />}
         <ArrowRight className={cls.ArrowRight} />
       </div>
     </>

@@ -17,8 +17,10 @@
 
 @media screen and (max-width: 1400px) {
   .Roadmap {
+    padding: 2rem;
     gap: 120px;
-    overflow-x: scroll;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     touch-action: pan-x;
     scrollbar-width: thin;
     scrollbar-color: var(--c-orange) #072b40;
@@ -35,8 +37,15 @@
   }
 }
 
+@media screen and (max-width: 900px) {
+  .Roadmap {
+    gap: 80px;
+  }
+}
+
 @media screen and (max-width: 576px) {
   .Roadmap {
+    display: flex;
     flex-direction: column;
     overflow-x: unset;
     align-items: center;

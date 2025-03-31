@@ -1,52 +1,88 @@
 .SocialRoadmapCard {
-    position: relative;
-    p {
-        color: #B8B8B8;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 20px;
+  position: relative;
+  p {
+    color: #b8b8b8;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  &.Third {
+    justify-self: center;
+    grid-column: 1/3;
+  }
+
+  .ArrowLeft {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-100%, -50%);
+
+    @media screen and (max-width: 1400px) {
+      transform: translate(-100%, -50%);
+
+      &:nth-child(1) {
+        display: none;
+      }
+
+      &:nth-child(2) {
+        left: 50%;
+        transform: translate(-50%, -390%) rotate(90deg);
+      }
     }
-    .ArrowLeft {
-        position: absolute;
-        top: 45%;
-        left: 0;
-        transform: translateX(-100%);
+  }
+  .ArrowRight {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(100%, -50%);
+
+    @media screen and (max-width: 1400px) {
+      transform: translate(88%, -50%);
+
+      &:nth-child(3) {
+        left: 50%;
+        transform: translate(-50%, 332%) rotate(90deg);
+      }
     }
-    .ArrowRight {
-        position: absolute;
-        top: 45%;
-        right: 0;
-        transform: translateX(100%);
+  }
+  .ArrowFinal {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateX(120%, -50%);
+
+    @media screen and (max-width: 1400px) {
+      transform: translate(-100%, -50%);
     }
-    .ArrowFinal {
-        position: absolute;
-        top: 45%;
-        right: 0;
-        transform: translateX(120%);
-    }
+  }
+
+  .ArrowId2 {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 576px) {
-    .SocialRoadmapCard {
-        position: relative;
-        .ArrowLeft {
-            top: 0;
-            bottom: unset;
-            right: unset;
-            left: 42%;
-            transform: translateY(-130%) rotate(90deg);
-        }
-        .ArrowRight {
-            top: unset;
-            bottom: 0;
-            right: unset;
-            left: 42%;
-            transform: translateY(130%) rotate(90deg);
-        }
-        .ArrowFinal {
-            top: 45%;
-            right: 0;
-            transform: translateY(120%) rotate(90deg);
-        }
+  .SocialRoadmapCard {
+    position: relative;
+    .ArrowLeft {
+      top: 0;
+      bottom: unset;
+      right: unset;
+      left: 42%;
+      transform: translateY(-130%) rotate(90deg);
     }
+    .ArrowRight {
+      top: unset;
+      bottom: 0;
+      right: unset;
+      left: 42%;
+      transform: translateY(130%) rotate(90deg);
+    }
+    .ArrowFinal {
+      top: 45%;
+      right: 0;
+      transform: translateY(120%) rotate(90deg);
+    }
+  }
 }
