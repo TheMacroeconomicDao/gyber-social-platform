@@ -18,9 +18,9 @@ const Sahifa = () => {
   return (
     <>
       <Slider
-        path={"/images/slides/test-banner.png"}
-        mobilePath={"/images/slides/new-gybernaty-mobile-2-slide.jpg"}
-        title={"Gybernaty Community of advanced enthusiasts and developers"}
+        path={'/images/slides/main-slide.jpg'}
+        mobilePath={'/images/slides/main-mobile-slide.jpg'}
+        title={'Community of Progressive Enthusiasts '}
       />
       <Substrate {...data} />
       <Team />

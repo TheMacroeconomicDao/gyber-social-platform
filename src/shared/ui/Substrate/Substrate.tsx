@@ -31,10 +31,14 @@ export const Substrate = (props: SubstrateProps) => {
           [className]
         )}
       >
-        <h2>{title}</h2>
+        <div className={cls.title_container}>
+          <h2>{title}</h2>
+        </div>
         {subtitle && <h3>{subtitle}</h3>}
         <div className={classNames(cls.text_box, { [cls.scroll]: scrollable })}>
+          <p>&nbsp;</p>
           {text}
+          <p>&nbsp;</p>
         </div>
       </div>
       {buttonText && buttonLink && (

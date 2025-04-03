@@ -18,8 +18,8 @@ export default function Home() {
   return (
     <>
       <Slider
-        path={'/images/slides/test-banner.png'}
-        mobilePath={'/images/slides/MAIN_BANNER_MOBILE.png'}
+        path={'/images/slides/main-slide.jpg'}
+        mobilePath={'/images/slides/main-mobile-slide.jpg'}
         title={'Community of Progressive Enthusiasts '}
       />
       <Substrate {...data} />

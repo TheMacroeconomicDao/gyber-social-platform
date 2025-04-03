@@ -15,8 +15,8 @@ const GyberExperiment = () => {
   return (
     <>
       <Slider
-        path={'/images/slides/MAIN_BUNNER_EXPIRIMENT.png'}
-        mobilePath={'/images/slides/expiriment_mobile_banner.png'}
+        path={'/images/slides/gyber-experiment-slide.jpg'}
+        mobilePath={'/images/slides/gyber-experiment-mobile-slide.jpg'}
         title={'Millions are Billionaires'}
       />
       <Substrate {...data} />

@@ -38,7 +38,7 @@ const AIC = () => {
   )
 }
 const data = {
-  title: `The future of artificial intelligence: a study that opens up new horizons`,
+  title: `The future of artificial intelligence: a research that opens up new horizons`,
   text: `AiC (Artificial Intelligence and Blockchain Community) is a project that aims to create an open community of progressive AI researchers and developers with integration into Blockchain. AiC plans to use DAO contracts to regulate the operation of models and to ensure transparency and openness in the development and use of the AI models and technologies we create.
 
     The problem that AiC solves is that the development and use of artificial intelligence models can be costly and complex, requiring significant resources and expertise. In addition, the use of models in different fields can raise concerns about privacy and security.
