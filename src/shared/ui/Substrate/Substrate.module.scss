@@ -149,6 +149,7 @@
     white-space: pre-line;
   }
   h3 {
+    text-align: start;
     font-size: 22px;
     font-weight: 500;
     line-height: 3;
@@ -177,9 +178,9 @@
   }
   .with_button {
     padding-bottom: 160px;
-    .scroll {
-      height: 216px;
-    }
+    // .scroll {
+    //   height: 216px;
+    // }
   }
   .button_wrapper {
     position: relative;
@@ -192,7 +193,6 @@
     margin: 50px 16px 0 16px;
     padding: 30px 5px 30px 20px;
     .text_box{
-      margin-top: -10px;
       height: 400px;
     }
     .scroll {
@@ -208,10 +208,9 @@
   .with_button {
     padding-bottom: 80px;
     .scroll {
-      height: 216px;
+      // height: 216px;
     }
     h2 {
-      font-size: 1rem;
       font-weight: 400;
     }
   }
@@ -223,12 +222,7 @@
 @media screen and (max-width: 480px) {
   .with_button {
     padding-bottom: 80px;
-    .scroll {
-      height: 216px;
-      font-size: 0.875rem;
-    }
     h2 {
-      font-size: 1rem;
       font-weight: 400;
     }
   }

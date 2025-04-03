@@ -34,9 +34,9 @@ export const Substrate = (props: SubstrateProps) => {
         <div className={cls.title_container}>
           <h2>{title}</h2>
         </div>
-        {subtitle && <h3>{subtitle}</h3>}
         <div className={classNames(cls.text_box, { [cls.scroll]: scrollable })}>
           <p>&nbsp;</p>
+          {subtitle && <h3>{subtitle}</h3>}
           {text}
           <p>&nbsp;</p>
         </div>
