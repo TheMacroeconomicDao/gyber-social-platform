@@ -1,43 +1,53 @@
 [
   {
     "id": 1,
-    "description": "P2P chats and video calls are end-to-end encrypted",
+    "description": "",
     "stages": [
       {
         "id": 1,
-        "title": "Secure chat",
+        "title": "Unit Docs",
         "status": "done"
       },
       {
         "id": 2,
-        "title": "Secure call",
+        "title": "Unit Dashboard",
         "status": "progress"
       },
       {
         "id": 3,
-        "title": "Secure video call",
-        "status": "todo"
+        "title": "Secure Messenger",
+        "status": "progress"
       }
     ]
   },
   {
     "id": 2,
-    "description": "Store your videos, photos and other content in a decentralized way. And share files with other members",
+    "description": "",
     "stages": [
       {
-      "id": 1,
-      "title": "File hosting (video, photo, documents)",
-      "status": "todo"
+        "id": 1,
+        "title": "File hosting (video, photo, documents)",
+        "status": "todo"
+      },
+      {
+        "id": 2,
+        "title": "Secure Calls",
+        "status": "todo"
+      },
+      {
+        "id": 3,
+        "title": "Video Calls",
+        "status": "todo"
       }
     ]
   },
   {
     "id": 3,
-    "description": "Create projects together with the community or implement existing projects",
+    "description": "",
     "stages": [
       {
         "id": 1,
-        "title": "Project Management",
+        "title": "Project Managment",
         "status": "todo"
       },
       {

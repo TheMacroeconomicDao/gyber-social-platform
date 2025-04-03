@@ -4,7 +4,7 @@ import Image from "next/image";
 import { ReactNode } from "react";
 
 export enum ThemeBackgroundSection {
-  FIRST = '/images/bg-text-card.jpg',
+  FIRST = '/images/bg-social-platform-roadmapping-mobile.svg',
   SECOND = '/images/bg-social-platform-roadmapping.svg',
 }
 
@@ -20,7 +20,7 @@ export const Section = (props: SectionProps) => {
     <div
       className={classNames(cls.Section, {}, [className])}
     >
-      { background && (
+      {background &&
         <Image 
         fill
         src={background}
@@ -28,8 +28,7 @@ export const Section = (props: SectionProps) => {
         className={cls.image}
         quality={70}
       />
-      )}
-      
+      }
       {children}
     </div>
   );
