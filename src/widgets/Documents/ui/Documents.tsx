@@ -45,12 +45,12 @@ const documentsVariants = {
         x: 50
     },
 }
-
-const Documents = () => {
-    const [isShow, setIsShow] = useState<boolean>(false);
-    const handleClick = () => {
-        setIsShow(() => !isShow)
-    }
+interface DocumentsProps {
+    isShow: boolean;
+    handleClick: () => void;
+}
+  
+  const Documents = ({ isShow, handleClick }: DocumentsProps) => {
     return (
         <div className={cls.wrapper}>
             {isShow &&

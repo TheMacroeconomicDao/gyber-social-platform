@@ -1,6 +1,7 @@
+'use client'
 import {classNames} from "@/shared/lib/classNames/classNames";
 import cls from "./Header.module.scss";
-import React from "react";
+import React, { useState } from "react";
 import {Button, ThemeButton} from "@/shared/ui/Button/Button";
 import {Logo} from "@/shared/ui/Logo/Logo";
 import {NavbarTablet} from "../Navbar";
@@ -14,6 +15,10 @@ interface HeaderProps {
 }
 
 export const Header = ({className = ""}: HeaderProps) => {
+    const [isShow, setIsShow] = useState<boolean>(false);
+    const handleClick = () => {
+        setIsShow(() => !isShow)
+    }
     return (
         <div className={classNames(cls.Header, {}, [className])}>
             <Link href={'/'}>
@@ -21,10 +26,12 @@ export const Header = ({className = ""}: HeaderProps) => {
             </Link>
 
             <div className={cls.btnGroup}>
-                <Documents />
-                <Button theme={ThemeButton.ORANGE} disabled={false}>
-                    Dapp
-                </Button>
+                <Documents handleClick={handleClick} isShow={isShow} />
+                    {!isShow &&
+                        <Button theme={ThemeButton.ORANGE} disabled={false}>
+                            Dapp
+                        </Button>
+                    }
                 <NavbarTablet/>
             </div>
         </div>
