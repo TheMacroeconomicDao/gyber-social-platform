@@ -69,7 +69,7 @@ interface DocumentsProps {
                             White Paper
                         </ExternalLink>
                     </motion.span>
-                    <motion.span variants={item}>
+                    {/* <motion.span variants={item}>
                         <ExternalLink
                             className={cls.pdf}
                             href="/documents/gyber_pitch_deck.pdf"
@@ -77,7 +77,7 @@ interface DocumentsProps {
                             theme={ThemeExternalLink.CLEAR}>
                             Pitch Deck
                         </ExternalLink>
-                    </motion.span>
+                    </motion.span> */}
                 </motion.div>
             }
             <Button onClick={handleClick} theme={ThemeButton.CLEAR}>
